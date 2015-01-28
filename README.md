@@ -19,7 +19,7 @@ You can report your favourite Android tools in those categories:
 
 ### Contributing
 
-"Wow. We can now do books in Markdown" - Paulo Cohello
+"Wow. We can now do books in Markdown" - Paulo Coelho
 
 You can edit this ebook with your favourite editor (VIM rulez!), and make pull requests with typos, gramar fixes, or new tools added.
 
