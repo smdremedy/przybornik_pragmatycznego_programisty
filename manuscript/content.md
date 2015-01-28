@@ -68,7 +68,7 @@ Najczęściej *ProGuard* uruchamiany jest podczas budowania APK w wersji Release
 
 Proces działania *ProGuard* jest sterowany przez plik konfiguracyjny __proguard-rules.pro__ lub podobny. Ważne, aby pamiętać, że ProGuard potencjalnie może usunąć zbyt dużo, co może powodować, że aplikacja przestanie działać poprawnie. Zwykle wynika to z faktu, że aplikacja (lub jedna z użytych bibliotek) korzysta z mechanizmu Refleksji czyli opiera swoje działanie o nazwy metod, które ulegają zmianie podczas zaciemniania. W takim wypadku trzeba do pliku konfiguracyjnego dodać zestaw wyjątków, które informują, że danych metod lub klas nie należy zmieniać. Często biblioteki posiadają w swojej dokumentacji gotowe fragmenty konfiguracji, które trzeba wkleić, aby poprawnie działały po użyciu ProGuarda.
 
-## Git
+### Git
 
 #### Strona
 http://git-scm.com/
