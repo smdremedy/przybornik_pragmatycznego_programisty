@@ -12,16 +12,17 @@ Zaczynamy od śmietanki, czyli produktów dostępnych jako aplikacje desktopowe 
 
 ## Android Studio
 
-### Strona
+Strona
 
-http://developer.android.com/sdk/index.html
+: http://developer.android.com/sdk/index.html
 
-### Cena
-FREE
+Cena
 
-### Alternatywy
+: FREE
 
-ADT/Eclipse, InteliJ IDEA (€207)
+Alternatywy
+
+: ADT/Eclipse, InteliJ IDEA (€207)
 
 ### Opis
 
@@ -615,11 +616,12 @@ Twórca CommonsWare i autor ksiązki "The Busy Coder’s Guide to Android Develo
 
 
 # Reklama
-## Zasubskrybuj YT
+
+## Zasubskrybuj Soldiers of Mobile na YouTube
 https://www.youtube.com/channel/UCQUuM6One5W6odx8dDJ8Vsw?sub_confirmation=1
 
-## Śledź na Twitter
+## Śledź Sylwester Madej na Twitter
 https://twitter.com/smdremedy
 
-## A przede wszystkim czytaj
+## A przede wszystkim czytaj bloga
 http://soldiersofmobile.com
