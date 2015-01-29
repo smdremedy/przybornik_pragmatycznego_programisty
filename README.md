@@ -1,10 +1,14 @@
 # Przybornik Pragmatycznego Programisty Androida - eBook in Polish
 
+<p align="center">
+<img src="https://github.com/smdremedy/przybornik_pragmatycznego_programisty/blob/master/cover.jpg?raw=true" alt="Przybornik Praktycznego Programisty Androida - Book Cover"/>
+</p>
+
 ## Summary
 
-This ebook was intended to be Lead Magnet at my blog: <a href="http://soldiersofmobile.com">Soldiers of Mobile</a>, but as a geek I could not have missed the oportunity to create an OpenSource book. :) 
+This ebook was intended to be Lead Magnet at my blog: <a href="http://soldiersofmobile.com">Soldiers of Mobile</a>, but as a geek I could not have missed the oportunity to create an OpenSource book. :)
 
-This is work in progress and you are more than welcome to contribute! If you don't speak Polish, no worry. I am planing to do translation to english...someday. 
+This is work in progress and you are more than welcome to contribute! If you don't speak Polish, no worry. I am planing to do translation to english...someday.
 
 ### Chapters
 
