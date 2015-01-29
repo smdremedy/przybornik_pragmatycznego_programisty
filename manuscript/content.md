@@ -12,19 +12,9 @@ Zaczynamy od śmietanki, czyli produktów dostępnych jako aplikacje desktopowe 
 
 ## Android Studio
 
-Strona
-
-: http://developer.android.com/sdk/index.html
-
-Cena
-
-: FREE
-
-Alternatywy
-
-: ADT/Eclipse, InteliJ IDEA (€207)
-
-### Opis
+Strona      | http://developer.android.com/sdk/index.html
+Cena        | FREE
+Alternatywy | ADT/Eclipse, InteliJ IDEA (€207)
 
 Android Studio powstało jako rozwinięcie wsparcia dla Androida, dostępnego w Intelij IDEA Community Edition. Zostało namaszczone przez Google jako nowe oficjalne środowisko do tworzenia aplikacji na platformę Android. Dzięki połączeniu doskonałego IDE dopracowywanemu przez lata przez firmę JetBrains oraz oficjalnemu wsparciu zespołu Google, jest ono zdecydowanie lepsze od ADT (IDE opartego o Eclipse).
 
