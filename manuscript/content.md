@@ -84,6 +84,34 @@ Najczęściej *ProGuard* uruchamiany jest podczas budowania APK w wersji Release
 
 Proces działania *ProGuard* jest sterowany przez plik konfiguracyjny __proguard-rules.pro__ lub podobny. Ważne, aby pamiętać, że ProGuard potencjalnie może usunąć zbyt dużo, co może powodować, że aplikacja przestanie działać poprawnie. Zwykle wynika to z faktu, że aplikacja (lub jedna z użytych bibliotek) korzysta z mechanizmu Refleksji czyli opiera swoje działanie o nazwy metod, które ulegają zmianie podczas zaciemniania. W takim wypadku trzeba do pliku konfiguracyjnego dodać zestaw wyjątków, które informują, że danych metod lub klas nie należy zmieniać. Często biblioteki posiadają w swojej dokumentacji gotowe fragmenty konfiguracji, które trzeba wkleić, aby poprawnie działały po użyciu ProGuarda.
 
+{title="Fragment pliku proguard-rules.pro"}
+~~~~~~~~
+-keep class com.soldiersofmobile.app.events.** {*;}
+-keepclassmembers class * {
+    public void *(org.json.JSONArray);
+}
+
+# REMOVE LOGS IN RELEASE BUILDS
+-assumenosideeffects class android.util.Log {
+    public static *** d(...);
+    public static *** w(...);
+    public static *** e(...);
+    public static *** i(...);
+}
+
+# GENERAL
+-keepnames class * implements android.os.Parcelable {
+    public static final ** CREATOR;
+}
+
+-dontskipnonpubliclibraryclasses
+-dontskipnonpubliclibraryclassmembers
+-keepattributes Signature,*Annotation*,EnclosingMethod,SourceFile,LineNumberTable
+
+# KEEP FACEBOOK SDK CLASSES
+-keep class com.facebook.** { *; }
+~~~~~~~~
+
 ## Git
 
 | *Strona*      | http://git-scm.com/    |
@@ -95,6 +123,8 @@ Rozproszony system kontroli wersji, który powstał aby zarządzać kodem jądra
 Git w chwili obecnej jest de facto standardem w projektach informatycznych i każdego dnia rośnie ilość narzędzi i usług, które powstały z myślą o nim. W przypadku starszych projektów, nadal można spotkać się jeszcze z narzędziem SVN, które jest rozwiązaniem słabszym, ze względu na konieczność korzystania z centralnego serwera.
 
 Idea pracy z Git opiera się o zapisywanie kolejnych wersji interesujących nas plików, w lokalnym repozytorium, które znajduje się w katalogu projektu. Dzięki temu możemy śledzić zmiany bez połączenia z siecią i synchronizować się z innymi członkami zespołu, tylko kiedy tego potrzebujemy.
+
+![Przenoszenie zmian pomiędzy lokalizacjami lokalnymi i zdalnymi. Źródło: http://pl.wikibooks.org/wiki/Git/Podstawy](images/git_flow.png)
 
 Dużą wartością Git jest bardzo łatwy i lekki sposób pracy z gałęziami (branches), które pozwalają np. pisać nowe elementy aplikacji, jednocześnie mając dostęp do wersji stabilnej.
 
@@ -110,7 +140,9 @@ W dużym skrócie, zadaniem Mirror-a jest usunięcie konieczności przebudowywan
 
 Mirror opiera się na własnych plikach XML, w których opisuje się, jakie layouty mają być wyświetlone na ekranie oraz jakimi danymi mają zostać wypełnione. Daje to szansę podejrzenia bardzo przybliżonego podglądu aplikacji, bez konieczności pisania kodu Java i przetestowania tego, na wielu urządzeniach jednocześnie.
 
-Więcej informacji na mojej prezentacji z Mobilization (TODO link).
+![Wypełnianie podglądu danymi działa dużo lepiej niż w AS. Źródło: http://jimulabs.com/if-studio-why-mirror/](images/mirror_vs_as.png)
+
+Więcej informacji na mojej prezentacji z [Mobilization](http://soldiersofmobile.com/mobilization-2014-wideo-z-mojej-prezentacji/).
 
 ## Genymotion
 
