@@ -269,8 +269,7 @@ Kolejne proste narzędzie, które może oszczędzić godziny. DB Browser, jak sa
 | *Cena*        | FREE                             |
 | *Alternatywy* | -                                |
 
-### Opis
-
+![Gradle, Please w akcji.](images/gradle_please.png)
 
 ## Bitbucket
 
