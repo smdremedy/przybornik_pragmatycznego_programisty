@@ -152,7 +152,7 @@ W przypadku, gdy z jakiś powodów zdecydujesz, że Genymotion nie jest dla Cieb
 
 ## Calabash
 
-{width=60%,float=left}
+{width=50%}
 ![](images/calabash_logo.png)
 
 | *Strona*      | http://calaba.sh/          |
