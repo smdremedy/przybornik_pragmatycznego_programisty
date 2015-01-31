@@ -152,12 +152,12 @@ W przypadku, gdy z jakiś powodów zdecydujesz, że Genymotion nie jest dla Cieb
 
 ## Calabash
 
-{width=50%}
-![](images/calabash_logo.png)
-
 | *Strona*      | http://calaba.sh/          |
 | *Cena*        | FREE                       |
 | *Alternatywy* | Robotium, Espresso, Appium |
+
+{width=50%}
+![](images/calabash_logo.png)
 
 Calabash jest narzędziem służącym do testów funkcjonalnych (klikanie po UI) aplikacji stworzonych na platformy Android i iOS.
 
@@ -178,6 +178,9 @@ Przykładowy scenariusz:
 | *Strona*      | http://jenkins-ci.org/      |
 | *Cena*        | FREE                        |
 | *Alternatywy* | Travis CI, Bamboo, TeamCity |
+
+{width=50%}
+![](images/jenkins_logo.png)
 
 Continous Integration, to technika, w której serwer co pewien czas pobiera kod źródłowy i sprawdza czy uda się go skompilować, uruchomić i przetestować. Dzięki temu już w kilka minut po umieszczeniu zmian w systemie kontroli wersji, możemy się dowiedzieć czy coś zepsuliśmy np. poprzez mail rozsyłany do osób zainteresowanych.
 
