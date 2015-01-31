@@ -16,6 +16,9 @@ Zaczynamy od śmietanki, czyli produktów dostępnych jako aplikacje desktopowe 
 | *Cena*        | FREE                                        |
 | *Alternatywy* | ADT/Eclipse, InteliJ IDEA (€207)            |
 
+{width=30%}
+![](images/android_studio_logo.png)
+
 Android Studio powstało jako rozwinięcie wsparcia dla Androida, dostępnego w Intelij IDEA Community Edition. Zostało namaszczone przez Google jako nowe oficjalne środowisko do tworzenia aplikacji na platformę Android. Dzięki połączeniu doskonałego IDE dopracowywanemu przez lata przez firmę JetBrains oraz oficjalnemu wsparciu zespołu Google, jest ono zdecydowanie lepsze od ADT (IDE opartego o Eclipse).
 
 ![Android Studio w trybie edycji layoutów z podglądem](images/android_studio.png)
@@ -27,6 +30,9 @@ W celu maksymalizacji wydajności korzystania z AS, warto poświęcić nieco cza
 | *Strona*      | http://tools.android.com/tech-docs/new-build-system/ |
 | *Cena*        | FREE                                                 |
 | *Alternatywy* | Maven, ANT                                           |
+
+{width=50%}
+![](images/gradle_logo.png)
 
 Gradle został wybrany przez Google jako podstawa New Build System, który używany jest m.in. w Android Studio. Dzięki mechanizmowi zarządzania zależnościami wykorzystującymi istniejące repozytoria wykorzystywane dotychczas przez Maven, możliwe jest korzystanie z setek bibliotek, po dodaniu jednej linii opisującej każdą z nich. Zastosowanie Gradle pozwoliło ujednolicić konfigurację projektu, dzięki czemu w chwili obecnej budowanie z linii poleceń i IDE wygląda tak samo i korzysta z tej samej konfiguracji.
 
@@ -106,6 +112,9 @@ Proces działania *ProGuard* jest sterowany przez plik konfiguracyjny __proguard
 | *Cena*        | FREE                   |
 | *Alternatywy* | Mercurial, SVN, Baazar |
 
+{width=50%}
+![](images/git_logo.png)
+
 Rozproszony system kontroli wersji, który powstał aby zarządzać kodem jądra systemu Linux. Jest to podstawowe narzędzie, które każdy programista powinien sobie przyswoić, ponieważ pozwala współdzielić kod w zespole, podmieniać wersje, zapisuje każda wersję pliku.
 
 Git w chwili obecnej jest de facto standardem w projektach informatycznych i każdego dnia rośnie ilość narzędzi i usług, które powstały z myślą o nim. W przypadku starszych projektów, nadal można spotkać się jeszcze z narzędziem SVN, które jest rozwiązaniem słabszym, ze względu na konieczność korzystania z centralnego serwera.
@@ -121,6 +130,9 @@ Dużą wartością Git jest bardzo łatwy i lekki sposób pracy z gałęziami (b
 | *Strona*      | http://jimulabs.com/ |
 | *Cena*        | $79                  |
 | *Alternatywy* | -                    |
+
+{width=30%}
+![](images/mirror_logo.png)
 
 Mirror jest nowością, która szybko się rozwija i z mojego doświadczenia wprowadza zupełnie nowy sposób pracy nad interfejsem użytkownika aplikacji Android.
 
@@ -204,6 +216,9 @@ Przykładowy cykl, który może realizować Jenkins CI:
 | *Strona*      | http://bohemiancoding.com/sketch/        |
 | *Cena*        | $99                                      |
 | *Alternatywy* | Photoshop CC (E12.29/mc w CreativeCloud) |
+
+{width=30%}
+![](images/sketch_logo.png)
 
 Sketch staje się w środowisku designerów następcą Photoshopa. Jego główne zalety to: dostosowanie do pracy z koncepcją ekranów, niska cena, prostota obsługi. Podstawowa wada, to konieczność korzystania z MacOS X.
 
@@ -293,9 +308,14 @@ Do momentu gdy nasza aplikacja nie zacznie uzyskiwać znaczącego ruchu, wszystk
 | *Cena*        | FREE                               |
 | *Alternatywy* | Applause, Splunk MINT, Google Play |
 
+{width=50%}
+![](images/crashlytics_logo.png)
+
 Każda aplikacja umieszczona na sklepie wcześniej lub później będzie miała crashe. Nie da się tego uniknąć, bo nie da się też przetestować aplikacji na każdym z dziesiątek tysięcy urządzeń. Dlatego warto wyposażyć naszą aplikację w mechanizm automatycznego zgłaszania błędów, który w przypadku wystąpienia błędu wyśle krótką wiadomość na nasz serwer. Crashlytics sprawdza się w tej roli świetnie, a dodatkowo posiada piękny interfejs web, na którym można przeglądać informację o zaistniałych błędach łącznie z informacjami, na jakim modelu, wersji systemu i sprzęcie wystąpiły.
 
 W przypadku, gdy korzystaliśmy z mechanizmu obfuskacji w ProGuard, będziemy potrzebowali pliku z mapowaniem, ponieważ nazwy metod w których wystąpił błąd będą już zmienione.
+
+![Crashlytics wyświetla błędy w postaci czytelnej tablicy.](images/crashlytics.png)
 
 ## StackOverflow
 
