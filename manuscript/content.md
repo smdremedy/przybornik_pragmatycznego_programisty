@@ -485,41 +485,56 @@ Nietypowa książka autorstwa Mark'a Murphy'ego. Dostępna jedynie w postaci roc
 
 ## Jake Wharton
 
-| *Strona*  | http://jakewharton.com/ |
-| *Twitter* |                         |
-| *G+*      |                         |
+| *Strona*  | http://jakewharton.com/               |
+| *Twitter* | https://twitter.com/JakeWharton       |
+| *G+*      | https://plus.google.com/+JakeWharton/ |
+
+{width=20%, float=left}
+![](images/jake_wharton.jpg)
 
 Człowiek instytucja. Twórca wielu z przytoczonych bibliotek. Autorytet w kwestii upraszczania kodu, korzystania z anotacji oraz SDK.
 
 ## Romain Guy
 
-| *Strona*  | http://www.curious-creature.com/ |
-| *Twitter* |                                  | 
-| *G+*      |                                  |
+| *Strona*  | http://www.curious-creature.com/    |
+| *Twitter* | https://twitter.com/romainguy       | 
+| *G+*      | https://plus.google.com/+RomainGuy/ |
+
+{width=20%, float=left}
+![](images/romain_guy.jpg)
 
 Googler pracujący nad Androidem. Często prezentuje nowości związane z UI.
 
 ## Chris Banes
 
-| *Strona*  | https://chris.banes.me/ |
-| *Twitter* |                         |
-| *G+*      |                         |
+| *Strona*  | https://chris.banes.me/              |
+| *Twitter* |                                      |
+| *G+*      | https://plus.google.com/+ChrisBanes/ |
+
+{width=20%, float=left}
+![](images/chris_banes.jpeg)
 
 Googler odpowiedzialny za relacje z developerami. Twórca wielu elementów biblioteki zgodności m.in. AppCompat.
 
 ## Nick Butcher
 
-| *Strona*  | http://www.curious-creature.com/ |
-| *Twitter* |                                  |
-| *G+*      |                                  |
+| *Strona*  | http://www.curious-creature.com/      |
+| *Twitter* | https://twitter.com/crafty            |
+| *G+*      | https://plus.google.com/+NickButcher/ |
+
+{width=20%, float=left}
+![](images/nick_butcher.jpg)
 
 Googler odpowiedzialny za relacje na styku design/development. Umieszcza bardzo fajne prezentacje i przykłady. Dużo udziela się na kanale YouTube Android Developers.
 
 ## Mark Murphy
 
 | *Strona*  | https://commonsware.com/mmurphy |
-| *Twitter* |                                 |
-| *G+*      |                                 |
+| *Twitter* | https://twitter.com/commonsguy  |
+| *G+*      | -                               |
+
+{width=20%, float=left}
+![](images/mark_murphy.jpg)
 
 Twórca CommonsWare i autor ksiązki "The Busy Coder’s Guide to Android Development". Znajduje się w Top 10 najbardziej aktywnych osób na StackOverflow. Jeśli szukasz odpowiedzi na pytanie o Androida, duża szansa, że to on odpowie. Twórca dużej ilości bibliotek i częsty speaker na popularnych konferencjach mobilnych.
 
