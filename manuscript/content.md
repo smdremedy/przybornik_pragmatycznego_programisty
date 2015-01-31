@@ -39,7 +39,6 @@ apply plugin: 'com.android.application'
 android {
     compileSdkVersion 21
     buildToolsVersion "21.1.2"
-
     defaultConfig {
         applicationId "com.soldiersofmobile.myapplication"
         minSdkVersion 15
@@ -54,12 +53,10 @@ android {
         }
     }
 }
-
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
     compile 'com.android.support:appcompat-v7:21.0.3'
 }
-
 ~~~~~~~~
 
 ## ProGuard
@@ -87,25 +84,16 @@ Proces działania *ProGuard* jest sterowany przez plik konfiguracyjny __proguard
 {title="Fragment pliku proguard-rules.pro"}
 ~~~~~~~~
 -keep class com.soldiersofmobile.app.events.** {*;}
--keepclassmembers class * {
-    public void *(org.json.JSONArray);
-}
 
 # REMOVE LOGS IN RELEASE BUILDS
 -assumenosideeffects class android.util.Log {
     public static *** d(...);
-    public static *** w(...);
-    public static *** e(...);
-    public static *** i(...);
 }
 
 # GENERAL
 -keepnames class * implements android.os.Parcelable {
     public static final ** CREATOR;
 }
-
--dontskipnonpubliclibraryclasses
--dontskipnonpubliclibraryclassmembers
 -keepattributes Signature,*Annotation*,EnclosingMethod,SourceFile,LineNumberTable
 
 # KEEP FACEBOOK SDK CLASSES
@@ -158,9 +146,14 @@ Narzędzie to ma dwie podstawowe zalety nad emulatorami dostarczanymi przez Goog
 
 - Ma możliwość korzystania z Google Apps (Google Play, Gmail, Mapy i wszystko co wymaga Google Play Services), tak jakby to był telefon. Obsługa ta jest co prawda nieoficjalna (ze względów licencyjnych obrazy emulatorów nie mogą zawierać tych aplikacji), ale działa bardzo dobrze.
 
+![Genymotion pozwala tworzyć urządzenia o róźnych parametrach np. rozdzielczość, wielkość, wersja systemu.](images/genymotion_select.png)
+
 W przypadku, gdy z jakiś powodów zdecydujesz, że Genymotion nie jest dla Ciebie, to warto skorzystać z emulatorów x86, które są dużo szybsze od ARM, zwłaszcza jeśli mamy w systemie obsługę wirtualizacji (HAXM w Windows i MacOS X, KVM w Linux). Ta kombinacja powoduje, że wszystkie operacje z emulatora uruchamiane są bezpośrednio na procesorze naszego komputera i nie wymagają tłumaczenia, jak w przypadku ARM.
 
 ## Calabash
+
+{width=60%,float=left}
+![](images/calabash_logo.png)
 
 | *Strona*      | http://calaba.sh/          |
 | *Cena*        | FREE                       |
@@ -213,6 +206,8 @@ Sketch staje się w środowisku designerów następcą Photoshopa. Jego główne
 
 Warto posiadać Sketch jeśli często otrzymujemy grafiki w tym formacie i nie chcemy polegać na kimś, kto może akurat nie mieć czasu. Korzysanie z aplikacji jest proste i można nawet wykorzystać go jako narzędzie do tworzenia Mockup'ów aplikacji.
 
+![Główne okno Sketch.](images/sketch.png)
+
 Jest to produkt otwarty na rozwój, z dobrym community, co przekłada się na dużą ilość wtyczek, które pozwalają np. na szybki eksport grafik do różnych rozdzielczości. Widziałem nawet wersje, które pozwalają generować kod layoutów prosto z projektu w Sketch.
 
 
@@ -236,7 +231,9 @@ Do głównych zalet Postman'a należy zaliczyć:
 
 Narzędzie to warto wykorzystać, aby sprawdzić API zanim zaczniemy implementować dane zapytanie po stronie aplikacji. Ponadto jest to idealne rozwiązanie dla programistów tworzących API, którzy chcą przetestować jak będzie się zachowywało dla prawdziwych danych.
 
-## DB Browser for SQLite
+![Przykładowe zapytanie do API Tumblr w Postman.](images/postman.png)
+
+## DB Browser for SQLite (dawniej SQLite Browser)
 
 | *Strona*      | http://sqlitebrowser.org/           |
 | *Cena*        | FREE                                |
@@ -244,6 +241,7 @@ Narzędzie to warto wykorzystać, aby sprawdzić API zanim zaczniemy implementow
 
 Kolejne proste narzędzie, które może oszczędzić godziny. DB Browser, jak sama nazwa wskazuje, służy do przeglądania zawartości bazy SQLite. Poza przeglądaniem daje także możliwości edycji oraz wykonywania zapytań SQL i podglądu wyników. Jest to doskonała alternatywa dla konsolowego klienta *sqlite3*, który jest dostarczany z SDK Androida. Jedyną wadą jest konieczność pobrania pliku z urządzenia do lokalnego systemu plików np. poleceniem `adb pull`. Od tej chwili mamy plik, na którym możemy wykonywać dowolne operacje. Jeśli dokonamy zmian, to zmieniony pliku musimy umieścić znów na urządzeniu poleceniem `adb push`.
 
+![DB Browser pozwala m.in. podejrzeć strukturę bazy danych.](images/dbbrowser.png)
 
 # Usługi
 
