@@ -235,7 +235,7 @@ Jest to produkt otwarty na rozwój, z dobrym community, co przekłada się na du
 | *Cena*        | FREE                       |
 | *Alternatywy* | RESTClient dla Firefox     |
 
-{width=30%}
+{width=60%}
 ![](images/postman_logo.jpg)
 
 Bardzo przydatny plugin do przeglądarki Chrome, pozwalający na testowanie API REST, bez konieczności pisania kodu. Przyjemy interfejs użytkownika pozwala na zarządzanie wieloma zapytaniami jednocześnie i testowanie API, z którym będzie się komunikowała nasza aplikacja.
@@ -272,9 +272,9 @@ Kolejne proste narzędzie, które może oszczędzić godziny. DB Browser, jak sa
 
 Kolejne proste narzędzie, które może oszczędzić godziny. DB Browser, jak sama nazwa wskazuje, służy do przeglądania zawartości bazy SQLite. Poza przeglądaniem daje także możliwości edycji oraz wykonywania zapytań SQL i podglądu wyników. Jest to doskonała alternatywa dla konsolowego klienta *sqlite3*, który jest dostarczany z SDK Androida. Jedyną wadą jest konieczność pobrania pliku z urządzenia do lokalnego systemu plików np. poleceniem `adb pull`. Od tej chwili mamy plik, na którym możemy wykonywać dowolne operacje. Jeśli dokonamy zmian, to zmieniony pliku musimy umieścić znów na urządzeniu poleceniem `adb push`.
 
-![Dużą zaletą Charles jest prostota nawigacji pomiędzy zapytaniami.](images/charles_proxy.png)
+![Dużą zaletą Charles jest prostota nawigacji pomiędzy zapytaniami. Źródło: http://www.charlesproxy.com/](images/charles_proxy.png)
 
-# Usługi
+# Usługi i narzędzia Web
 
 ## Gradle, Please
 
@@ -283,6 +283,32 @@ Kolejne proste narzędzie, które może oszczędzić godziny. DB Browser, jak sa
 | *Alternatywy* | -                                |
 
 ![Gradle, Please w akcji.](images/gradle_please.png)
+
+## Android Assets Studio
+
+| *Strona*      | https://romannurik.github.io/AndroidAssetStudio/ |
+| *Cena*        | FREE                                             |
+| *Alternatywy* | -                                                |
+
+Zestaw przydatnych mini-narzędzi, które pozwalają generować zasoby, które przydają się zwłaszcza na początku projektu. 
+
+Możemy wygenerować:
+* ikony aplikacji np. z tekstu, clipartów, obrazku we wszystkich potrzebnych gęstościach,
+* styl ActionBar,
+* 9-patch,
+* osadzić screenshoty w ramce telefonów Nexus.
+
+Część z tych narzędzi została już wbudowana w Android Studio, ale warto zapoznać się z ich możliwościami.
+
+## Android Pixel Calculator
+
+| *Strona*      | http://angrytools.com/android/pixelcalc/ |
+| *Cena*        | FREE                                     |
+| *Alternatywy* | -                                        |
+
+Wymiary obiektów na ekranie Androida można podawać w wielu jednostach. Pixel Calculator pozwala sprawnie poruszać się pomiędzy tymi jednostami. Dzięki temu niezależnie gęstości dla jakiej przygotowany został projekt graficzny, można szybko wyliczyć wielkość w dp lub sp.
+
+![W trybie prostym wystarczy podać wartość w jednej jednostce i gęstość, aby otrzymać pozostałe.](images/pixel_calculator.png)
 
 ## Bitbucket
 
@@ -465,6 +491,13 @@ https://github.com/JakeWharton/u2020
 
 Mały projekt prezentujący, jak połączyć ze sobą wiele z opisanych wcześniej biblitek Square.
 
+## Libraries for Developers
+https://play.google.com/store/apps/details?id=com.desarrollodroide.repos
+
+Aplikacja prezentująca przykłady bibliotek, bez konieczności kompilowania ich. Wystarczy pobrać z Google Play i zobaczyć, czy wybrana biblioteka spełnia nasze oczekiwania zanim ją zaczniemy integrować z naszą aplikacją.
+
+![Wszystkie biblioteki są podzielone na kategorie i dostępne z poziomu menu.](images/libs_for_devs.png)
+
 # Źródła wiedzy
 
 ## Strony
@@ -488,6 +521,8 @@ http://www.materialup.com/
 https://android-arsenal.com/
 
 Największy katalog bibliotek, narzędzi i przykładów na Androida. Z możliwością przeszukiwania wg. różnych kryteriów m.in. cena, rodzaj, zastosowanie. Można potraktować jako rozbudowaną wersję tego ebooka. Niestety liczba dostępnych elementów powoduje, że pomiędzy perełkami jest dużo słabych bibliotek.
+
+Alternatywy: https://www.android-libs.com
 
 ## Kanały YouTube
 Dla tych, którzy wolą oglądać wideo, zamiast czytać istnieje kilka kanałów, które warto dodać do swoich subskrybcji na YouTube, aby na bieżąco dostawać powiadomienia.
