@@ -293,6 +293,7 @@ Kolejne proste narzędzie, które może oszczędzić godziny. DB Browser, jak sa
 Zestaw przydatnych mini-narzędzi, które pozwalają generować zasoby, które przydają się zwłaszcza na początku projektu. 
 
 Możemy wygenerować:
+
 * ikony aplikacji np. z tekstu, clipartów, obrazku we wszystkich potrzebnych gęstościach,
 * styl ActionBar,
 * 9-patch,
@@ -562,7 +563,7 @@ Nietypowa książka autorstwa Mark'a Murphy'ego. Dostępna jedynie w postaci roc
 | *Twitter* | https://twitter.com/JakeWharton       |
 | *G+*      | https://plus.google.com/+JakeWharton/ |
 
-{width=10%, float=left}
+{width=10%, float=right}
 ![](images/jake_wharton.png)
 
 Człowiek instytucja. Twórca wielu z przytoczonych bibliotek. Autorytet w kwestii upraszczania kodu, korzystania z anotacji oraz SDK.
@@ -573,7 +574,7 @@ Człowiek instytucja. Twórca wielu z przytoczonych bibliotek. Autorytet w kwest
 | *Twitter* | https://twitter.com/romainguy       | 
 | *G+*      | https://plus.google.com/+RomainGuy/ |
 
-{width=10%, float=left}
+{width=10%, float=right}
 ![](images/romain_guy.jpg)
 
 Googler pracujący nad Androidem. Często prezentuje nowości związane z UI.
@@ -588,7 +589,7 @@ Googler pracujący nad Androidem. Często prezentuje nowości związane z UI.
 | *Twitter* |                                      |
 | *G+*      | https://plus.google.com/+ChrisBanes/ |
 
-{width=10%, float=left}
+{width=10%, float=right}
 ![](images/chris_banes.jpeg)
 
 Googler odpowiedzialny za relacje z developerami. Twórca wielu elementów biblioteki zgodności m.in. AppCompat.
@@ -602,7 +603,7 @@ Googler odpowiedzialny za relacje z developerami. Twórca wielu elementów bibli
 | *Twitter* | https://twitter.com/crafty            |
 | *G+*      | https://plus.google.com/+NickButcher/ |
 
-{width=10%, float=left}
+{width=10%, float=right}
 ![](images/nick_butcher.jpg)
 
 Googler odpowiedzialny za relacje na styku design/development. Umieszcza bardzo fajne prezentacje i przykłady. Dużo udziela się na kanale YouTube Android Developers.
@@ -616,7 +617,7 @@ Googler odpowiedzialny za relacje na styku design/development. Umieszcza bardzo 
 | *Twitter* | https://twitter.com/commonsguy  |
 | *G+*      | -                               |
 
-{width=10%, float=left}
+{width=10%, float=right}
 ![](images/mark_murphy.jpg)
 
 Twórca CommonsWare i autor ksiązki "The Busy Coder’s Guide to Android Development". Znajduje się w Top 10 najbardziej aktywnych osób na StackOverflow. Jeśli szukasz odpowiedzi na pytanie o Androida, duża szansa, że to on odpowie. Twórca dużej ilości bibliotek i częsty speaker na popularnych konferencjach mobilnych.
