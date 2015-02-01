@@ -235,6 +235,9 @@ Jest to produkt otwarty na rozwój, z dobrym community, co przekłada się na du
 | *Cena*        | FREE                       |
 | *Alternatywy* | RESTClient dla Firefox     |
 
+{width=30%}
+![](images/postman_logo.jpg)
+
 Bardzo przydatny plugin do przeglądarki Chrome, pozwalający na testowanie API REST, bez konieczności pisania kodu. Przyjemy interfejs użytkownika pozwala na zarządzanie wieloma zapytaniami jednocześnie i testowanie API, z którym będzie się komunikowała nasza aplikacja.
 
 Do głównych zalet Postman'a należy zaliczyć:
@@ -261,6 +264,16 @@ Kolejne proste narzędzie, które może oszczędzić godziny. DB Browser, jak sa
 
 ![DB Browser pozwala m.in. podejrzeć strukturę bazy danych.](images/dbbrowser.png)
 
+## Charles Proxy
+
+| *Strona*      | http://www.charlesproxy.com/ |
+| *Cena*        | $50                          |
+| *Alternatywy* | Wireshark                    |
+
+Kolejne proste narzędzie, które może oszczędzić godziny. DB Browser, jak sama nazwa wskazuje, służy do przeglądania zawartości bazy SQLite. Poza przeglądaniem daje także możliwości edycji oraz wykonywania zapytań SQL i podglądu wyników. Jest to doskonała alternatywa dla konsolowego klienta *sqlite3*, który jest dostarczany z SDK Androida. Jedyną wadą jest konieczność pobrania pliku z urządzenia do lokalnego systemu plików np. poleceniem `adb pull`. Od tej chwili mamy plik, na którym możemy wykonywać dowolne operacje. Jeśli dokonamy zmian, to zmieniony pliku musimy umieścić znów na urządzeniu poleceniem `adb push`.
+
+![Dużą zaletą Charles jest prostota nawigacji pomiędzy zapytaniami.](images/charles_proxy.png)
+
 # Usługi
 
 ## Gradle, Please
@@ -277,9 +290,14 @@ Kolejne proste narzędzie, które może oszczędzić godziny. DB Browser, jak sa
 | *Cena*        | FREE                   |
 | *Alternatywy* | Github, Gitlab         |
 
+{width=50%}
+![](images/bitbucket_logo.png)
+
 Bitbucket to product firmy Atlasian, znanego twórcy narzędzi dla zespołów programistycznych (m.in. Jira, Confulence, Bamboo). Usługa ta pozwala na darmowe przechowywanie nieograniczonej ilości prywatnych repozytoriów, z ograniczeniem do 5 użytkowników. Sprawdza się to bardzo dobrze nawet dla niewielkich zespołów/projektów i pozwala zacząć pracę z Gitem, bez konieczności konfigurowania własnego serwera.
 
 Dodatkowo, Bitbucket posiada dobrze rozwiniętą opcje korzystania z mechanizmu Pull Request, który pozwala innym członkom naszego zespołu na sprawdzenie naszego kodu (Code Review).
+
+![Widok pozwalający na komentowanie kodu w ramach Pull Request.](images/bitbucket.png)
 
 ## Parse
 
@@ -325,16 +343,37 @@ W przypadku, gdy korzystaliśmy z mechanizmu obfuskacji w ProGuard, będziemy po
 
 ## Github
 
-| *Strona*      | https://crashlytics.com |
-| *Cena*        | FREE                    |
-| *Alternatywy* | -                       |
+| *Strona*      | https://crashlytics.com        |
+| *Cena*        | FREE dla projektów Open Source |
+| *Alternatywy* | -                              |
 
+{width=50%}
+![](images/github_logo.png)
+
+Z punktu widzenia produktu, Github jest konkurentem Bitbucket. Jest to miejsce, gdzie można przechowywać kod źródłowy własnych projektów.
+
+Róźnica wynika z modelu biznesowego i sposobu pozycjonowania produktu. Github udostępnia swoje usługi bez limitu dla repozytoriów publicznych (kod widoczny dla wszystkich), a każe płacić za przechowywanie projektów prywantych. Dzięki takiemu podejściu, dużo projektów Open Source przeniosło swoje kody źródłowe na Github. Ponadto serwis stał się swoistą siecią społecznościową dla progrmistów, a konto na Github stało się nowoczesną alternatywą dla CV. Często na rozmowach rekrutacyjnych konta Github uważane są za bardziej wartościowe niż suche wpisy o projektach, ponieważ pozwalały zobaczyć jakość tworzonego kodu oraz sposób pracy nad projektem.
+
+Polecam utworzenie konta na Github każdemu programiście i utworzenie własnych projektów publicznych lub udział w istniejących projektach, poprzez zgłaszanie poprawek w postaci tzw. Pull Request.
+
+![Na Github można znaleźć kod wielu popularnych bibliotek OpenSource.](images/github.png)
 
 ## TestDroid
 
 | *Strona*      | http://testdroid.com/ |
 | *Cena*        | FREE                  |
 | *Alternatywy* | Appthwack, Saucelabs  |
+
+{width=50%}
+![](images/testdroid_logo.jpg)
+
+Testdroid jest jedną z wielu, bardzo podobnych usług. W odpowiedzi na zwiększającą się fragmentację urządzeń korzystających z systemu Android, pojawiły się problemy z przetestowaniem aplikacji na dużej liczbie różnych urządzeń. Pojawił się pomysł, aby stworzyć miejsca, gdzie można uzyskać dostęp do dużej liczby fizycznych urządzeń, w zamian za niewielką opłatę. 
+
+Tak jak wspomniałem, serwisów takich jest wiele. Różnią się liczbą dostępnych urządzeń, ceną oraz rodzajami testów jakie da się uruchomić. Rzeczą, która wyróżnia Testdroid jest możliwość założenia darmowego konta i dostęp do kilku darmowych urządzeń (dzięki współpracy z firmą Intel, są to głównie urządzenia z procesorami Intel Atom). To pozwala zapoznać się z zasadą funkcjonowania serwisu oraz przeprowadznia testów na kilku dodatkowych urządzeniach.
+
+Dodatkową cechą wyróżniającą, jest możliwość użycia narzędzia Testdroid Recorder, które pozwala nagrywać testy manualne i powtarzać je, na wielu urządzeniach jednocześnie.
+
+![Widok wyników testu na urządzeniu Acer Iconia Tab 8.](images/testdroid.png)
 
 ## FluidUI
 
