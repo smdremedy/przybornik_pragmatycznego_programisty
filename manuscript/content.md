@@ -21,7 +21,7 @@ Zaczynamy od śmietanki, czyli produktów dostępnych jako aplikacje desktopowe 
 
 Android Studio powstało jako rozwinięcie wsparcia dla Androida, dostępnego w Intelij IDEA Community Edition. Zostało namaszczone przez Google jako nowe oficjalne środowisko do tworzenia aplikacji na platformę Android. Dzięki połączeniu doskonałego IDE dopracowywanemu przez lata przez firmę JetBrains oraz oficjalnemu wsparciu zespołu Google, jest ono zdecydowanie lepsze od ADT (IDE opartego o Eclipse).
 
-![Android Studio w trybie edycji layoutów z podglądem](images/android_studio.png)
+![Android Studio w trybie edycji layoutów z podglądem.](images/android_studio.png)
 
 W celu maksymalizacji wydajności korzystania z AS, warto poświęcić nieco czasu i nauczyć się skrótów klawiszowych oraz poznać np. mechanizm szablonów generujący kod, który często się powtarza. Każda minuta poświęcona w naukę sztuczek w AS, to inwestycja w przyszłość. Istnieje wiele czynności, które są często powtarzane, a które da się przyśpieszyć np.: generowanie par getter/setter, refaktoryzacja kodu, czy chociażby obsługa systemów kontroli wersji z poziomu kodu.
 
@@ -41,11 +41,10 @@ Warto poświęcić kilka godzin, aby poznać bardziej zaawansowane możliwości 
 {title="Prosty plik build.gradle dla aplikacji Android"}
 ~~~~~~~~
 apply plugin: 'com.android.application'
-
 android {
     compileSdkVersion 21
     buildToolsVersion "21.1.2"
-    defaultConfig {
+    defaultConfig { //podstawowa konfiguracja aplikacji
         applicationId "com.soldiersofmobile.myapplication"
         minSdkVersion 15
         targetSdkVersion 21
@@ -53,13 +52,14 @@ android {
         versionName "1.0"
     }
     buildTypes {
-        release {
-            minifyEnabled false
-            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        release { //włącz ProGuard przy budowaniu release
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'),
+		 'proguard-rules.pro'
         }
     }
 }
-dependencies {
+dependencies { //zależności, czyli zewnętrzne biblioteki
     compile fileTree(dir: 'libs', include: ['*.jar'])
     compile 'com.android.support:appcompat-v7:21.0.3'
 }
@@ -112,7 +112,7 @@ Proces działania *ProGuard* jest sterowany przez plik konfiguracyjny __proguard
 | *Cena*        | FREE                   |
 | *Alternatywy* | Mercurial, SVN, Baazar |
 
-{width=50%}
+{width=40%}
 ![](images/git_logo.png)
 
 Rozproszony system kontroli wersji, który powstał aby zarządzać kodem jądra systemu Linux. Jest to podstawowe narzędzie, które każdy programista powinien sobie przyswoić, ponieważ pozwala współdzielić kod w zespole, podmieniać wersje, zapisuje każda wersję pliku.
@@ -121,7 +121,8 @@ Git w chwili obecnej jest de facto standardem w projektach informatycznych i ka�
 
 Idea pracy z Git opiera się o zapisywanie kolejnych wersji interesujących nas plików, w lokalnym repozytorium, które znajduje się w katalogu projektu. Dzięki temu możemy śledzić zmiany bez połączenia z siecią i synchronizować się z innymi członkami zespołu, tylko kiedy tego potrzebujemy.
 
-![Przenoszenie zmian pomiędzy lokalizacjami lokalnymi i zdalnymi. Źródło: http://pl.wikibooks.org/wiki/Git/Podstawy](images/git_flow.png)
+![Przenoszenie zmian pomiędzy lokalizacjami lokalnymi i zdalnymi.  
+Źródło: http://pl.wikibooks.org/wiki/Git/Podstawy](images/git_flow.png)
 
 Dużą wartością Git jest bardzo łatwy i lekki sposób pracy z gałęziami (branches), które pozwalają np. pisać nowe elementy aplikacji, jednocześnie mając dostęp do wersji stabilnej.
 
@@ -140,7 +141,8 @@ W dużym skrócie, zadaniem Mirror-a jest usunięcie konieczności przebudowywan
 
 Mirror opiera się na własnych plikach XML, w których opisuje się, jakie layouty mają być wyświetlone na ekranie oraz jakimi danymi mają zostać wypełnione. Daje to szansę podejrzenia bardzo przybliżonego podglądu aplikacji, bez konieczności pisania kodu Java i przetestowania tego, na wielu urządzeniach jednocześnie.
 
-![Wypełnianie podglądu danymi działa dużo lepiej niż w AS. Źródło: http://jimulabs.com/if-studio-why-mirror/](images/mirror_vs_as.png)
+![Wypełnianie podglądu danymi działa dużo lepiej niż w AS.  
+Źródło: http://jimulabs.com/if-studio-why-mirror/](images/mirror_vs_as.png)
 
 Więcej informacji na mojej prezentacji z [Mobilization](http://soldiersofmobile.com/mobilization-2014-wideo-z-mojej-prezentacji/).
 
@@ -156,9 +158,11 @@ Narzędzie to ma dwie podstawowe zalety nad emulatorami dostarczanymi przez Goog
 
 - Jest dużo szybsze (znane są przypadki uruchamiania topowych gier 3D z Androida).
 
-- Ma możliwość korzystania z Google Apps (Google Play, Gmail, Mapy i wszystko co wymaga Google Play Services), tak jakby to był telefon. Obsługa ta jest co prawda nieoficjalna (ze względów licencyjnych obrazy emulatorów nie mogą zawierać tych aplikacji), ale działa bardzo dobrze.
+- Ma możliwość korzystania z Google Apps (Google Play, Gmail, Mapy i wszystko co wymaga Google Play Services), tak jakby to był telefon. 
 
-![Genymotion pozwala tworzyć urządzenia o róźnych parametrach np. rozdzielczość, wielkość, wersja systemu.](images/genymotion_select.png)
+Obsługa Google Apps jest co prawda nieoficjalna (ze względów licencyjnych obrazy emulatorów nie mogą zawierać tych aplikacji), ale działa bardzo dobrze. Wystarczy pobrać plik zawierający Google Apps (zwykle gapps-wersjasystemu.zip) i przeciągnać na ekran emulatora. Genymotion poprosi o potwierdzenie chęci wgrania oprogramowania, a następnie wykona restart systemu. Od tego momentu można zalogować się kontem Google i np. pobierać aplikacje z Google Play, albo korzystać z Google Plus.
+
+![Genymotion pozwala tworzyć urządzenia o róźnych parametrach np. rozdzielczość, wielkość, wersja systemu. Twórcy przygotowali nawet kilka najpopularniejszych urządzeń.](images/genymotion_select.png)
 
 W przypadku, gdy z jakiś powodów zdecydujesz, że Genymotion nie jest dla Ciebie, to warto skorzystać z emulatorów x86, które są dużo szybsze od ARM, zwłaszcza jeśli mamy w systemie obsługę wirtualizacji (HAXM w Windows i MacOS X, KVM w Linux). Ta kombinacja powoduje, że wszystkie operacje z emulatora uruchamiane są bezpośrednio na procesorze naszego komputera i nie wymagają tłumaczenia, jak w przypadku ARM.
 
@@ -185,6 +189,8 @@ Przykładowy scenariusz:
       Then I take a screenshot
       Then I see the text "Pole wymagane"
 
+Wynik testów w Calabash może być zapisany jako plik HTML zaweirający kroki z informacją o powodzeniu oraz screenshoty. W przypadku, gdy chcemy  wykorzystać Calabash w systemie Continous Integration, możliwe jest wygenerowanie raportu w postaci pliku JSON. Format ten jest identyczny z formatem używanym przez program Cucumber, z którego Calabash się wywodzi i może być importowany przez wiele systemów m.in. plugin do Jenkins CI.
+
 ## Jenkins CI
 
 | *Strona*      | http://jenkins-ci.org/      |
@@ -210,6 +216,8 @@ Przykładowy cykl, który może realizować Jenkins CI:
 
 5. Po udanym zbudowaniu i przetestowaniu, wysłanie do kanału Alpha w Google Play lub na jakąś usługę do dystrybucji paczek np. Crashlytics.
 
+![Prognoza jest dobra - buildy się udały.  
+Źródło: https://www.morlunk.com/jenkins/](images/jenkins_android.png)
 
 ## Sketch
 
@@ -235,7 +243,7 @@ Jest to produkt otwarty na rozwój, z dobrym community, co przekłada się na du
 | *Cena*        | FREE                       |
 | *Alternatywy* | RESTClient dla Firefox     |
 
-{width=60%}
+{width=65%}
 ![](images/postman_logo.jpg)
 
 Bardzo przydatny plugin do przeglądarki Chrome, pozwalający na testowanie API REST, bez konieczności pisania kodu. Przyjemy interfejs użytkownika pozwala na zarządzanie wieloma zapytaniami jednocześnie i testowanie API, z którym będzie się komunikowała nasza aplikacja.
@@ -281,6 +289,10 @@ Kolejne proste narzędzie, które może oszczędzić godziny. DB Browser, jak sa
 | *Strona*      | http://gradleplease.appspot.com/ |
 | *Cena*        | FREE                             |
 | *Alternatywy* | -                                |
+
+Wprowadzenie New Build System, korzystającego z Gradle, znacząco uprościło zarządzanie zależnościami projektu. Wystarczy dodać jedną linię w pliku build.gradle i już biblioteka staje się dostępna w projekcie. Pozostało tylko jeno pytanie: jaką linię?
+
+Tutaj do akcji wkracza *Gralde, Please*, który po wpisaniu nazwy biblioteki, wyświetla linię do skopiowaniu. W celu dodatkowego uproszczenia życia, najpopularniejsze zależności są wyświetlone na stale.
 
 ![Gradle, Please w akcji.](images/gradle_please.png)
 
@@ -367,6 +379,14 @@ W przypadku, gdy korzystaliśmy z mechanizmu obfuskacji w ProGuard, będziemy po
 | *Cena*        | FREE                    |
 | *Alternatywy* | -                       |
 
+{width=50%}
+![](images/stackoverflow_logo.png)
+
+StackOverflow jest najczęściej na pierwszym miejscu jeśli zadasz w Google pytanie, o konkretny problem. Baza licząca ponad pół miliona pytań dotyczących samego Androida, pozwala uniknąc często godzin siedzenia w poszukiwaniu rozwiązania problemu. Warto jednak wiedzieć, dlaczego to co wklejamy działa, aby nie zostawić w swoim kodzie magicznej *czarnej skrzynki*, którą każdy boi się dotknąć.
+
+StackOverflow to jednak dużo więcej niż zbiór pytań i odpowiedzi. To społeczność programistów, którzy chętnie dzielą się wiedzą. Wszystko wspomagane systemem punktowym, który pozwala wyróżnić się aktywnym. Dobra reputacja (punkty są nazywane właśnie reputacją) na StackOverflow, to obok konta Github, ważny element wyróżniający CV.
+
+![Wśród 624 tysięcy pytań o Androida, może znajdziesz odpowiedź na swoje.](images/stackoverflow.png)
 
 ## Github
 
@@ -408,11 +428,16 @@ Dodatkową cechą wyróżniającą, jest możliwość użycia narzędzia Testdro
 | *Cena*        | FREE                       |
 | *Alternatywy* | Proto.io, Balsamiq Mockups |
 
+{width=50%}
+![](images/testdroid_logo.jpg)
+
 Klikalne prototypy stanowią jedną z najlepszych form dokumentacji w komunikacji programista<->klient. Pozwalają przedstawić potrzebne ekrany, sposoby nawigacji pomiędzy nimi oraz przetestować aplikację na żywym organizmie, bez konieczności uruchamiania IDE. Bardzo często zmniejszają ryzyko niedomówień lub ujawniają braki w projekcie.
 
 Warto zacząć tworzenie prototypu już na etapie tworzenia lub czytania specyfikacji. Najlepiej jeśli jest to mockup typu Lo-Fi (niskiej szczegółowości, bez graficznych ozdób), tak aby klient nie przywiązywał się do jego wyglądu, tylko skupiał na nawigacji i kompletności danych.
 
 Fluid UI jest przykładem rozwiązania, które pozwala zaprojektować ekrany, dodać proste akcje (np. przejścia pomiędzy ekranami po naciśnięciu przycisku) i zaprezentować wynik w przeglądarce na telefonie klienta. Wystarczy przesłać link do wygenerowanego prototypu, który potencjalny użytkownik, może sobie przetestować na urządzeniu.
+
+![FluidUI pozwala przygotować widoki ekranów, oraz przejścia pomiędzy nimi.](images/fluidui.png)
 
 # Biblioteki
 Każdy programista dochodzi do takiego momentu, że stwierdza, że coraz więcej kodu, który pisze się powtarza. Dlatego własnie tak ważne jest korzystanie z bibliotek w projektach, zwłaszcza z tych, które są sprawdzone i uznawane za standard. Dzięki temu, ktoś kto będzie przeglądał nasz projekt od razu będzie czuł się jak w domu.
@@ -472,6 +497,10 @@ Dagger to implementacja wzorca Dependency Injection, czyli wstrzykiwania zależn
 
 Picasso to biblioteka do wyświetlania obrazków z internetu. Kropka. Posiada proste API i automatyzuje pobieranie plików graficznych, zmianę ich rozmiaru, wyświetlanie w ImageView, cache w pamięci ram i flash. Dzięki temu możemy skupić się na tym, co ma być wyświetlone, a nie jak.
 
+## RxAndroid, RxJava
+Biblioteka RxJava oraz jej rozszerzenie RxAndroid, pozwalają wprowadzić do Javy nowy paradygmat - programowanie reaktywne (Reactive Programming). Jest to podejście upraszczające w znaczny sposób kod, którego zadaniem jest zarządzanie wieloma zadaniami asynchronicznymi, zwłaszcza takimi, które operują na danych. Dobrym przykładem jest fragment aplikacji wymagający np. jednoczesnego wywołania wielu zapytań HTTP i połączenia ich wyników. 
+
+RxJava nie jest biblioteką, którą mogę polecić początkującym programistą. Jeśli jednak Twoje aplikacje stają się coraz większe i rośnie liczba zdarzeń lub zapytań HTTP, które wysyłasz to polecam przestudiowanie dokumentacji https://github.com/ReactiveX/RxJava/wiki. Warto także przyjrzeć się dodatkowo bibliotece [Retrolambda](https://github.com/orfjackal/retrolambda), która znacząco zmniejszy liczbę anonimowych klas, które trzeba napisać.
 
 # Kody źródłowe
 
@@ -502,6 +531,12 @@ Aplikacja prezentująca przykłady bibliotek, bez konieczności kompilowania ich
 # Źródła wiedzy
 
 ## Strony
+
+### Vogella Android Tutorials
+http://www.vogella.com/tutorials/android.html
+
+Znane źródło bardzo dopracowanych tutoriali opisujących popularne zagadnienia z zakresu programowania na Androida i nie tylko.
+
 
 ### Soldiers of Mobile - Blog
 http://soldiersofmobile.com
