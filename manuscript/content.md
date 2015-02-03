@@ -344,6 +344,9 @@ Dodatkowo, Bitbucket posiada dobrze rozwiniętą opcje korzystania z mechanizmu 
 | *Cena*        | FREE do 30 req/s                                  |
 | *Alternatywy* | Firebase, Google AppEngine, Azure Mobile Services |
 
+{width=50%}
+![](images/parse_logo.png)
+
 Parse to rozwiązanie typu Mobile Backend as a Service, czyli część serwerowa dla naszej aplikacji, bez konieczności pisania kodu. Twórcy tej usługi postawili sobie za zadanie uproszczenie do maksimum czynności, które do tej pory trzeba było implementować w API. Mamy więc mechanizm operowania na danych w tabelach, wysyłanie wiadomości PUSH, analitykę, logowanie FB i Twitter, a nawet pisanie logiki po stronie serwera w JS.
 
 Przykładowo: utworzenie backendu dla aplikacji typu Tinder nie wymaga od nas pisania kodu, ponieważ możemy skorzystać z:
@@ -357,6 +360,8 @@ Przykładowo: utworzenie backendu dla aplikacji typu Tinder nie wymaga od nas pi
 * powiadamiać użytkownika o nowych aktywnościach na profilu, poprzez wiadomości PUSH.
 
 Do momentu gdy nasza aplikacja nie zacznie uzyskiwać znaczącego ruchu, wszystko to mamy za darmo.
+
+![Widok danych pozwala zarządzać bazą w prosty sposób.](images/parse.png)
 
 ## Crashlitycs
 
@@ -429,7 +434,7 @@ Dodatkową cechą wyróżniającą, jest możliwość użycia narzędzia Testdro
 | *Alternatywy* | Proto.io, Balsamiq Mockups |
 
 {width=50%}
-![](images/testdroid_logo.jpg)
+![](images/fluidui_logo.png)
 
 Klikalne prototypy stanowią jedną z najlepszych form dokumentacji w komunikacji programista<->klient. Pozwalają przedstawić potrzebne ekrany, sposoby nawigacji pomiędzy nimi oraz przetestować aplikację na żywym organizmie, bez konieczności uruchamiania IDE. Bardzo często zmniejszają ryzyko niedomówień lub ujawniają braki w projekcie.
 
