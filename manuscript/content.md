@@ -132,7 +132,7 @@ Dużą wartością Git jest bardzo łatwy i lekki sposób pracy z gałęziami (b
 | *Cena*        | $79                  |
 | *Alternatywy* | -                    |
 
-{width=30%}
+{width=25%}
 ![](images/mirror_logo.png)
 
 Mirror jest nowością, która szybko się rozwija i z mojego doświadczenia wprowadza zupełnie nowy sposób pracy nad interfejsem użytkownika aplikacji Android.
@@ -618,10 +618,10 @@ Człowiek instytucja. Twórca wielu z przytoczonych bibliotek. Autorytet w kwest
 ![](images/romain_guy.jpg)
 
 Googler pracujący nad Androidem. Często prezentuje nowości związane z UI.
-  
-  
-  
-  
+&nbsp;  &nbsp;
+  &nbsp;&nbsp;
+  &nbsp;&nbsp;
+  &nbsp;&nbsp;
 
 ## Chris Banes
 
@@ -630,7 +630,7 @@ Googler pracujący nad Androidem. Często prezentuje nowości związane z UI.
 | *G+*      | https://plus.google.com/+ChrisBanes/ |
 
 {width=10%, float=right}
-![](images/chris_banes.jpeg)
+![](images/chris_banes.jpg)
 
 Googler odpowiedzialny za relacje z developerami. Twórca wielu elementów biblioteki zgodności m.in. AppCompat.
   
