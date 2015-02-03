@@ -618,24 +618,25 @@ Człowiek instytucja. Twórca wielu z przytoczonych bibliotek. Autorytet w kwest
 ![](images/romain_guy.jpg)
 
 Googler pracujący nad Androidem. Często prezentuje nowości związane z UI.
-
-
-
-
+  
+  
+  
+  
 
 ## Chris Banes
 
 | *Strona*  | https://chris.banes.me/              |
-| *Twitter* |                                      |
+| *Twitter* | https://twitter.com/chrisbanes       |
 | *G+*      | https://plus.google.com/+ChrisBanes/ |
 
 {width=10%, float=right}
 ![](images/chris_banes.jpeg)
 
 Googler odpowiedzialny za relacje z developerami. Twórca wielu elementów biblioteki zgodności m.in. AppCompat.
-
-
-
+  
+  
+  
+  
 
 ## Nick Butcher
 
@@ -661,18 +662,6 @@ Googler odpowiedzialny za relacje na styku design/development. Umieszcza bardzo 
 ![](images/mark_murphy.jpg)
 
 Twórca CommonsWare i autor ksiązki "The Busy Coder’s Guide to Android Development". Znajduje się w Top 10 najbardziej aktywnych osób na StackOverflow. Jeśli szukasz odpowiedzi na pytanie o Androida, duża szansa, że to on odpowie. Twórca dużej ilości bibliotek i częsty speaker na popularnych konferencjach mobilnych.
-
-
-
-
-
-
-# Słownik
-
-*ARM (Advanced RISC Machine)* - Architektura procesorów, często stosowana w urządzeniach mobilnych. Emulatory ARM, wymagają tłumaczenia każdej instrukcji na szereg instrukcji x86.
-
-*x86* - Architektura procesorów stworzona przez firmę Intel, która stosowana jest zarówno w komputerach stacjonarnych, jak i mobilnych. Dzięki zastosowaniu jednakowej architektury, emulatory x86 wykonują polecenia bezpośrednio na proscesorze komputera, bez tłumaczenia.
-
 
 # Reklama
 
