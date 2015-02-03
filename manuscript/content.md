@@ -1,14 +1,16 @@
 # Wstęp
-Celem niniejszego Poradnika jest przedstawienie zestawu narzędzi i zasobów, których używanie wpływa na jakość i wydajność pracy programisty. Są to narzędzia, które sprawdziły się podczas tworzenia wielu aplikacji. Wybór ten potwierdziło wielu programistów, z którymi rozmawiałem na imprezach takich jak Mobile Warsaw, Droidcon czy Mobilization.
+Celem niniejszego ebooka jest przedstawienie zestawu narzędzi i zasobów, których używanie wpływa na jakość i wydajność pracy programisty. Każde z nich przetestowałem na własnej skórze, podczas tworzenia wielu aplikacji. Wybór ten potwierdziło wielu programistów, z którymi rozmawiałem na imprezach takich jak Mobile Warsaw, Droidcon czy Mobilization.
 
-Postarałem się wybrać po jednym elemencie, z każdej kategorii. W przypadku gdy znam inne, podobne rozwiązania, podaje je jako alternatywy. Ułatwia to proces wyboru osobom początkującym, jednak sam wychodzę z założenia, że nie ma narzędzi idealnych do wszystkiego i sam co jakiś czas szukam nowych, lepszych rozwiązań.
+Postarałem się wybrać po jednym elemencie, z każdej kategorii. W przypadku gdy znam inne, podobne rozwiązania, podaje je jako alternatywy. Ułatwia to proces wyboru osobom początkującym, choć sam wychodzę z założenia, że nie ma narzędzi idealnych do wszystkiego. Dlatego też sam co jakiś czas szukam nowych, lepszych rozwiązań.
 
-Duża część narzędzi jest bezpłatnych. W przypadku rozwiązań płatnych podaję minimalną cenę jaką trzeba zapłacić jako niezależny programista za najprostszą, ale wystarczającą wersję produktu.
+Duża część narzędzi jest bezpłatnych. W przypadku rozwiązań płatnych podaję minimalną cenę jaką musisz zapłacić jako niezależny programista, za najprostszą, ale funkcjonalną wersję produktu.
 
-Mam nadzieję, że programiści zaczynający swoją przygodę z profesjonalnym tworzeniem aplikacji znajdą tu masę wskazówek, jak od samego początku pracować "zgodnie ze sztuką". Ponadto, w przypadku osób bardziej doświadczonych, chciałbym abyście znaleźli dla siebie przynajmniej 2-3 fajne narzędzia, które się wam przydadzą.
+Mam nadzieję, że programiści zaczynający swoją przygodę z profesjonalnym tworzeniem aplikacji znajdą tu masę wskazówek, aby od samego początku pracować "zgodnie ze sztuką". Ponadto, w przypadku osób bardziej doświadczonych, chciałbym abyście znaleźli dla siebie przynajmniej 2-3 fajne narzędzia, które się wam przydadzą.
+
+Lubię książki, które podają konkretne kroki i od samego początku przynoszą wartość. Dlatego też mam prośbe: wybierz 1 narzędzie i zacznij z niego korzystać. Gwarantuję, że już po tygodniu będziesz widział zmianę na plus!
 
 # Narzędzia
-Zaczynamy od śmietanki, czyli produktów dostępnych jako aplikacje desktopowe lub wtyczki do takich aplikacji. Są to elementy, z którymi programista spędza najwięcej czasu i stanowią ekosystem, który łączy się ze sobą dosyć dobrze, jednocześnie uzupełniając swoje możliwości.
+Zaczynamy od śmietanki, czyli produktów dostępnych jako aplikacje desktopowe lub wtyczki do takich aplikacji. Są to elementy, z którymi programista spędza najwięcej czasu. Wybrane narzędzia dobrze się uzupełniają i stanowią ekosystem, w którym praca staje się prostsza.
 
 ## Android Studio
 
@@ -19,11 +21,12 @@ Zaczynamy od śmietanki, czyli produktów dostępnych jako aplikacje desktopowe 
 {width=30%}
 ![](images/android_studio_logo.png)
 
-Android Studio powstało jako rozwinięcie wsparcia dla Androida, dostępnego w Intelij IDEA Community Edition. Zostało namaszczone przez Google jako nowe oficjalne środowisko do tworzenia aplikacji na platformę Android. Dzięki połączeniu doskonałego IDE dopracowywanemu przez lata przez firmę JetBrains oraz oficjalnemu wsparciu zespołu Google, jest ono zdecydowanie lepsze od ADT (IDE opartego o Eclipse).
+Android Studio powstało jako rozwinięcie wsparcia dla Androida, dostępnego w edytorze Intelij IDEA Community Edition. 
+Na Google IO 2013 zostało ogłoszone przez Google jako nowe oficjalne środowisko do tworzenia aplikacji na platformę Android. Dzięki połączeniu doskonałego IDE, dopracowywanemu przez lata przez firmę JetBrains oraz oficjalnemu wsparciu zespołu Google, jest ono zdecydowanie lepsze od ADT (IDE opartego o Eclipse).
 
 ![Android Studio w trybie edycji layoutów z podglądem.](images/android_studio.png)
 
-W celu maksymalizacji wydajności korzystania z AS, warto poświęcić nieco czasu i nauczyć się skrótów klawiszowych oraz poznać np. mechanizm szablonów generujący kod, który często się powtarza. Każda minuta poświęcona w naukę sztuczek w AS, to inwestycja w przyszłość. Istnieje wiele czynności, które są często powtarzane, a które da się przyśpieszyć np.: generowanie par getter/setter, refaktoryzacja kodu, czy chociażby obsługa systemów kontroli wersji z poziomu kodu.
+W celu maksymalizacji wydajności korzystania z AS, warto poświęcić nieco czasu i nauczyć się skrótów klawiszowych oraz poznać np. mechanizm szablonów generujący kod, który często się powtarza. Każda minuta poświęcona w naukę sztuczek w AS, to inwestycja w przyszłość. Istnieje wiele czynności, które da się przyśpieszyć np.: generowanie par getter/setter, refaktoryzacja kodu, czy chociażby obsługa systemów kontroli wersji z poziomu IDE.
 
 ## Gradle (New Build System)
 
@@ -85,7 +88,9 @@ Warto nauczyć się korzystać z niego, przede wszystkim dla jego trzech unikaln
 
 Najczęściej *ProGuard* uruchamiany jest podczas budowania APK w wersji Release, czyli takiego jakie potrzebne jest do umieszczenia w *Google Play*. W przypadku budowania w *Android Studio*/*Gradle*, konieczne jest ustawienie flagi __minifyEnabled=true__, aby aktywować *ProGuard* jako jeden z kroków tworzenia pliku APK.
 
-Proces działania *ProGuard* jest sterowany przez plik konfiguracyjny __proguard-rules.pro__ lub podobny. Ważne, aby pamiętać, że ProGuard potencjalnie może usunąć zbyt dużo, co może powodować, że aplikacja przestanie działać poprawnie. Zwykle wynika to z faktu, że aplikacja (lub jedna z użytych bibliotek) korzysta z mechanizmu Refleksji czyli opiera swoje działanie o nazwy metod, które ulegają zmianie podczas zaciemniania. W takim wypadku trzeba do pliku konfiguracyjnego dodać zestaw wyjątków, które informują, że danych metod lub klas nie należy zmieniać. Często biblioteki posiadają w swojej dokumentacji gotowe fragmenty konfiguracji, które trzeba wkleić, aby poprawnie działały po użyciu ProGuarda.
+Proces działania *ProGuard* jest sterowany przez plik konfiguracyjny __proguard-rules.pro__ lub podobny. Ważne, aby pamiętać, że ProGuard potencjalnie może usunąć zbyt dużo, co może powodować, że aplikacja przestanie działać poprawnie. Zwykle wynika to z faktu, że aplikacja (lub jedna z użytych bibliotek) korzysta z mechanizmu Refleksji czyli opiera swoje działanie o nazwy metod, które ulegają zmianie podczas zaciemniania. 
+
+W takim wypadku trzeba, do pliku konfiguracyjnego dodać zestaw wyjątków, które informują program, że danych metod lub klas nie należy zmieniać. Często biblioteki posiadają w swojej dokumentacji gotowe fragmenty konfiguracji, które trzeba wkleić, aby poprawnie działały po użyciu ProGuarda.
 
 {title="Fragment pliku proguard-rules.pro"}
 ~~~~~~~~
@@ -135,9 +140,9 @@ Dużą wartością Git jest bardzo łatwy i lekki sposób pracy z gałęziami (b
 {width=25%}
 ![](images/mirror_logo.png)
 
-Mirror jest nowością, która szybko się rozwija i z mojego doświadczenia wprowadza zupełnie nowy sposób pracy nad interfejsem użytkownika aplikacji Android.
+Mirror jest nowością, która szybko się rozwija. Z mojego doświadczenia wynika, że wprowadza zupełnie nowy sposób pracy nad interfejsem użytkownika aplikacji Android.
 
-W dużym skrócie, zadaniem Mirror-a jest usunięcie konieczności przebudowywania i wgrywania aplikacji po wykonaniu zmiany w plikach z zasobami.
+W dużym skrócie. Zadaniem Mirror-a jest usunięcie konieczności przebudowywania i wgrywania aplikacji po wykonaniu zmiany w plikach z zasobami.
 
 Mirror opiera się na własnych plikach XML, w których opisuje się, jakie layouty mają być wyświetlone na ekranie oraz jakimi danymi mają zostać wypełnione. Daje to szansę podejrzenia bardzo przybliżonego podglądu aplikacji, bez konieczności pisania kodu Java i przetestowania tego, na wielu urządzeniach jednocześnie.
 
@@ -152,13 +157,13 @@ Więcej informacji na mojej prezentacji z [Mobilization](http://soldiersofmobile
 | *Cena*        | FREE - dla zastosowań osobistych              |
 | *Alternatywy* | Emulator x86 z włączoną obsługą wirtualizacji |
 
-Genymotion to fenomen. Projekt zaczął jako próba uruchomienia emulacji Androida w wersji na procesory x86, z wykorzystaniem VirtualBox. Obecnie rozrósł się do pełnoprawnego produktu, z którego korzysta ponad 2.5M programistów. Duża część z nich płaci, co gwarantuje ciągły rozwój projektu oraz coraz nowsze opcje.
+Genymotion to fenomen. Projekt zaczął jako próba uruchomienia emulacji Androida, w wersji na procesory x86, z wykorzystaniem VirtualBox. Obecnie rozrósł się do pełnoprawnego produktu, z którego korzysta ponad 2.5M programistów. Duża część z nich korzysta z płatnej wersji, co gwarantuje ciągły rozwój projektu oraz coraz nowsze opcje.
 
 Narzędzie to ma dwie podstawowe zalety nad emulatorami dostarczanymi przez Google.
 
-- Jest dużo szybsze (znane są przypadki uruchamiania topowych gier 3D z Androida).
+1. Jest dużo szybsze (znane są przypadki uruchamiania topowych gier 3D z Androida).
 
-- Ma możliwość korzystania z Google Apps (Google Play, Gmail, Mapy i wszystko co wymaga Google Play Services), tak jakby to był telefon. 
+2. Ma możliwość korzystania z Google Apps (Google Play, Gmail, Mapy i wszystko co wymaga Google Play Services), tak jakby to był telefon. 
 
 Obsługa Google Apps jest co prawda nieoficjalna (ze względów licencyjnych obrazy emulatorów nie mogą zawierać tych aplikacji), ale działa bardzo dobrze. Wystarczy pobrać plik zawierający Google Apps (zwykle gapps-wersjasystemu.zip) i przeciągnać na ekran emulatora. Genymotion poprosi o potwierdzenie chęci wgrania oprogramowania, a następnie wykona restart systemu. Od tego momentu można zalogować się kontem Google i np. pobierać aplikacje z Google Play, albo korzystać z Google Plus.
 
