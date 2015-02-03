@@ -633,10 +633,8 @@ Googler pracujący nad Androidem. Często prezentuje nowości związane z UI.
 ![](images/chris_banes.jpg)
 
 Googler odpowiedzialny za relacje z developerami. Twórca wielu elementów biblioteki zgodności m.in. AppCompat.
-  
-  
-  
-  
+
+Googler odpowiedzialny za relacje na styku design/development. Umieszcza bardzo fajne prezentacje i przykłady. Dużo udziela się na kanale YouTube Android Developers.
 
 ## Nick Butcher
 
@@ -648,9 +646,6 @@ Googler odpowiedzialny za relacje z developerami. Twórca wielu elementów bibli
 ![](images/nick_butcher.jpg)
 
 Googler odpowiedzialny za relacje na styku design/development. Umieszcza bardzo fajne prezentacje i przykłady. Dużo udziela się na kanale YouTube Android Developers.
-
-
-
 
 ## Mark Murphy
 
