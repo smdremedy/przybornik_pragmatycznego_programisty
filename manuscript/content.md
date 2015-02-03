@@ -634,7 +634,7 @@ Googler pracujący nad Androidem. Często prezentuje nowości związane z UI.
 
 Googler odpowiedzialny za relacje z developerami. Twórca wielu elementów biblioteki zgodności m.in. AppCompat.
 
-Googler odpowiedzialny za relacje na styku design/development. Umieszcza bardzo fajne prezentacje i przykłady. Dużo udziela się na kanale YouTube Android Developers.
+{pagebreak}
 
 ## Nick Butcher
 
