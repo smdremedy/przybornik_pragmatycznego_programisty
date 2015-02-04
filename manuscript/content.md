@@ -148,10 +148,11 @@ W dużym skrócie. Zadaniem Mirror-a jest usunięcie konieczności przebudowywan
 
 Mirror opiera się na własnych plikach XML, w których opisuje się, jakie layouty mają być wyświetlone na ekranie oraz jakimi danymi mają zostać wypełnione. Daje to szansę podejrzenia bardzo przybliżonego podglądu aplikacji, bez konieczności pisania kodu Java i przetestowania tego, na wielu urządzeniach jednocześnie.
 
+Więcej informacji na mojej prezentacji z [Mobilization](http://soldiersofmobile.com/mobilization-2014-wideo-z-mojej-prezentacji/).
+
 ![Wypełnianie podglądu danymi działa dużo lepiej niż w AS.  
 Źródło: http://jimulabs.com/if-studio-why-mirror/](images/mirror_vs_as.png)
 
-Więcej informacji na mojej prezentacji z [Mobilization](http://soldiersofmobile.com/mobilization-2014-wideo-z-mojej-prezentacji/).
 
 ## Genymotion
 
@@ -300,6 +301,7 @@ Wprowadzenie New Build System, korzystającego z Gradle, znacząco uprościło z
 
 Tutaj do akcji wkracza *Gralde, Please*, który po wpisaniu nazwy biblioteki, wyświetla linię do skopiowaniu. W celu dodatkowego uproszczenia życia, najpopularniejsze zależności są wyświetlone na stale.
 
+{width=70%}
 ![Gradle, Please w akcji.](images/gradle_please.png)
 
 ## Android Assets Studio
@@ -342,7 +344,6 @@ Bitbucket to product firmy Atlasian, znanego twórcy narzędzi dla zespołów pr
 
 Dodatkowo, Bitbucket posiada dobrze rozwiniętą opcje korzystania z mechanizmu Pull Request, który pozwala innym członkom naszego zespołu na sprawdzenie naszego kodu (Code Review).
 
-{width=70%}
 ![Widok pozwalający na komentowanie kodu w ramach Pull Request.](images/bitbucket.png)
 
 ## Parse
@@ -667,7 +668,7 @@ Googler odpowiedzialny za relacje na styku design/development. Umieszcza bardzo 
 
 Twórca CommonsWare i autor ksiązki "The Busy Coder’s Guide to Android Development". Znajduje się w Top 10 najbardziej aktywnych osób na StackOverflow. Jeśli szukasz odpowiedzi na pytanie o Androida, duża szansa, że to on odpowie. Twórca dużej ilości bibliotek i częsty speaker na popularnych konferencjach mobilnych.
 
-# Reklama
+# Reklama :)
 
 ## Zasubskrybuj Soldiers of Mobile na YouTube
 https://www.youtube.com/channel/UCQUuM6One5W6odx8dDJ8Vsw?sub_confirmation=1
