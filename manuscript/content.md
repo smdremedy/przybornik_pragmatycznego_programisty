@@ -111,6 +111,8 @@ W takim wypadku trzeba, do pliku konfiguracyjnego dodać zestaw wyjątków, któ
 -keep class com.facebook.** { *; }
 ~~~~~~~~
 
+{pagebreak}
+
 ## Git
 
 | *Strona*      | http://git-scm.com/    |
@@ -221,8 +223,7 @@ Przykładowy cykl, który może realizować Jenkins CI:
 
 5. Po udanym zbudowaniu i przetestowaniu, wysłanie do kanału Alpha w Google Play lub na jakąś usługę do dystrybucji paczek np. Crashlytics.
 
-![Prognoza jest dobra - buildy się udały.  
-Źródło: https://www.morlunk.com/jenkins/](images/jenkins_android.png)
+![Prognoza jest dobra - buildy się udały. Źródło: https://www.morlunk.com/jenkins/](images/jenkins_android.png)
 
 ## Sketch
 
@@ -341,6 +342,7 @@ Bitbucket to product firmy Atlasian, znanego twórcy narzędzi dla zespołów pr
 
 Dodatkowo, Bitbucket posiada dobrze rozwiniętą opcje korzystania z mechanizmu Pull Request, który pozwala innym członkom naszego zespołu na sprawdzenie naszego kodu (Code Review).
 
+{width=70%}
 ![Widok pozwalający na komentowanie kodu w ramach Pull Request.](images/bitbucket.png)
 
 ## Parse
@@ -638,6 +640,8 @@ Googler pracujący nad Androidem. Często prezentuje nowości związane z UI.
 ![](images/chris_banes.jpg)
 
 Googler odpowiedzialny za relacje z developerami. Twórca wielu elementów biblioteki zgodności m.in. AppCompat.
+
+Często dzieli się na swoich profilach fragmentami kodów, realizujących konkretne zadania np. znikający Toolbar.
 
 {pagebreak}
 
