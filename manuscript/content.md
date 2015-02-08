@@ -308,8 +308,9 @@ Wprowadzenie New Build System, korzystającego z Gradle, znacząco uprościło z
 
 Tutaj do akcji wkracza *Gralde, Please*, który po wpisaniu nazwy biblioteki, wyświetla linię do skopiowania. W celu dodatkowego uproszczenia życia programistom, najpopularniejsze zależności są wyświetlone na stałe.
 
-{width=70%}
 ![Gradle, Please w akcji.](images/gradle_please.png)
+
+{pagebreak}
 
 ## Android Assets Studio
 
