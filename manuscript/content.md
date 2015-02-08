@@ -334,6 +334,16 @@ Wymiary obiektów na ekranie Androida można podawać w wielu jednostkach. Pixel
 
 ![W trybie prostym wystarczy podać wartość w jednej jednostce i gęstość, aby otrzymać pozostałe.](images/pixel_calculator.png)
 
+## Material Palette
+
+| *Strona*      | http://www.materialpalette.com/ |
+| *Cena*        | FREE                            |
+| *Alternatywy* | -                               |
+
+Szybki generator palety kolorów, do wykorzystania w aplikacjach zgodnych z Material Design.
+
+![Wystarczy dwa kolory główne i paleta gotowa](images/material_palette.png)
+
 ## Bitbucket
 
 | *Strona*      | https://bitbucket.org/ |
