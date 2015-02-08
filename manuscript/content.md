@@ -286,7 +286,9 @@ Kolejne proste narzędzie, które pomoże zaoszczędzić godziny przy tworzeniu 
 | *Cena*        | $50                          |
 | *Alternatywy* | Wireshark                    |
 
-TODO
+Charles Proxy pozwala na debugowanie komunikacji HTTP pomiędzy aplikacją mobilną, a serwerem. Do działania wykorzystuje mechanizm proxy, czyli urządzenia, przez które przechodzi cały ruch sieciowy. Wystarczy wystartować program i ustawić na urządzeniu nasz komputer, jako serwer proxy, aby móc podejrzeć każdy bajt informacji przesyłany po HTTP, nawet w przypadku szyfrowania SSL.
+
+Właśnie wsparcie dla SSL oraz prostota obsługi sprawiają, że narzędzie to może oszczędzić godziny. Dodatkowo, warto czasem przeanalizować co wysyłają na serwer inne aplikacje lub np. usługi Google.
 
 ![Dużą zaletą Charles jest prostota nawigacji pomiędzy zapytaniami. Źródło: http://www.charlesproxy.com/](images/charles_proxy.png)
 
