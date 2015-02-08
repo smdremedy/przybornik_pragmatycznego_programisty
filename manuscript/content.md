@@ -155,11 +155,14 @@ Więcej informacji w mojej prezentacji z [Mobilization](http://soldiersofmobile.
 Źródło: http://jimulabs.com/if-studio-why-mirror/](images/mirror_vs_as.png)
 
 
+{pagebreak}
 ## Genymotion
 
 | *Strona*      | https://www.genymotion.com                    |
 | *Cena*        | FREE - dla zastosowań osobistych              |
 | *Alternatywy* | Emulator x86 z włączoną obsługą wirtualizacji |
+
+![](images/genymotion_logo.png)
 
 Genymotion to fenomen. Projekt zaczął funkcjonować jako próba uruchomienia emulacji Androida, w wersji na procesory x86, z wykorzystaniem VirtualBox. Obecnie rozrósł się do pełnoprawnego produktu, z którego korzysta ponad 2.5M programistów. Duża część z nich korzysta z płatnej wersji, co gwarantuje ciągły rozwój projektu oraz coraz to nowsze opcje.
 
