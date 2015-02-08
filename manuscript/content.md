@@ -156,6 +156,7 @@ Więcej informacji w mojej prezentacji z [Mobilization](http://soldiersofmobile.
 
 
 {pagebreak}
+
 ## Genymotion
 
 | *Strona*      | https://www.genymotion.com                    |
