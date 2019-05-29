@@ -14,9 +14,9 @@ Zacznę od crème de la crème spośród narzędzi do tworzenia aplikacji mobiln
 
 ## Android Studio
 
-| *Strona*      | http://developer.android.com/sdk/index.html |
+| *Strona*      | https://developer.android.com/studio |
 | *Cena*        | FREE                                        |
-| *Alternatywy* | ADT/Eclipse, IntelliJ IDEA (€207)            |
+| *Alternatywy* | IntelliJ IDEA (€207)            |
 
 {width=30%}
 ![](images/android_studio_logo.png)
@@ -26,20 +26,22 @@ Na Google IO 2013 zostało ogłoszone przez Google jako nowe oficjalne środowis
 
 ![Android Studio w trybie edycji layoutów z podglądem.](images/android_studio.png)
 
+TODO Nowy obrazek
+
 W celu maksymalizacji wydajności korzystania z AS, warto poświęcić trochę czasu i nauczyć się skrótów klawiszowych oraz poznać np. mechanizm szablonów generujący kod, który często się powtarza. Każda minuta poświęcona na naukę sztuczek w AS, to inwestycja w przyszłość. Istnieje wiele czynności, które da się przyśpieszyć np.: generowanie par getter/setter, refaktoryzacja kodu, czy chociażby obsługa systemów kontroli wersji z poziomu IDE.
 
 ## Gradle (New Build System)
 
 | *Strona*      | http://tools.android.com/tech-docs/new-build-system/ |
 | *Cena*        | FREE                                                 |
-| *Alternatywy* | Maven, ANT                                           |
+| *Alternatywy* | Maven, Buck                                           |
 
 {width=50%}
 ![](images/gradle_logo.png)
 
-Gradle został wybrany przez Google jako podstawa New Build System, który używany jest m.in. w Android Studio. „Dzięki mechanizmowi zarządzania zależnościami wykorzystującymi istniejące repozytoria, używane dotychczas przez Maven, możliwe jest korzystanie z setek bibliotek. Wystarczy dodać do pliku build.gradle, po jednej linii tekstu, opisującej każdą z wymaganych zależności. Zastosowanie Gradle pozwoliło ujednolicić konfigurację projektu, dzięki czemu w chwili obecnej budowanie z linii poleceń oraz IDE wygląda tak samo i korzysta z tej samej konfiguracji.
+Gradle został wybrany przez Google jako podstawa New Build System, który używany jest m.in. w Android Studio. Dzięki mechanizmowi zarządzania zależnościami wykorzystującymi istniejące repozytoria, używane dotychczas przez Maven, możliwe jest korzystanie z setek bibliotek. Wystarczy dodać do pliku build.gradle, po jednej linii tekstu, opisującej każdą z wymaganych zależności. Zastosowanie Gradle pozwoliło ujednolicić konfigurację projektu, dzięki czemu w chwili obecnej budowanie z linii poleceń oraz IDE wygląda tak samo i korzysta z tej samej konfiguracji.
 
-Warto poświęcić kilka godzin, aby poznać bardziej zaawansowane możliwości systemu np. Flavors (smaki projektu), możliwość pisania fragmentów skryptu w języku Groovy czy choćby opcje dostępne w Android Plugin dla Gradle.
+Warto poświęcić kilka godzin, aby poznać bardziej zaawansowane możliwości systemu np. Flavors (smaki projektu), możliwość pisania fragmentów skryptu w języku Groovy lub Kotlin czy choćby opcje dostępne w Android Plugin dla Gradle.
 
 {title="Prosty plik build.gradle dla aplikacji Android"}
 ~~~~~~~~
@@ -69,6 +71,8 @@ dependencies { //zależności, czyli zewnętrzne biblioteki
 ~~~~~~~~
 
 ## ProGuard
+
+TODO wywalić albo dodać R8
 
 | *Strona*      | http://proguard.sourceforge.net/                                                                   |
 | *Cena*        | FREE                                                                                               |
@@ -132,77 +136,6 @@ Idea pracy z Git opiera się na zapisywaniu kolejnych wersji interesujących nas
 Źródło: http://pl.wikibooks.org/wiki/Git/Podstawy](images/git_flow.png)
 
 Dużą wartością Git jest bardzo łatwy i lekki sposób pracy z gałęziami (branches), które pozwalają np. pisać nowe elementy aplikacji, jednocześnie mając dostęp do wersji stabilnej.
-
-## Mirror
-
-| *Strona*      | http://jimulabs.com/ |
-| *Cena*        | $79                  |
-| *Alternatywy* | -                    |
-
-{width=20%}
-![](images/mirror_logo.png)
-
-Mirror jest nowością, która szybko się rozwija. Z mojego doświadczenia wynika, że wprowadza zupełnie nowy sposób pracy nad interfejsem użytkownika aplikacji Android.
-
-W dużym skrócie. Zadaniem Mirror-a jest wyeliminowanie konieczności przebudowywania i wgrywania aplikacji po wykonaniu zmiany w plikach z zasobami.
-
-Mirror opiera się na własnych plikach XML, w których opisuje się, jakie layouty mają być wyświetlone na ekranie oraz jakimi danymi mają zostać wypełnione. Daje to szansę podejrzenia bardzo przybliżonego podglądu aplikacji, bez konieczności pisania kodu Java i przetestowania tego, na wielu urządzeniach jednocześnie.
-
-Więcej informacji w mojej prezentacji z [Mobilization](http://soldiersofmobile.com/mobilization-2014-wideo-z-mojej-prezentacji/).
-
-{width=70%}
-![Wypełnianie podglądu danymi działa dużo lepiej niż w AS.  
-Źródło: http://jimulabs.com/if-studio-why-mirror/](images/mirror_vs_as.png)
-
-
-{pagebreak}
-
-## Genymotion
-
-| *Strona*      | https://www.genymotion.com                    |
-| *Cena*        | FREE - dla zastosowań osobistych              |
-| *Alternatywy* | Emulator x86 z włączoną obsługą wirtualizacji |
-
-![](images/genymotion_logo.png)
-
-Genymotion to fenomen. Projekt zaczął funkcjonować jako próba uruchomienia emulacji Androida, w wersji na procesory x86, z wykorzystaniem VirtualBox. Obecnie rozrósł się do pełnoprawnego produktu, z którego korzysta ponad 2.5M programistów. Duża część z nich korzysta z płatnej wersji, co gwarantuje ciągły rozwój projektu oraz coraz to nowsze opcje.
-
-Narzędzie to ma dwie podstawowe zalety nad emulatorami dostarczanymi przez Google:
-
-1. Jest dużo szybsze (znane są przypadki uruchamiania topowych gier 3D z Androida).
-
-2. Ma możliwość korzystania z Google Apps (Google Play, Gmail, Mapy i wszystko co wymaga Google Play Services), tak jakby to był telefon. 
-
-Obsługa Google Apps jest co prawda nieoficjalna (ze względów licencyjnych obrazy emulatorów nie mogą zawierać tych aplikacji), ale działa bardzo dobrze. Wystarczy pobrać plik zawierający Google Apps (zwykle gapps-wersjasystemu.zip) i przeciągnąć na ekran emulatora. Genymotion poprosi o potwierdzenie chęci wgrania oprogramowania, a następnie wykona restart systemu. Od tego momentu można zalogować się poprzez konto Google i np. pobierać aplikacje z Google Play, albo korzystać z Google Plus.
-
-![Genymotion pozwala tworzyć urządzenia o różnych parametrach np. rozdzielczość, wielkość, wersja systemu. Twórcy przygotowali nawet kilka najpopularniejszych urządzeń.](images/genymotion_select.png)
-
-W przypadku, gdy z jakiś powodów zdecydujesz, że Genymotion nie jest dla Ciebie, to warto skorzystać z emulatorów x86, które są dużo szybsze od ARM, zwłaszcza jeśli mamy w systemie obsługę wirtualizacji (HAXM w Windows i OS X, KVM w Linux). Ta kombinacja powoduje, że wszystkie operacje z emulatora uruchamiane są bezpośrednio na procesorze naszego komputera i nie wymagają tłumaczenia, jak w przypadku ARM.
-
-## Calabash
-
-| *Strona*      | http://calaba.sh/          |
-| *Cena*        | FREE                       |
-| *Alternatywy* | Robotium, Espresso, Appium |
-
-{width=50%}
-![](images/calabash_logo.png)
-
-Calabash jest narzędziem służącym do testów funkcjonalnych (klikanie po UI) aplikacji stworzonych na platformy Android i iOS.
-
-Główna idea wywodzi się z narzędzia Cucumber, które jest popularne wśród programistów Ruby. Chodzi o to, aby scenariusze testów były pisane w pseudojęzyku, który z założenia ma przypominać mocno sformalizowany język angielski. Zadaniem Calabasha jest przetłumaczenie tych sformułowań na zdarzenia wykonywane na aplikacji.
-
-Dużą zaletą jest brak konieczności dotykania kodu aplikacji, więc pozwala też na testowanie aplikacji, do których nie ma się dostępu (BlackBox testing).
-
-Przykładowy scenariusz:
-
-    Scenario: As a invalid user I cannot log into my app
-      Given I am on "LoginActivity"
-      When I press view with id "login_button"
-      Then I take a screenshot
-      Then I see the text "Pole wymagane"
-
-Wynik testów w Calabash może być zapisany jako plik HTML, zawierający wykonane kroki oraz informację o wyniku oraz screenshoty z procesu testowania. W przypadku, gdy chcemy wykorzystać Calabash w systemie Continous Integration, możliwe jest wygenerowanie raportu w postaci pliku JSON. Format ten jest identyczny z formatem używanym przez program Cucumber, z którego Calabash się wywodzi i może być importowany przez wiele systemów m.in. plugin do Jenkins CI.
 
 ## Jenkins CI
 
@@ -284,51 +217,48 @@ Kolejne proste narzędzie, które pomoże zaoszczędzić godziny przy tworzeniu 
 
 ![DB Browser pozwala m.in. podejrzeć strukturę bazy danych.](images/dbbrowser.png)
 
-## Charles Proxy
+## Burp Suite
 
-| *Strona*      | http://www.charlesproxy.com/ |
-| *Cena*        | $50                          |
-| *Alternatywy* | Wireshark                    |
+| *Strona*      | https://portswigger.net/burp |
+| *Cena*        | FREE                         |
+| *Alternatywy* | CharlesProxy, Fiddler, Mitmproxy |
 
-Charles Proxy pozwala na debugowanie komunikacji HTTP pomiędzy aplikacją mobilną, a serwerem. Do działania wykorzystuje mechanizm proxy, czyli urządzenia, przez które przechodzi cały ruch sieciowy. Wystarczy wystartować program i ustawić na urządzeniu nasz komputer, jako serwer proxy, aby móc podejrzeć każdy bajt informacji przesyłany po HTTP, nawet w przypadku szyfrowania SSL.
+BurpSuite pozwala na debugowanie komunikacji HTTP pomiędzy aplikacją mobilną, a serwerem. Do działania wykorzystuje mechanizm proxy, czyli urządzenia, przez które przechodzi cały ruch sieciowy. Wystarczy wystartować program i ustawić na urządzeniu nasz komputer, jako serwer proxy, aby móc podejrzeć każdy bajt informacji przesyłany po HTTP, nawet w przypadku szyfrowania SSL.
 
-Właśnie wsparcie dla SSL oraz prostota obsługi sprawiają, że narzędzie to może oszczędzić godziny. Dodatkowo, warto czasem przeanalizować co wysyłają na serwer inne aplikacje lub np. usługi Google.
+Właśnie wsparcie dla SSL oraz prostota obsługi sprawiają, że narzędzie to może oszczędzić godziny. Często korzystam też z narzędzia interceptor, które niczym w debugerze, pozwala przerwać request w trakcie i np. zmodyfikować odpowiedź z serwera, jeśli chcę przetestować inny przypadek.
+
+Dodatkowo, polecam czasem przeanalizować co wysyłają na serwer inne aplikacje lub np. usługi Google.
 
 ![Dużą zaletą Charles jest prostota nawigacji pomiędzy zapytaniami. Źródło: http://www.charlesproxy.com/](images/charles_proxy.png)
 
+
+## Lottie
+| *Strona*      | https://airbnb.io/lottie/#/ |
+| *Cena*        | FREE                          |
+| *Alternatywy* | -                    |
+
+Biblioteka na Androida (i inne platformy) oraz plugin do After Effects. Pozwala na wyświetlanie w aplikacji bardzo efektownych wizualnie animacji, szczególnie przydatny przy tworzeniu splash screen, ekranów logowania i aplikacji lifestylowych, które muszą ładnie wyglądać.
+
+Designer może projektować animacje korzystając z After Effects (de facto standard dla animacji), a następnie wyeksportować animację do pliku JSON i na tym jego rola się kończy.
+
+Programista dodaje do projektu bibliotekę Lottie, wrzuca plik json do zasobów i w kilku liniach kodu jest wstanie zaimplementować dokładnie taki efekt jaki wymyślił designer. Żyjemy w przyszłości! ;)
+
+
+TODO Screenshot
+
 # Usługi i narzędzia Web
 
-## Gradle, Please
+## Shape Shifter
 
-| *Strona*      | http://gradleplease.appspot.com/ |
-| *Cena*        | FREE                             |
-| *Alternatywy* | -                                |
-
-Wprowadzenie New Build System, korzystającego z Gradle, znacząco uprościło zarządzanie zależnościami projektu. Wystarczy dodać jedną linię w pliku build.gradle i już biblioteka staje się dostępna w całym projekcie. Pozostało tylko jeno pytanie: jaką linię?
-
-Tutaj do akcji wkracza *Gralde, Please*, który po wpisaniu nazwy biblioteki, wyświetla linię do skopiowania. W celu dodatkowego uproszczenia życia programistom, najpopularniejsze zależności są wyświetlone na stałe.
-
-{width=80%}
-![Gradle, Please w akcji.](images/gradle_please.png)
-
-{pagebreak}
-
-## Android Assets Studio
-
-| *Strona*      | https://romannurik.github.io/AndroidAssetStudio/ |
+| *Strona*      | https://github.com/alexjlockwood/ShapeShifter |
 | *Cena*        | FREE                                             |
 | *Alternatywy* | -                                                |
 
-Zestaw przydatnych mini-narzędzi, które pozwalają generować zasoby, pomocne zwłaszcza na początku projektu. 
+Narzędzie online, które pozwala na pracę z animacjami na obrazach wektorowych. Interfejs użytkownika wygląda jak bardzo uproszczony Adobe Flash, ale pozwala tworzyć m.in. pliki zawierające AnimatedVectorDrawable.
 
-Za ich pomocą możemy wygenerować:
+Jest to bardzo dobry sposób na dodanie do aplikacji efektu WOW, bez konieczności tworzenia animacji w kodzie albo w ręcznie w plikach XML. Projekt jest ciągle rozwijany i zmierza w kierunku pełnoprawnego edytora.
 
-* ikony aplikacji np. z tekstu, clipartów, obrazku we wszystkich potrzebnych gęstościach,
-* styl ActionBar,
-* 9-patch,
-* osadzić screenshoty w ramce telefonów Nexus.
-
-Część z tych narzędzi została już wbudowana w Android Studio, ale warto zapoznać się z ich możliwościami.
+TODO screenshot
 
 ## Android Pixel Calculator
 
@@ -350,20 +280,40 @@ Szybki generator palety kolorów, do wykorzystania w aplikacjach zgodnych z Mate
 
 ![Wystarczy dwa kolory główne i paleta gotowa](images/material_palette.png)
 
-## Bitbucket
+## Github
 
-| *Strona*      | https://bitbucket.org/ |
+| *Strona*      | https://github.com/ |
 | *Cena*        | FREE                   |
-| *Alternatywy* | Github, Gitlab         |
+| *Alternatywy* | Bitbucket, Gitlab         |
 
 {width=50%}
 ![](images/bitbucket_logo.png)
 
-Bitbucket to produkt firmy Atlasian, znanego twórcy narzędzi dla zespołów programistycznych (m.in. Jira, Confulence, Bamboo). Pozwala na darmowe przechowywanie nieograniczonej ilości prywatnych repozytoriów, z ograniczeniem do 5 użytkowników. Usługa ta sprawdza się to bardzo dobrze nawet dla niewielkich zespołów/projektów i pozwala zacząć pracę z Gitem, bez konieczności konfigurowania własnego serwera.
+Github to od lat standard jeśli chodzi o przechowywanie kodu w publicznych repozytoriach. Tutaj lądują projekty Open Source, z których korzystasz. Tutaj rekruterzy szukają programistów, którzy nie wstydzą się swojego kodu. Po akwizycji przez Microsoft, Github pozwala też na przechowywanie nieograniczonej ilości prywatnych repozytoriów za darmo. Usługa ta sprawdza się to bardzo dobrze nawet dla dużych zespołów/projektów i pozwala zacząć pracę z Gitem, bez konieczności konfigurowania własnego serwera.
 
-Dodatkowo, Bitbucket posiada dobrze rozwiniętą opcje korzystania z mechanizmu Pull Request, który umożliwia innym członkom naszego zespołu na sprawdzenie naszego kodu (Code Review).
+Dodatkowo, Github posiada dobrze rozwiniętą opcje korzystania z mechanizmu Pull Request, który umożliwia innym członkom naszego zespołu na sprawdzenie naszego kodu (Code Review).
+
+TODO screenshot github
 
 ![Widok pozwalający na komentowanie kodu w ramach Pull Request.](images/bitbucket.png)
+
+## Github
+
+| *Strona*      | https://crashlytics.com        |
+| *Cena*        | FREE dla projektów Open Source |
+| *Alternatywy* | -                              |
+
+{width=50%}
+![](images/github_logo.png)
+
+Z punktu widzenia produktu, Github jest konkurentem Bitbucket. Jest to miejsce, gdzie można przechowywać kod źródłowy własnych projektów.
+
+Różnica wynika z modelu biznesowego i sposobu pozycjonowania produktu. Github udostępnia swoje usługi bez limitu dla repozytoriów publicznych (kod widoczny dla wszystkich), a każe płacić za przechowywanie projektów prywatnych. Dzięki takiemu podejściu, dużo projektów Open Source przeniosło swoje kody źródłowe na Github. Ponadto serwis stał się swoistą siecią społecznościową dla programistów, a konto na Github stało się nowoczesną alternatywą dla CV. Często na rozmowach rekrutacyjnych konta Github uważane są za bardziej wartościowe niż suche wpisy o projektach w CV, ponieważ pozwalają zobaczyć jakość tworzonego kodu oraz sposób pracy nad projektem.
+
+Dlatego też polecam założenie konta na Github każdemu programiście i tworzenie własnych projektów publicznych lub też udział w istniejących już przedsięwzięciach, poprzez zgłaszanie poprawek w postaci tzw. Pull Request.
+
+![Na Github można znaleźć kod wielu popularnych bibliotek OpenSource.](images/github.png)
+
 
 ## Parse
 
@@ -372,9 +322,13 @@ Dodatkowo, Bitbucket posiada dobrze rozwiniętą opcje korzystania z mechanizmu 
 | *Alternatywy* | Firebase, Google AppEngine, Azure Mobile Services |
 
 {width=50%}
-![](images/parse_logo.png)
+![](images/logo_parseserver.svg)
 
-Parse to rozwiązanie typu Mobile Backend as a Service, czyli część serwerowa dla naszej aplikacji, bez konieczności pisania kodu. Twórcy tej usługi postawili sobie za cel uproszczenie do maksimum czynności, które do tej pory trzeba było implementować w API. Mamy więc mechanizm operowania na danych w tabelach, wysyłanie wiadomości PUSH, analitykę, logowanie FB i Twitter, a nawet pisanie logiki po stronie serwera w JS.
+Parse było rozwiązaniem typu Mobile Backend as a Service, czyli część serwerowa dla naszej aplikacji, bez konieczności pisania kodu. Twórcy tej usługi postawili sobie za cel uproszczenie do maksimum czynności, które do tej pory trzeba było implementować w API.
+
+Niestety, Facebook najpierw kupił Parse.com, a potem postanowił zawiesić jej działanie (czyli typowy przykład acqui-hire). Na szczęście jednak duża część kodu została udostępniona jako Parse Server, który każdy może zainstalować na własnym serwerze. Jeśli nie chcemy zajmować się instalacją rozwiązania, to możemy skorzystać z jednego z dostawców, którzy oferują hosting pod jednym kliknięciem np. https://back4app.com. Sam często wykorzystuje to rozwiązanie na szkoleniach, dzięki czemu uczestnicy mogą sami stworzyć własną instancję serwera w kilka minut, bez konieczności płacenia w ramach limitów developerskich (np. max 10 req/sec).
+
+Mamy więc mechanizm operowania na danych w tabelach, wysyłanie wiadomości PUSH, analitykę, logowanie FB i Twitter, a nawet pisanie logiki po stronie serwera w JS.
 
 Przykładowo: utworzenie backendu dla aplikacji typu Tinder nie wymaga od nas pisania kodu, ponieważ możemy skorzystać z:
 
@@ -386,15 +340,15 @@ Przykładowo: utworzenie backendu dla aplikacji typu Tinder nie wymaga od nas pi
 
 * powiadamiania użytkownika o nowych aktywnościach na profilu, poprzez wiadomości PUSH.
 
-Do momentu gdy nasza aplikacja nie zacznie uzyskiwać znaczącego ruchu, wszystko to mamy za darmo.
+TODO parse server screenshot
 
 ![Widok danych pozwala zarządzać bazą w prosty sposób.](images/parse.png)
 
-## Crashlitycs
+## Firebase Crashlytics
 
-| *Strona*      | https://crashlytics.com            |
+| *Strona*      | https://firebase.google.com/docs/crashlytics/          |
 | *Cena*        | FREE                               |
-| *Alternatywy* | Applause, Splunk MINT, Google Play |
+| *Alternatywy* | Applause, Splunk MINT |
 
 {width=50%}
 ![](images/crashlytics_logo.png)
@@ -420,22 +374,6 @@ StackOverflow to jednak dużo więcej niż zbiór pytań i odpowiedzi. To społe
 
 ![Wśród 624 tysięcy pytań o Androida, może znajdziesz odpowiedź na swoje.](images/stackoverflow.png)
 
-## Github
-
-| *Strona*      | https://crashlytics.com        |
-| *Cena*        | FREE dla projektów Open Source |
-| *Alternatywy* | -                              |
-
-{width=50%}
-![](images/github_logo.png)
-
-Z punktu widzenia produktu, Github jest konkurentem Bitbucket. Jest to miejsce, gdzie można przechowywać kod źródłowy własnych projektów.
-
-Różnica wynika z modelu biznesowego i sposobu pozycjonowania produktu. Github udostępnia swoje usługi bez limitu dla repozytoriów publicznych (kod widoczny dla wszystkich), a każe płacić za przechowywanie projektów prywatnych. Dzięki takiemu podejściu, dużo projektów Open Source przeniosło swoje kody źródłowe na Github. Ponadto serwis stał się swoistą siecią społecznościową dla programistów, a konto na Github stało się nowoczesną alternatywą dla CV. Często na rozmowach rekrutacyjnych konta Github uważane są za bardziej wartościowe niż suche wpisy o projektach w CV, ponieważ pozwalają zobaczyć jakość tworzonego kodu oraz sposób pracy nad projektem.
-
-Dlatego też polecam założenie konta na Github każdemu programiście i tworzenie własnych projektów publicznych lub też udział w istniejących już przedsięwzięciach, poprzez zgłaszanie poprawek w postaci tzw. Pull Request.
-
-![Na Github można znaleźć kod wielu popularnych bibliotek OpenSource.](images/github.png)
 
 ## TestDroid
 
@@ -454,70 +392,86 @@ Dodatkową cechą wyróżniającą, jest możliwość użycia narzędzia Testdro
 
 ![Widok wyników testu na urządzeniu Acer Iconia Tab 8.](images/testdroid.png)
 
-## FluidUI
+## Proto.io
 
 | *Strona*      | https://www.fluidui.com/   |
 | *Cena*        | FREE                       |
 | *Alternatywy* | Proto.io, Balsamiq Mockups |
 
 {width=50%}
-![](images/fluidui_logo.png)
+![](images/protoio_logo.svg)
+
+TODO przyciac
 
 Klikalne prototypy stanowią jedną z najlepszych form dokumentacji w komunikacji programista<->klient. Pozwalają przedstawić potrzebne ekrany, sposoby nawigacji pomiędzy nimi oraz przetestować aplikację na żywym organizmie, bez konieczności uruchamiania IDE. Bardzo często zmniejszają ryzyko niedomówień lub ujawniają braki w projekcie.
 
 Warto zacząć tworzenie prototypu już na etapie tworzenia lub czytania specyfikacji. Najlepiej jeśli jest to mockup typu Lo-Fi (niskiej szczegółowości, bez graficznych ozdób), tak aby klient nie przywiązywał się do jego wyglądu, tylko skupiał na nawigacji i kompletności danych.
 
-Fluid UI jest przykładem rozwiązania, które pozwala zaprojektować ekrany, dodać proste akcje (np. przejścia pomiędzy ekranami po naciśnięciu przycisku) i zaprezentować wynik w przeglądarce na telefonie klienta. Wystarczy przesłać link do wygenerowanego prototypu, który potencjalny użytkownik, może sobie przetestować na urządzeniu.
+Proto.io jest przykładem rozwiązania, które pozwala zaprojektować ekrany, dodać proste akcje (np. przejścia pomiędzy ekranami po naciśnięciu przycisku) i zaprezentować wynik w przeglądarce na telefonie klienta. Wystarczy przesłać link do wygenerowanego prototypu, który potencjalny użytkownik, może sobie przetestować na urządzeniu.
 
-![FluidUI pozwala przygotować widoki ekranów, oraz przejścia pomiędzy nimi.](images/fluidui.png)
+![Proto.io pozwala testować prototypy bezpośrednio na urządzeniu.](images/protoio.webp)
 
 # Biblioteki
 Każdy programista dochodzi do takiego momentu, gdy stwierdza, że coraz więcej kodu, który pisze się powtarza. Dlatego właśnie tak ważne jest w projektach korzystanie z bibliotek, zwłaszcza z tych, które są sprawdzone i uznawane za standard. Dzięki temu, ktoś kto będzie przeglądał nasz projekt od razu będzie czuł się jak w domu.
 
-W chwili obecnej dużą popularnością cieszą się biblioteki stworzone przez firmę Square. Więcej informacji możesz znaleźć w mojej [prezentacji z Warsjawa](http://soldiersofmobile.com/prezentacja-kod-przykladami-uzycia-bibliotek-square-warsjawa/), wraz z przykładami zastosowania opisanych bibliotek.
+## Android Jetpack
 
-## ButterKnife
+| *Strona*      | https://developer.android.com/jetpack   |
+| *Cena*        | FREE                                 |
+| *Alternatywy* | - |
 
-| *Strona*      | http://jakewharton.github.io/butterknife/ |
-| *Cena*        | FREE                                      |
-| *Alternatywy* | RoboGuice, AndroidAnnotations             |
-
-Bardzo prosta bibliteka, która generuje kod związany z dostępem do UI na podstawie anotacji. Pozwala:
-
-* zamienić findViewById + rzutowanie na @InjectView
-
-* zamienić listenery na @OnClick, @OnItemClick
-
-* operować na wielu widokach jednocześnie z użyciem tablic widoków.
+{width=50%}
+![](images/jetpack-hero.svg)
 
 
-Bardzo dobrze sprawdza się w połączeniu z pluginem do Android Studio o nazwie android-butterknife-zelezny. Dzięki tej parze generowanie kodu wyciągającego widoki z layoutu sprowadza się do wywołania jednej opcji z menu.
+Jetpack to duży ukłon firmy Google w kierunku programistów. Jest to zestaw bibliotek i narzędzi, które stworzone zostały, aby dobrze się uzupełniać i tworzyć spójną architekturę. Warto przejrzeć je wszystkie, przynajmniej pobieżnie, a szczególną uwagę zwrócić na [Architecture Components](https://developer.android.com/topic/libraries/architecture/).
 
-## Otto
 
-| *Strona*      | http://square.github.io/otto/ |
-| *Cena*        | FREE                          |
-| *Alternatywy* | EventBus                      |
 
-Otto to szyna danych, która działa podobnie do LocalBroadcast. W pewnym miejscu aplikacji wysyłamy zdarzenie, które następnie odbierane jest w innych miejscach - zapisanych do odbioru informacji o tym zdarzeniu (mechanizm Post/Subscribe). Główną przewagą nad androidowymi broadcastami jest fakt, że przesyłamy obiekty POJO, a nie instancje klasy Bundle, co zmniejsza szanse na pomyłkę i jest dużo szybsze w implementacji.
+### ROOM
+Bardzo dobrze napisana biblioteka ORM (do mapowania obiektowo-relacyjnego), która upraszcza pracę z bazą SQLite w naszej aplikacji. Większość kodu generowana jest na etapie kompilacji na podstawie metadanych, które podamy m.in. zapytań SQL. Ważną zaleta jest dobra integracja z Android Studio, która pozwala m.in. na podpowiadanie kodu przy pisaniu zapytań SQL. 
 
-Wykorzystanie szyny do komunikacji pomiędzy komponentami zmniejsza ilość zależności pomiędzy nimi, a zwłaszcza konieczność implementowania dużej ilości interfejsów. Niestety, w przypadku dużych projektów wymaga dużej dyscypliny, aby zapanować nad ilością zdarzeń które są przesyłane. W takim przypadku niezwykle przydatny okazuje się plugin otto-intellij-plugin, który pozwala w łatwy sposób nawigować pomiędzy miejscami, w których zarzenie jest emitowane i odbierane.
 
 ## Retrofit
 
-| *Strona*      | https://github.com/square/retrofit   |
+| *Strona*      | https://square.github.io/retrofit/   |
 | *Cena*        | FREE                                 |
-| *Alternatywy* | Spring Rest Template, AQuery, Volley |
+| *Alternatywy* | Ktor, Volley |
 
 Retrofit to najprzyjemniejszy sposób korzystania z API REST z poziomu Androida. Naszym zadaniem jest napisanie interfejsu zawierającego wszystkie metody, które będziemy chcieli wywołać na API, oraz dorzucenie anotacji, które opisują pod jakie URL-e mają te zapytania uderzać, jakie parametry wysyłać i co odbierać.
 
 Resztę generuje za nas Retrofit. Otrzymujemy konkretną klasę, na której możemy wywoływać te metody. Wbudowana obsługa GSON, zapewnia nam automatyczne mapowanie obiektów POJO na JSON i odwrotnie. Łatwiej się nie da.
 
-## Dagger
 
-| *Strona*      | http://square.github.io/dagger/ |
+Przykładowy interfejs opisujący API:
+```java
+public interface GitHubService {
+  @GET("users/{user}/repos")
+  Call<List<Repo>> listRepos(@Path("user") String user);
+}
+```
+
+Na jego podstawie Retrofit może szybko wygenerować implementację klienta HTTP:
+```java
+Retrofit retrofit = new Retrofit.Builder()
+    .baseUrl("https://api.github.com/")
+    .build();
+
+GitHubService service = retrofit.create(GitHubService.class);
+```
+
+Teraz wystarczy tylko zawołać wygenerowaną metode i pronto!
+```java
+Call<List<Repo>> repos = service.listRepos("octocat");
+```
+
+
+
+## Dagger 2
+
+| *Strona*      | https://github.com/google/dagger |
 | *Cena*        | FREE                            |
-| *Alternatywy* | RoboGuice, Dagger2              |
+| *Alternatywy* | Koin              |
 
 Dagger to implementacja wzorca Dependency Injection, czyli wstrzykiwania zależności. Celem tego podejścia jest minimalizacja ilości miejsc, w których tworzymy obiekty poprzez `new NazwaKlasy()` i stworzenie centralnego repozytorium obiektów, które możemy wstrzyknąć w dowolnym miejscu aplikacji. W przypadku Androida jest to szczególnie przydatne, ponieważ często potrzebujemy w różnych Activity albo Fragmentach dostępu do np. SharedPreferences. Polecam przeczytanie dokumentacji i rozpoczęcie od wstrzykiwania prostych obiektów np. swoich Managerów.
 
@@ -525,19 +479,19 @@ Dagger to implementacja wzorca Dependency Injection, czyli wstrzykiwania zależn
 
 | *Strona*      | http://square.github.io/picasso/       |
 | *Cena*        | FREE                                   |
-| *Alternatywy* | AQuery, Volley, Universal Image Loader |
+| *Alternatywy* | Glide, Universal Image Loader |
 
 Picasso to biblioteka służąca do wyświetlania obrazków z internetu. Kropka. Posiada proste API i automatyzuje pobieranie plików graficznych, zmianę ich rozmiaru, wyświetlanie w ImageView, cache w pamięci ram i flash. Dzięki temu możemy skupić się na tym, co ma być wyświetlone, a nie jak.
 
-## RxAndroid, RxJava
+## RxJava
 
-| *Strona*      | https://github.com/ReactiveX/RxAndroid |
+| *Strona*      | https://github.com/ReactiveX/RxJava |
 | *Cena*        | FREE                                   |
 | *Alternatywy* | -                                      |
 
-Biblioteka RxJava oraz jej rozszerzenie RxAndroid, pozwalają wprowadzić do Javy nowy paradygmat - programowanie reaktywne (Reactive Programming). Jest to podejście upraszczające w znaczny sposób kod, którego zadaniem jest zarządzanie wieloma zadaniami asynchronicznymi, zwłaszcza takimi, które operują na danych. Dobrym przykładem jest fragment aplikacji wymagający np. jednoczesnego wywołania wielu zapytań HTTP i połączenia ich wyników. 
+Biblioteka RxJava, pozwala wprowadzić do Javy nowy paradygmat - programowanie reaktywne (Reactive Programming). Jest to podejście upraszczające w znaczny sposób kod, którego zadaniem jest zarządzanie wieloma zadaniami asynchronicznymi, zwłaszcza takimi, które operują na danych. Dobrym przykładem jest fragment aplikacji wymagający np. jednoczesnego wywołania wielu zapytań HTTP i połączenia ich wyników. 
 
-RxJava nie jest biblioteką, którą mogę polecić początkującym programistom. Jeśli jednak Twoje aplikacje stają się coraz większe i rośnie liczba zdarzeń lub zapytań HTTP, które wysyłasz to polecam przestudiowanie dokumentacji https://github.com/ReactiveX/RxJava/wiki. Warto także przyjrzeć się dodatkowo bibliotece [Retrolambda](https://github.com/orfjackal/retrolambda), która znacząco zmniejszy liczbę anonimowych klas, które trzeba napisać.
+RxJava nie jest biblioteką, którą mogę polecić początkującym programistom. Jeśli jednak Twoje aplikacje stają się coraz większe i rośnie liczba zdarzeń lub zapytań HTTP, które wysyłasz to polecam przestudiowanie dokumentacji https://github.com/ReactiveX/RxJava/wiki.
 
 # Kody źródłowe
 
@@ -548,22 +502,6 @@ Każdego roku Google IO jest najważniejszą konferencją, na której ekipa z Mo
 
 Warto przejrzeć, choć z doświadczenia wiem, że kod nie jest idealny i trudny w czytaniu, ale zdecydowanie prezentuje dużo nowości.
 
-## Android Bootstrap
-http://www.androidbootstrap.com/
-
-Android Bootstrap pełni dwie role. Z jednej strony, jest to generator szkieletu projektu, a z drugiej sam szkielet jest dobrym przykładem przemyślanego projektu ze sporą ilością współpracujących bibliotek.
-
-## u2020
-https://github.com/JakeWharton/u2020
-
-Mały projekt prezentujący, jak połączyć ze sobą wiele z opisanych wcześniej bibliotek Square.
-
-## Libraries for Developers
-https://play.google.com/store/apps/details?id=com.desarrollodroide.repos
-
-Aplikacja prezentująca przykłady bibliotek, bez konieczności kompilowania ich. Wystarczy pobrać z Google Play i zobaczyć, czy wybrana biblioteka spełnia nasze oczekiwania zanim ją zaczniemy integrować z naszą aplikacją.
-
-![Wszystkie biblioteki są podzielone na kategorie i dostępne z poziomu menu.](images/libs_for_devs.png)
 
 # Źródła wiedzy
 
