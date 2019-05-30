@@ -1,3 +1,11 @@
+TODO
+
+- Dodac Firebase
+
+- Nowy obrazek AS
+- Lottie Screenshot
+
+
 # Wstęp
 Celem niniejszego ebooka jest przedstawienie zestawu narzędzi i zasobów, których używanie wpływa na jakość i wydajność pracy programisty. Każde z nich przetestowałem na własnej skórze, podczas tworzenia wielu aplikacji. Wybór ten potwierdziło wielu programistów, z którymi rozmawiałem na imprezach branżowych, takich jak Mobile Warsaw, Droidcon czy Mobilization.
 
@@ -11,6 +19,65 @@ Lubię książki, które podają konkretne kroki i od samego początku przynosz�
 
 # Narzędzia
 Zacznę od crème de la crème spośród narzędzi do tworzenia aplikacji mobilnych, czyli produktów dostępnych jako aplikacje desktop-owe lub wtyczki do takich aplikacji. Są to elementy, z którymi programista spędza najwięcej czasu. Starałem się, aby wybrane narzędzia dobrze się uzupełniały i stanowiły ekosystem, w którym praca staje się prostsza.
+
+## Kotlin
+
+Zapomnij o Javie. Obecnie w świecie Androida liczy się tylko jeden język. Kotlin powstał jako wewnętrzny projekt twórców Android Studio, firmy JetBrains. Jednak łatwość integracji z AS i współpracy z Javą w projektach Androidowych spowodował, że coraz większa część programistów Androida postanowiła przenieść swoje projekty do Kotlina. 
+Google zauważył ten trend i na Google I/O w 2017 ogłosił oficjalne wsparcie dla Kotlina, a w 2019 ogłosił Kotlina jako podstawowy język dla tej platformy.
+
+Kotlin ma wiele zalet, ale przede wszystkim jest zwięzły:
+```kotlin
+data class Person(var name: String)
+```
+
+Odpowiednik w Java
+
+```java
+public final class Person {
+   @NotNull
+   private String name;
+
+   @NotNull
+   public final String getName() {
+      return this.name;
+   }
+
+   public final void setName(@NotNull String var1) {
+      Intrinsics.checkParameterIsNotNull(var1, "<set-?>");
+      this.name = var1;
+   }
+
+   public Person(@NotNull String name) {
+      Intrinsics.checkParameterIsNotNull(name, "name");
+      super();
+      this.name = name;
+   }
+
+   @NotNull
+   public String toString() {
+      return "Person(name=" + this.name + ")";
+   }
+
+   public int hashCode() {
+      return this.name != null ? this.name.hashCode() : 0;
+   }
+
+   public boolean equals(@Nullable Object var1) {
+      if (this != var1) {
+         if (var1 instanceof Person) {
+            Person var2 = (Person)var1;
+            if (Intrinsics.areEqual(this.name, var2.name)) {
+               return true;
+            }
+         }
+         return false;
+      } else {
+         return true;
+      }
+   }
+}
+
+```
 
 ## Android Studio
 
@@ -26,7 +93,7 @@ Na Google IO 2013 zostało ogłoszone przez Google jako nowe oficjalne środowis
 
 ![Android Studio w trybie edycji layoutów z podglądem.](images/android_studio.png)
 
-TODO Nowy obrazek
+
 
 W celu maksymalizacji wydajności korzystania z AS, warto poświęcić trochę czasu i nauczyć się skrótów klawiszowych oraz poznać np. mechanizm szablonów generujący kod, który często się powtarza. Każda minuta poświęcona na naukę sztuczek w AS, to inwestycja w przyszłość. Istnieje wiele czynności, które da się przyśpieszyć np.: generowanie par getter/setter, refaktoryzacja kodu, czy chociażby obsługa systemów kontroli wersji z poziomu IDE.
 
@@ -50,7 +117,7 @@ android {
     compileSdkVersion 21
     buildToolsVersion "21.1.2"
     defaultConfig { //podstawowa konfiguracja aplikacji
-        applicationId "com.soldiersofmobile.myapplication"
+        applicationId "pl.szkoleniaandroid.myapplication"
         minSdkVersion 15
         targetSdkVersion 21
         versionCode 1
@@ -69,53 +136,6 @@ dependencies { //zależności, czyli zewnętrzne biblioteki
     compile 'com.android.support:appcompat-v7:21.0.3'
 }
 ~~~~~~~~
-
-## ProGuard
-
-TODO wywalić albo dodać R8
-
-| *Strona*      | http://proguard.sourceforge.net/                                                                   |
-| *Cena*        | FREE                                                                                               |
-| *Alternatywy* | DexGuard (€480) - rozszerzenie ProGuard o m.in. szyfrowanie napisów, dużo lepsze zaciemnianie kodu |
-
-*ProGuard* powstał jako darmowe narzędzie do optymalizacji, zmniejszania i zaciemniania plików klas, powstałych w wyniku kompilacji kodu źródłowego w języku *Java*.
-
-Został przystosowany przez zespół z *Google*, do współpracy z Androidem i od samego początku stanowi podstawowe narzędzie do zmniejszania objętości klas w pliku APK.
-
-Warto nauczyć się z niego korzystać, przede wszystkim dla jego trzech unikalnych funkcji:
-
-* usuwania niepotrzebnych klas, które zapomnieliśmy skasować z projektu lub zostały dodane w pliku JAR jakiejś biblioteki,
-
-* zaciemniania kodu (zmiana nazw metod i klas oraz pakietów), które utrudnia ciekawskim poznanie, jak nasza aplikacja działa,
-
-* usuwania niepotrzebnych fragmentów kodu z klas (np. nieużywanych metod, albo miejsc w których logowaliśmy coś do Logcat), co okazuje się niezwykle przydatne ze względu na limit 64 tysięcy metod w aplikacji.
-
-Najczęściej *ProGuard* uruchamiany jest podczas budowania APK w wersji Release, czyli takiego jakie potrzebne jest do umieszczenia w *Google Play*. W przypadku budowania w *Android Studio*/*Gradle*, konieczne jest ustawienie flagi __minifyEnabled=true__, aby aktywować *ProGuard* jako jeden z kroków tworzenia pliku APK.
-
-Proces działania *ProGuard* jest sterowany przez plik konfiguracyjny __proguard-rules.pro__ lub podobny. Ważne jest, aby pamiętać, że ProGuard potencjalnie może usunąć zbyt dużo kodu - może to spowodować, że aplikacja przestanie działać poprawnie. Zwykle wynika to z faktu, że aplikacja (lub jedna z użytych bibliotek) korzysta z mechanizmu Refleksji czyli opiera swoje działanie o nazwy metod, które ulegają zmianie podczas zaciemniania. 
-
-W takim wypadku trzeba, do pliku konfiguracyjnego dodać zestaw wyjątków, które informują program, że danych metod lub klas nie należy zmieniać. Często biblioteki posiadają w swojej dokumentacji gotowe fragmenty konfiguracji, które trzeba wkleić, aby poprawnie działały po użyciu ProGuarda.
-
-{title="Fragment pliku proguard-rules.pro"}
-~~~~~~~~
--keep class com.soldiersofmobile.app.events.** {*;}
-
-# REMOVE LOGS IN RELEASE BUILDS
--assumenosideeffects class android.util.Log {
-    public static *** d(...);
-}
-
-# GENERAL
--keepnames class * implements android.os.Parcelable {
-    public static final ** CREATOR;
-}
--keepattributes Signature,*Annotation*,EnclosingMethod,SourceFile,LineNumberTable
-
-# KEEP FACEBOOK SDK CLASSES
--keep class com.facebook.** { *; }
-~~~~~~~~
-
-{pagebreak}
 
 ## Git
 
@@ -166,9 +186,9 @@ Przykładowy cykl, który może realizować Jenkins CI:
 
 ## Sketch
 
-| *Strona*      | http://bohemiancoding.com/sketch/        |
-| *Cena*        | $99                                      |
-| *Alternatywy* | Photoshop CC (E12.29/mc w CreativeCloud) |
+| *Strona*      | https://www.sketch.com       |
+| *Cena*        | $99/rok                                      |
+| *Alternatywy* | Figma, Photoshop CC |
 
 {width=30%}
 ![](images/sketch_logo.png)
@@ -181,6 +201,23 @@ Warto posiadać Sketch jeśli często otrzymujemy projekty graficzne wykonane w 
 
 Jest to produkt otwarty na rozwój, z dobrym community, co przekłada się na dużą ilość wtyczek, pozwalających m.in.: na szybki eksport grafik do różnych rozdzielczości. Widziałem nawet wersje, umożliwiające generowanie kodu layoutów prosto z projektu w Sketch.
 
+## InVision 
+
+| *Strona*      | https://www.invisionapp.com/ |
+| *Cena*        | FREE (1 projekt)                      |
+| *Alternatywy* | Zeplin, Avocode              |
+
+Ważnym elementem każdego projektu jest współpraca na linii programista-designer. Jeszcze kilka lat temu oznaczało to, że programista musiał mieć dostęp do Photoshopa, albo musiał polegać na projektancie, który wyeksportuje mu widoki ekranów i zasoby graficzne do popularnego formatu graficznego (PNG, JPG).
+
+Takie podejście powodowało stratę czasu i niedokłaności w odwzorowaniu projektu wynikające np. z trudności zmierzenia odstępów pomiędzy elementami. Na szczęście pojawiła się cała gama rozwiązań, które ułatwiają tę współpracę. Ostatnio najczęściej korzystam z InVision. Jest to aplikacja webowa oraz zestaw pluginów do najpopularniejszych narzędzi graficznych.
+W pierwszym kroku designer eksportuje projekt do InVision korzystają z pluginu, a następnie programista może sprawdzać odstępy, kolory i fonty użyte w projekcie oraz samemu eksportować zasoby graficzne do formatów rastrowych lub wektorowych.
+
+## Stetho
+
+| *Strona*      | http://www.getpostman.com/ |
+| *Cena*        | FREE                       |
+| *Alternatywy* | RESTClient dla Firefox     |
+
 
 ## Postman – Rest client
 
@@ -189,9 +226,9 @@ Jest to produkt otwarty na rozwój, z dobrym community, co przekłada się na du
 | *Alternatywy* | RESTClient dla Firefox     |
 
 {width=65%}
-![](images/postman_logo.jpg)
+![](images/postman-logo.png)
 
-Bardzo przydatny plugin do przeglądarki Chrome, pozwalający na testowanie API REST, bez konieczności pisania kodu. Przyjemy interfejs użytkownika pozwala na zarządzanie wieloma zapytaniami jednocześnie i testowanie API, z którym będzie się komunikowała nasza aplikacja.
+Bardzo przydatny narzędzie, pozwalające na testowanie API REST, bez konieczności pisania kodu. Przyjemy interfejs użytkownika pozwala na zarządzanie wieloma zapytaniami jednocześnie i testowanie API, z którym będzie się komunikowała nasza aplikacja.
 
 Do głównych zalet Postman'a należy zaliczyć:
 
@@ -205,7 +242,7 @@ Do głównych zalet Postman'a należy zaliczyć:
 
 Narzędzie to warto wykorzystać, aby sprawdzić API zanim jeszcze zaczniemy implementować dane zapytanie po stronie aplikacji. Ponadto jest to idealne rozwiązanie dla programistów tworzących API, którzy chcą przetestować jak będzie się ono zachowywało dla prawdziwych danych.
 
-![Przykładowe zapytanie do API Tumblr w Postman.](images/postman.png)
+![Przykładowe zapytanie do API Tumblr w Postman.](images/postman-default-view.png)
 
 ## DB Browser for SQLite (dawniej SQLite Browser)
 
@@ -244,7 +281,6 @@ Designer może projektować animacje korzystając z After Effects (de facto stan
 Programista dodaje do projektu bibliotekę Lottie, wrzuca plik json do zasobów i w kilku liniach kodu jest wstanie zaimplementować dokładnie taki efekt jaki wymyślił designer. Żyjemy w przyszłości! ;)
 
 
-TODO Screenshot
 
 # Usługi i narzędzia Web
 
@@ -258,7 +294,7 @@ Narzędzie online, które pozwala na pracę z animacjami na obrazach wektorowych
 
 Jest to bardzo dobry sposób na dodanie do aplikacji efektu WOW, bez konieczności tworzenia animacji w kodzie albo w ręcznie w plikach XML. Projekt jest ciągle rozwijany i zmierza w kierunku pełnoprawnego edytora.
 
-TODO screenshot
+![](images/shapeshifter.png)
 
 ## Android Pixel Calculator
 
@@ -287,33 +323,16 @@ Szybki generator palety kolorów, do wykorzystania w aplikacjach zgodnych z Mate
 | *Alternatywy* | Bitbucket, Gitlab         |
 
 {width=50%}
-![](images/bitbucket_logo.png)
+![](images/github_logo.png)
+
 
 Github to od lat standard jeśli chodzi o przechowywanie kodu w publicznych repozytoriach. Tutaj lądują projekty Open Source, z których korzystasz. Tutaj rekruterzy szukają programistów, którzy nie wstydzą się swojego kodu. Po akwizycji przez Microsoft, Github pozwala też na przechowywanie nieograniczonej ilości prywatnych repozytoriów za darmo. Usługa ta sprawdza się to bardzo dobrze nawet dla dużych zespołów/projektów i pozwala zacząć pracę z Gitem, bez konieczności konfigurowania własnego serwera.
 
-Dodatkowo, Github posiada dobrze rozwiniętą opcje korzystania z mechanizmu Pull Request, który umożliwia innym członkom naszego zespołu na sprawdzenie naszego kodu (Code Review).
-
-TODO screenshot github
-
-![Widok pozwalający na komentowanie kodu w ramach Pull Request.](images/bitbucket.png)
-
-## Github
-
-| *Strona*      | https://crashlytics.com        |
-| *Cena*        | FREE dla projektów Open Source |
-| *Alternatywy* | -                              |
-
-{width=50%}
-![](images/github_logo.png)
-
-Z punktu widzenia produktu, Github jest konkurentem Bitbucket. Jest to miejsce, gdzie można przechowywać kod źródłowy własnych projektów.
-
-Różnica wynika z modelu biznesowego i sposobu pozycjonowania produktu. Github udostępnia swoje usługi bez limitu dla repozytoriów publicznych (kod widoczny dla wszystkich), a każe płacić za przechowywanie projektów prywatnych. Dzięki takiemu podejściu, dużo projektów Open Source przeniosło swoje kody źródłowe na Github. Ponadto serwis stał się swoistą siecią społecznościową dla programistów, a konto na Github stało się nowoczesną alternatywą dla CV. Często na rozmowach rekrutacyjnych konta Github uważane są za bardziej wartościowe niż suche wpisy o projektach w CV, ponieważ pozwalają zobaczyć jakość tworzonego kodu oraz sposób pracy nad projektem.
+Ponadto serwis stał się swoistą siecią społecznościową dla programistów, a konto na Github stało się nowoczesną alternatywą dla CV. Często na rozmowach rekrutacyjnych konta Github uważane są za bardziej wartościowe niż suche wpisy o projektach w CV, ponieważ pozwalają zobaczyć jakość tworzonego kodu oraz sposób pracy nad projektem.
 
 Dlatego też polecam założenie konta na Github każdemu programiście i tworzenie własnych projektów publicznych lub też udział w istniejących już przedsięwzięciach, poprzez zgłaszanie poprawek w postaci tzw. Pull Request.
 
 ![Na Github można znaleźć kod wielu popularnych bibliotek OpenSource.](images/github.png)
-
 
 ## Parse
 
@@ -322,7 +341,7 @@ Dlatego też polecam założenie konta na Github każdemu programiście i tworz
 | *Alternatywy* | Firebase, Google AppEngine, Azure Mobile Services |
 
 {width=50%}
-![](images/logo_parseserver.svg)
+![](images/logo_parseserver.png)
 
 Parse było rozwiązaniem typu Mobile Backend as a Service, czyli część serwerowa dla naszej aplikacji, bez konieczności pisania kodu. Twórcy tej usługi postawili sobie za cel uproszczenie do maksimum czynności, które do tej pory trzeba było implementować w API.
 
@@ -399,7 +418,7 @@ Dodatkową cechą wyróżniającą, jest możliwość użycia narzędzia Testdro
 | *Alternatywy* | Proto.io, Balsamiq Mockups |
 
 {width=50%}
-![](images/protoio_logo.svg)
+![](images/protoio_logo.png)
 
 TODO przyciac
 
@@ -409,7 +428,7 @@ Warto zacząć tworzenie prototypu już na etapie tworzenia lub czytania specyfi
 
 Proto.io jest przykładem rozwiązania, które pozwala zaprojektować ekrany, dodać proste akcje (np. przejścia pomiędzy ekranami po naciśnięciu przycisku) i zaprezentować wynik w przeglądarce na telefonie klienta. Wystarczy przesłać link do wygenerowanego prototypu, który potencjalny użytkownik, może sobie przetestować na urządzeniu.
 
-![Proto.io pozwala testować prototypy bezpośrednio na urządzeniu.](images/protoio.webp)
+![Proto.io pozwala testować prototypy bezpośrednio na urządzeniu.](images/protoio.png)
 
 # Biblioteki
 Każdy programista dochodzi do takiego momentu, gdy stwierdza, że coraz więcej kodu, który pisze się powtarza. Dlatego właśnie tak ważne jest w projektach korzystanie z bibliotek, zwłaszcza z tych, które są sprawdzone i uznawane za standard. Dzięki temu, ktoś kto będzie przeglądał nasz projekt od razu będzie czuł się jak w domu.
@@ -421,15 +440,25 @@ Każdy programista dochodzi do takiego momentu, gdy stwierdza, że coraz więcej
 | *Alternatywy* | - |
 
 {width=50%}
-![](images/jetpack-hero.svg)
+![](images/jetpack-hero.png)
 
 
 Jetpack to duży ukłon firmy Google w kierunku programistów. Jest to zestaw bibliotek i narzędzi, które stworzone zostały, aby dobrze się uzupełniać i tworzyć spójną architekturę. Warto przejrzeć je wszystkie, przynajmniej pobieżnie, a szczególną uwagę zwrócić na [Architecture Components](https://developer.android.com/topic/libraries/architecture/).
 
+### Data Binding
 
+Biblioteka pozwalająca na łączenie widoków z danymi na poziomie plików XML z Layoutami. W najprostrzym przypadku pozwala pozbyć się findViewById(), jednak zwykle używana jest do odseparowania logiki od prezentacji z użyciem wzorca MVVM (Model-View-ViewModel).
 
-### ROOM
+### ViewModel
+Bardzo prosta biblioteka zdejmująca z programisty błędogenny proces przechowywania stanu obiektów pomiędzy zmianami konfiguracji poprzez automatyczne zarządzanie cyklem życia obiektów typu ViewModel z MVVM.
+
+### Room
 Bardzo dobrze napisana biblioteka ORM (do mapowania obiektowo-relacyjnego), która upraszcza pracę z bazą SQLite w naszej aplikacji. Większość kodu generowana jest na etapie kompilacji na podstawie metadanych, które podamy m.in. zapytań SQL. Ważną zaleta jest dobra integracja z Android Studio, która pozwala m.in. na podpowiadanie kodu przy pisaniu zapytań SQL. 
+
+### LiveData
+Implementacja wzorca Obserwatora, która doskonale pozwala łączyć powyższe elementy, dzięki czemu np. widok (DataBinding) może reagować na zmiany w bazie danych (Room) poprzez obiekt LiveData przechowywany w ViewModelu.
+Obiekty typu LiveData pozwalają na przekształcanie obiektów pomiędzy warstwami naszej aplikacji lub łączeniem kilku obiektów w jeden. 
+
 
 
 ## Retrofit
@@ -513,8 +542,8 @@ http://www.vogella.com/tutorials/android.html
 Znane źródło bardzo dopracowanych tutoriali opisujących popularne zagadnienia z zakresu programowania na Androida i nie tylko.
 
 
-### Soldiers of Mobile - Blog
-http://soldiersofmobile.com
+### SzkoleniaAndroid.pl - Blog
+https://SzkoleniaAndroid.pl
 
 Blog, który tworzę w wolnym czasie pomiędzy projektami i szkoleniami. Staram się przekazywać spostrzeżenia dotyczące tworzenia aplikacji, zwłaszcza od strony warsztatu programisty.
 
@@ -538,7 +567,7 @@ Alternatywy: https://www.android-libs.com
 ## Kanały YouTube
 Dla tych, którzy wolą oglądać wideo, zamiast czytać istnieje kilka kanałów, które warto dodać do swoich subskrybcji na YouTube, aby na bieżąco dostawać powiadomienia.
 
-### Soldiers of Mobile - YouTube
+### SzkoleniaAndroid.pl - YouTube
 https://www.youtube.com/channel/UCQUuM6One5W6odx8dDJ8Vsw
 
 I znów kryptoreklama. Początkowo umieszczałem kursy, chwilowo lądują tam głównie zapisy z moich prezentacji na różnych wydarzeniach. Szczerze zachęcam do subskrybcji.
@@ -632,11 +661,11 @@ Twórca CommonsWare i autor ksiązki "The Busy Coder’s Guide to Android Develo
 
 # Reklama :)
 
-## Zasubskrybuj Soldiers of Mobile na YouTube
+## Zasubskrybuj SzkoleniaAndroid na YouTube
 https://www.youtube.com/channel/UCQUuM6One5W6odx8dDJ8Vsw?sub_confirmation=1
 
 ## Śledź Sylwester Madej na Twitter
 https://twitter.com/smdremedy
 
 ## A przede wszystkim czytaj bloga
-http://soldiersofmobile.com
+https://SzkoleniaAndroid.pl
