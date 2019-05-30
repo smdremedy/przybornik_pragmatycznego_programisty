@@ -1,9 +1,7 @@
-TODO
-
-- Dodac Firebase
-
-- Nowy obrazek AS
-- Lottie Screenshot
+[//]: # (TODO)
+[//]: # (Dodac Firebase)
+[//]: # (Nowy obrazek AS)
+[//]: # (Lottie Screenshot)
 
 
 # Wstęp
@@ -26,6 +24,7 @@ Zapomnij o Javie. Obecnie w świecie Androida liczy się tylko jeden język. Ko
 Google zauważył ten trend i na Google I/O w 2017 ogłosił oficjalne wsparcie dla Kotlina, a w 2019 ogłosił Kotlina jako podstawowy język dla tej platformy.
 
 Kotlin ma wiele zalet, ale przede wszystkim jest zwięzły:
+
 ```kotlin
 data class Person(var name: String)
 ```
@@ -78,6 +77,7 @@ public final class Person {
 }
 
 ```
+
 {pagebreak}
 
 ## Android Studio
@@ -93,7 +93,6 @@ Android Studio (AS) powstało jako rozwinięcie wsparcia dla Androida, dostępne
 Na Google IO 2013 zostało ogłoszone przez Google jako nowe oficjalne środowisko programistyczne (Integrated Development Environment, IDE) do tworzenia aplikacji na platformę Android. Dzięki połączeniu doskonałego IDE (latami dopracowywanego przez firmę JetBrains) z oficjalnym wsparciem zespołu Google, jest ono zdecydowanie lepsze od ADT (IDE opartego o Eclipse).
 
 ![Android Studio w trybie edycji layoutów z podglądem.](images/android_studio.png)
-
 
 
 W celu maksymalizacji wydajności korzystania z AS, warto poświęcić trochę czasu i nauczyć się skrótów klawiszowych oraz poznać np. mechanizm szablonów generujący kod, który często się powtarza. Każda minuta poświęcona na naukę sztuczek w AS, to inwestycja w przyszłość. Istnieje wiele czynności, które da się przyśpieszyć np.: generowanie par getter/setter, refaktoryzacja kodu, czy chociażby obsługa systemów kontroli wersji z poziomu IDE.
@@ -381,7 +380,6 @@ Przykładowo: utworzenie backendu dla aplikacji typu Tinder nie wymaga od nas pi
 
 * powiadamiania użytkownika o nowych aktywnościach na profilu, poprzez wiadomości PUSH.
 
-TODO parse server screenshot
 
 ![Widok danych pozwala zarządzać bazą w prosty sposób.](images/parse.png)
 
@@ -493,7 +491,11 @@ Obiekty typu LiveData pozwalają na przekształcanie obiektów pomiędzy warstwa
 
 {pagebreak}
 
-## Retrofit
+
+## Biblioteki Square
+
+
+### Retrofit
 
 | *Strona*      | https://square.github.io/retrofit/   |
 | *Cena*        | FREE                                 |
@@ -505,6 +507,7 @@ Resztę generuje za nas Retrofit. Otrzymujemy konkretną klasę, na której moż
 
 
 Przykładowy interfejs opisujący API:
+
 ```java
 public interface GitHubService {
   @GET("users/{user}/repos")
@@ -513,6 +516,7 @@ public interface GitHubService {
 ```
 
 Na jego podstawie Retrofit może szybko wygenerować implementację klienta HTTP:
+
 ```java
 Retrofit retrofit = new Retrofit.Builder()
     .baseUrl("https://api.github.com/")
@@ -522,9 +526,25 @@ GitHubService service = retrofit.create(GitHubService.class);
 ```
 
 Teraz wystarczy tylko zawołać wygenerowaną metode i pronto!
+
 ```java
 Call<List<Repo>> repos = service.listRepos("octocat");
 ```
+
+
+### Picasso
+
+| *Strona*      | http://square.github.io/picasso/       |
+| *Cena*        | FREE                                   |
+| *Alternatywy* | Glide, Universal Image Loader |
+
+Picasso to biblioteka służąca do wyświetlania obrazków z internetu. Kropka. Posiada proste API i automatyzuje pobieranie plików graficznych, zmianę ich rozmiaru, wyświetlanie w ImageView, cache w pamięci ram i flash. Dzięki temu możemy skupić się na tym, co ma być wyświetlone, a nie jak.
+
+
+### Timber
+
+### Leak Canary
+
 
 {pagebreak}
 
@@ -535,16 +555,6 @@ Call<List<Repo>> repos = service.listRepos("octocat");
 | *Alternatywy* | Koin              |
 
 Dagger to implementacja wzorca Dependency Injection, czyli wstrzykiwania zależności. Celem tego podejścia jest minimalizacja ilości miejsc, w których tworzymy obiekty poprzez `new NazwaKlasy()` i stworzenie centralnego repozytorium obiektów, które możemy wstrzyknąć w dowolnym miejscu aplikacji. W przypadku Androida jest to szczególnie przydatne, ponieważ często potrzebujemy w różnych Activity albo Fragmentach dostępu do np. SharedPreferences. Polecam przeczytanie dokumentacji i rozpoczęcie od wstrzykiwania prostych obiektów np. swoich Managerów.
-
-{pagebreak}
-
-## Picasso
-
-| *Strona*      | http://square.github.io/picasso/       |
-| *Cena*        | FREE                                   |
-| *Alternatywy* | Glide, Universal Image Loader |
-
-Picasso to biblioteka służąca do wyświetlania obrazków z internetu. Kropka. Posiada proste API i automatyzuje pobieranie plików graficznych, zmianę ich rozmiaru, wyświetlanie w ImageView, cache w pamięci ram i flash. Dzięki temu możemy skupić się na tym, co ma być wyświetlone, a nie jak.
 
 {pagebreak}
 
@@ -568,6 +578,7 @@ RxJava nie jest biblioteką, którą mogę polecić początkującym programistom
 
 
 {pagebreak}
+
 
 # Kody źródłowe
 
@@ -611,6 +622,9 @@ Największy katalog bibliotek, narzędzi i przykładów na Androida. Z możliwo�
 
 Alternatywy: https://www.android-libs.com
 
+
+{pagebreak}
+
 ## Kanały YouTube
 Dla tych, którzy wolą oglądać wideo, zamiast czytać istnieje kilka kanałów, które warto dodać do swoich subskrybcji na YouTube, aby na bieżąco dostawać powiadomienia.
 
@@ -633,6 +647,9 @@ Drugi oficjalny kanał. Związany nie tylko z samym Androidem, ale także otacza
 https://www.youtube.com/channel/UCkQX1tChV7Z7l1LFF4L9j_g
 
 Świetne źródło doskonałych prezentacji z zakresu różnych zagadnień. Warto obejrzeć zwłaszcza serię Android Bootcamp. Jest już nieco czasowa, ale większość poruszonych tam tematów nadal jest aktualna i bardzo dobrze wytłumaczona.
+
+
+{pagebreak}
 
 ## Książki
 
