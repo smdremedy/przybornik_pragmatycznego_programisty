@@ -78,6 +78,7 @@ public final class Person {
 }
 
 ```
+{pagebreak}
 
 ## Android Studio
 
@@ -96,6 +97,8 @@ Na Google IO 2013 zostało ogłoszone przez Google jako nowe oficjalne środowis
 
 
 W celu maksymalizacji wydajności korzystania z AS, warto poświęcić trochę czasu i nauczyć się skrótów klawiszowych oraz poznać np. mechanizm szablonów generujący kod, który często się powtarza. Każda minuta poświęcona na naukę sztuczek w AS, to inwestycja w przyszłość. Istnieje wiele czynności, które da się przyśpieszyć np.: generowanie par getter/setter, refaktoryzacja kodu, czy chociażby obsługa systemów kontroli wersji z poziomu IDE.
+
+{pagebreak}
 
 ## Gradle (New Build System)
 
@@ -137,6 +140,8 @@ dependencies { //zależności, czyli zewnętrzne biblioteki
 }
 ~~~~~~~~
 
+{pagebreak}
+
 ## Git
 
 | *Strona*      | http://git-scm.com/    |
@@ -156,6 +161,8 @@ Idea pracy z Git opiera się na zapisywaniu kolejnych wersji interesujących nas
 Źródło: http://pl.wikibooks.org/wiki/Git/Podstawy](images/git_flow.png)
 
 Dużą wartością Git jest bardzo łatwy i lekki sposób pracy z gałęziami (branches), które pozwalają np. pisać nowe elementy aplikacji, jednocześnie mając dostęp do wersji stabilnej.
+
+{pagebreak}
 
 ## Jenkins CI
 
@@ -184,6 +191,8 @@ Przykładowy cykl, który może realizować Jenkins CI:
 
 ![Prognoza jest dobra - buildy się udały. Źródło: https://www.morlunk.com/jenkins/](images/jenkins_android.png)
 
+{pagebreak}
+
 ## Sketch
 
 | *Strona*      | https://www.sketch.com       |
@@ -201,6 +210,8 @@ Warto posiadać Sketch jeśli często otrzymujemy projekty graficzne wykonane w 
 
 Jest to produkt otwarty na rozwój, z dobrym community, co przekłada się na dużą ilość wtyczek, pozwalających m.in.: na szybki eksport grafik do różnych rozdzielczości. Widziałem nawet wersje, umożliwiające generowanie kodu layoutów prosto z projektu w Sketch.
 
+{pagebreak}
+
 ## InVision 
 
 | *Strona*      | https://www.invisionapp.com/ |
@@ -212,11 +223,8 @@ Ważnym elementem każdego projektu jest współpraca na linii programista-desig
 Takie podejście powodowało stratę czasu i niedokłaności w odwzorowaniu projektu wynikające np. z trudności zmierzenia odstępów pomiędzy elementami. Na szczęście pojawiła się cała gama rozwiązań, które ułatwiają tę współpracę. Ostatnio najczęściej korzystam z InVision. Jest to aplikacja webowa oraz zestaw pluginów do najpopularniejszych narzędzi graficznych.
 W pierwszym kroku designer eksportuje projekt do InVision korzystają z pluginu, a następnie programista może sprawdzać odstępy, kolory i fonty użyte w projekcie oraz samemu eksportować zasoby graficzne do formatów rastrowych lub wektorowych.
 
-## Stetho
+{pagebreak}
 
-| *Strona*      | http://www.getpostman.com/ |
-| *Cena*        | FREE                       |
-| *Alternatywy* | RESTClient dla Firefox     |
 
 
 ## Postman – Rest client
@@ -244,6 +252,8 @@ Narzędzie to warto wykorzystać, aby sprawdzić API zanim jeszcze zaczniemy imp
 
 ![Przykładowe zapytanie do API Tumblr w Postman.](images/postman-default-view.png)
 
+{pagebreak}
+
 ## DB Browser for SQLite (dawniej SQLite Browser)
 
 | *Strona*      | http://sqlitebrowser.org/           |
@@ -253,6 +263,8 @@ Narzędzie to warto wykorzystać, aby sprawdzić API zanim jeszcze zaczniemy imp
 Kolejne proste narzędzie, które pomoże zaoszczędzić godziny przy tworzeniu aplikacji mobilnych. DB Browser, jak sama nazwa wskazuje, służy do przeglądania zawartości bazy SQLite. Poza przeglądaniem daje także możliwości edycji oraz wykonywania zapytań SQL i podglądu wyników. Jest to doskonała alternatywa dla konsolowego klienta *sqlite3*, który jest dostarczany z SDK Androida. Jedyną wadą jest konieczność pobrania pliku z urządzenia do lokalnego systemu plików np. poleceniem `adb pull`. Gdy to już zrobimy mamy gotowy plik, na którym możemy wykonywać dowolne operacje. Jeśli dokonamy jakichkolwiek zmian, to ten zmieniony plik musimy ponownie umieścić na urządzeniu za pomocą polecenia: `adb push`.
 
 ![DB Browser pozwala m.in. podejrzeć strukturę bazy danych.](images/dbbrowser.png)
+
+{pagebreak}
 
 ## Burp Suite
 
@@ -269,6 +281,8 @@ Dodatkowo, polecam czasem przeanalizować co wysyłają na serwer inne aplikacje
 ![Dużą zaletą Charles jest prostota nawigacji pomiędzy zapytaniami. Źródło: http://www.charlesproxy.com/](images/charles_proxy.png)
 
 
+{pagebreak}
+
 ## Lottie
 | *Strona*      | https://airbnb.io/lottie/#/ |
 | *Cena*        | FREE                          |
@@ -280,7 +294,7 @@ Designer może projektować animacje korzystając z After Effects (de facto stan
 
 Programista dodaje do projektu bibliotekę Lottie, wrzuca plik json do zasobów i w kilku liniach kodu jest wstanie zaimplementować dokładnie taki efekt jaki wymyślił designer. Żyjemy w przyszłości! ;)
 
-
+{pagebreak}
 
 # Usługi i narzędzia Web
 
@@ -296,6 +310,8 @@ Jest to bardzo dobry sposób na dodanie do aplikacji efektu WOW, bez koniecznoś
 
 ![](images/shapeshifter.png)
 
+{pagebreak}
+
 ## Android Pixel Calculator
 
 | *Strona*      | http://angrytools.com/android/pixelcalc/ |
@@ -306,6 +322,8 @@ Wymiary obiektów na ekranie Androida można podawać w wielu jednostkach. Pixel
 
 ![W trybie prostym wystarczy podać wartość w jednej jednostce i gęstość, aby otrzymać pozostałe.](images/pixel_calculator.png)
 
+{pagebreak}
+
 ## Material Palette
 
 | *Strona*      | http://www.materialpalette.com/ |
@@ -315,6 +333,8 @@ Wymiary obiektów na ekranie Androida można podawać w wielu jednostkach. Pixel
 Szybki generator palety kolorów, do wykorzystania w aplikacjach zgodnych z Material Design.
 
 ![Wystarczy dwa kolory główne i paleta gotowa](images/material_palette.png)
+
+{pagebreak}
 
 ## Github
 
@@ -333,6 +353,8 @@ Ponadto serwis stał się swoistą siecią społecznościową dla programistów,
 Dlatego też polecam założenie konta na Github każdemu programiście i tworzenie własnych projektów publicznych lub też udział w istniejących już przedsięwzięciach, poprzez zgłaszanie poprawek w postaci tzw. Pull Request.
 
 ![Na Github można znaleźć kod wielu popularnych bibliotek OpenSource.](images/github.png)
+
+{pagebreak}
 
 ## Parse
 
@@ -363,6 +385,8 @@ TODO parse server screenshot
 
 ![Widok danych pozwala zarządzać bazą w prosty sposób.](images/parse.png)
 
+{pagebreak}
+
 ## Firebase Crashlytics
 
 | *Strona*      | https://firebase.google.com/docs/crashlytics/          |
@@ -378,6 +402,8 @@ W przypadku, gdy korzystaliśmy z mechanizmu obfuskacji w ProGuard, będziemy po
 
 ![Crashlytics wyświetla błędy w postaci czytelnej tablicy.](images/crashlytics.png)
 
+{pagebreak}
+
 ## StackOverflow
 
 | *Strona*      | https://crashlytics.com |
@@ -392,6 +418,8 @@ StackOverflow jest najczęściej na pierwszym miejscu jeśli zadasz w Google pyt
 StackOverflow to jednak dużo więcej niż zbiór pytań i odpowiedzi. To społeczność programistów, którzy chętnie dzielą się wiedzą. Wszystko wspomagane systemem punktowym, który pozwala wyróżnić się aktywnym użytkownikom. Dobra reputacja (punkty są nazywane właśnie reputacją) na StackOverflow, to obok konta Github, ważny element wyróżniający CV.
 
 ![Wśród 624 tysięcy pytań o Androida, może znajdziesz odpowiedź na swoje.](images/stackoverflow.png)
+
+{pagebreak}
 
 
 ## TestDroid
@@ -411,6 +439,8 @@ Dodatkową cechą wyróżniającą, jest możliwość użycia narzędzia Testdro
 
 ![Widok wyników testu na urządzeniu Acer Iconia Tab 8.](images/testdroid.png)
 
+{pagebreak}
+
 ## Proto.io
 
 | *Strona*      | https://www.fluidui.com/   |
@@ -429,6 +459,8 @@ Warto zacząć tworzenie prototypu już na etapie tworzenia lub czytania specyfi
 Proto.io jest przykładem rozwiązania, które pozwala zaprojektować ekrany, dodać proste akcje (np. przejścia pomiędzy ekranami po naciśnięciu przycisku) i zaprezentować wynik w przeglądarce na telefonie klienta. Wystarczy przesłać link do wygenerowanego prototypu, który potencjalny użytkownik, może sobie przetestować na urządzeniu.
 
 ![Proto.io pozwala testować prototypy bezpośrednio na urządzeniu.](images/protoio.png)
+
+{pagebreak}
 
 # Biblioteki
 Każdy programista dochodzi do takiego momentu, gdy stwierdza, że coraz więcej kodu, który pisze się powtarza. Dlatego właśnie tak ważne jest w projektach korzystanie z bibliotek, zwłaszcza z tych, które są sprawdzone i uznawane za standard. Dzięki temu, ktoś kto będzie przeglądał nasz projekt od razu będzie czuł się jak w domu.
@@ -459,7 +491,7 @@ Bardzo dobrze napisana biblioteka ORM (do mapowania obiektowo-relacyjnego), któ
 Implementacja wzorca Obserwatora, która doskonale pozwala łączyć powyższe elementy, dzięki czemu np. widok (DataBinding) może reagować na zmiany w bazie danych (Room) poprzez obiekt LiveData przechowywany w ViewModelu.
 Obiekty typu LiveData pozwalają na przekształcanie obiektów pomiędzy warstwami naszej aplikacji lub łączeniem kilku obiektów w jeden. 
 
-
+{pagebreak}
 
 ## Retrofit
 
@@ -494,7 +526,7 @@ Teraz wystarczy tylko zawołać wygenerowaną metode i pronto!
 Call<List<Repo>> repos = service.listRepos("octocat");
 ```
 
-
+{pagebreak}
 
 ## Dagger 2
 
@@ -504,6 +536,8 @@ Call<List<Repo>> repos = service.listRepos("octocat");
 
 Dagger to implementacja wzorca Dependency Injection, czyli wstrzykiwania zależności. Celem tego podejścia jest minimalizacja ilości miejsc, w których tworzymy obiekty poprzez `new NazwaKlasy()` i stworzenie centralnego repozytorium obiektów, które możemy wstrzyknąć w dowolnym miejscu aplikacji. W przypadku Androida jest to szczególnie przydatne, ponieważ często potrzebujemy w różnych Activity albo Fragmentach dostępu do np. SharedPreferences. Polecam przeczytanie dokumentacji i rozpoczęcie od wstrzykiwania prostych obiektów np. swoich Managerów.
 
+{pagebreak}
+
 ## Picasso
 
 | *Strona*      | http://square.github.io/picasso/       |
@@ -511,6 +545,8 @@ Dagger to implementacja wzorca Dependency Injection, czyli wstrzykiwania zależn
 | *Alternatywy* | Glide, Universal Image Loader |
 
 Picasso to biblioteka służąca do wyświetlania obrazków z internetu. Kropka. Posiada proste API i automatyzuje pobieranie plików graficznych, zmianę ich rozmiaru, wyświetlanie w ImageView, cache w pamięci ram i flash. Dzięki temu możemy skupić się na tym, co ma być wyświetlone, a nie jak.
+
+{pagebreak}
 
 ## RxJava
 
@@ -521,6 +557,17 @@ Picasso to biblioteka służąca do wyświetlania obrazków z internetu. Kropka.
 Biblioteka RxJava, pozwala wprowadzić do Javy nowy paradygmat - programowanie reaktywne (Reactive Programming). Jest to podejście upraszczające w znaczny sposób kod, którego zadaniem jest zarządzanie wieloma zadaniami asynchronicznymi, zwłaszcza takimi, które operują na danych. Dobrym przykładem jest fragment aplikacji wymagający np. jednoczesnego wywołania wielu zapytań HTTP i połączenia ich wyników. 
 
 RxJava nie jest biblioteką, którą mogę polecić początkującym programistom. Jeśli jednak Twoje aplikacje stają się coraz większe i rośnie liczba zdarzeń lub zapytań HTTP, które wysyłasz to polecam przestudiowanie dokumentacji https://github.com/ReactiveX/RxJava/wiki.
+
+{pagebreak}
+
+## Stetho
+
+| *Strona*      | http://www.getpostman.com/ |
+| *Cena*        | FREE                       |
+| *Alternatywy* | RESTClient dla Firefox     |
+
+
+{pagebreak}
 
 # Kody źródłowe
 
