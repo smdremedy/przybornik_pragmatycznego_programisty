@@ -1,7 +1,20 @@
 [//]: # (TODO)
 [//]: # (Dodac Firebase)
+[//]: # (Dodac vysor albo konkurencje)
+[//]: # (Dodac link do kursu kotlina na yt)
+[//]: # (Dodac Drozer?)
 [//]: # (Nowy obrazek AS)
 [//]: # (Lottie Screenshot)
+[//]: # (https://github.com/mockk/mockk)
+[//]: # (https://github.com/android/plaid)
+[//]: # (https://github.com/aritraroy/UltimateAndroidReference/blob/master/README.md)
+
+[//]: # (https://github.com/mortenjust/androidtool-mac
+https://devknox.io/)
+[//]: # (https://github.com/codepath/android_guides)
+[//]: # (https://guides.codepath.com/android/Sample-Android-Apps)
+[//]: # (Code like a pro: 31 tools for Android app developers)
+
 
 
 # Wstęp
@@ -280,7 +293,31 @@ Dodatkowo, polecam czasem przeanalizować co wysyłają na serwer inne aplikacje
 ![Dużą zaletą Charles jest prostota nawigacji pomiędzy zapytaniami. Źródło: http://www.charlesproxy.com/](images/charles_proxy.png)
 
 
+## JADX
+
+| *Strona*      | https://github.com/skylot/jadx |
+| *Cena*        | FREE                         |
+| *Alternatywy* | Dex2Jar |
+
+Dekompilator bajtkodu w formacie dex do Java. Pozwala zobaczyć zawartość wygenerowanego przez nas pliku APK i przeanalizować czy nie zostawiamy w kodzie zbyt dużo informacji, które ktoś może wykorzystać do niecnych celów.
+
+Podstawowe narzędzie do statycznej analizy w przypadku testów bezpiczeczeństwa oraz debugowania kwestii związanych np. z obfuskacją kodu przez ProGuard albo R8.
+
+![](images/jadx.png)
+
 {pagebreak}
+
+
+## Vysor
+
+| *Strona*      | https://www.vysor.io/ |
+| *Cena*        | FREE / Vysor Pro $2.50/mo, $10/yr, or $40/lifetime                          |
+| *Alternatywy* | Mobizen                    |
+
+
+Sposób na podejrzenie ekranu telefonu na ekranie komputera. Przydatne zwłaszcza gdy robimy demo dla klienta lub zespołu i potrzebujemy fizycznego urządzenia.
+
+Darmowa wersja wyświetla reklamy, więc przed demo dla klienta warto zainwestować w pełną wersję albo poszukać alternatyw.
 
 ## Lottie
 | *Strona*      | https://airbnb.io/lottie/#/ |
@@ -294,6 +331,15 @@ Designer może projektować animacje korzystając z After Effects (de facto stan
 Programista dodaje do projektu bibliotekę Lottie, wrzuca plik json do zasobów i w kilku liniach kodu jest wstanie zaimplementować dokładnie taki efekt jaki wymyślił designer. Żyjemy w przyszłości! ;)
 
 {pagebreak}
+
+
+## JsonToKotlinClass
+
+| *Strona*      | https://github.com/wuseal/JsonToKotlinClass |
+| *Cena*        | FREE                          |
+| *Alternatywy* | -                    |
+
+Świetny plugin do AS i InteliJ Idea, pozwalający przekształcić kod JSON na obiekty modelowe w Kotlinie. Koniec z pracochłonnym, ręcznym budowaniem modelu na podstawie dokumentacji. Wystarczy wynik zapytania np. z Postmana i w kilku kliknięciach otrzymasz gotową strukturę klas.
 
 # Usługi i narzędzia Web
 
@@ -401,6 +447,20 @@ W przypadku, gdy korzystaliśmy z mechanizmu obfuskacji w ProGuard, będziemy po
 ![Crashlytics wyświetla błędy w postaci czytelnej tablicy.](images/crashlytics.png)
 
 {pagebreak}
+
+## Apiary
+
+| *Strona*      | https://apiary.io |
+| *Cena*        | FREE                    |
+| *Alternatywy* | -                       |
+
+Większosć aplikacji mobilnych na pewnym etapie swojego rozwoju zaczyna korzystać z API (zwykle REST), które często powstaje równolegle z aplikacją. Apiary ma za zadanie ułatwić proces współpracy pomiędzy twórcami API, a twórcami aplikacji.
+
+Apiary stanowi interaktywnej dokumentacji API, która opisuje jakie endpointy są dostępne i jednocześnie pozwala wystawić tzw. mock czyli zaślepkę zwracającą wbite na sztywno dane.
+
+Dzięki temu programiści mobilni mogą zacząć tworzyć i testować aplikację zanim powstanie infrastuktura serwerowa. Oczywiście zakładając, że dokumentacja będzie zdodna z rzeczywistością. 
+
+
 
 ## StackOverflow
 
@@ -572,10 +632,30 @@ RxJava nie jest biblioteką, którą mogę polecić początkującym programistom
 
 ## Stetho
 
-| *Strona*      | http://www.getpostman.com/ |
+| *Strona*      | TODO |
 | *Cena*        | FREE                       |
-| *Alternatywy* | RESTClient dla Firefox     |
+| *Alternatywy* | -     |
 
+
+## BindingCollectionAdapter
+
+| *Strona*      | https://github.com/evant/binding-collection-adapter |
+| *Cena*        | FREE                       |
+| *Alternatywy* | -    |
+
+Prosta biblioteka, która sprawi, że zapomnisz jakim bólem było pisanie adapterów do ListView i RecyclerView. Doskonale uzupełnia Data Binding i pozwala na automatyzację łączenia elementów kolekcji w ViewModelu z layoutami, eliminując tym samym masę boilerplate code.
+
+Łatwo można dodać obsługę wielu typów elementów na liście albo np. dodać obsługę kliknięcia na elemencie.
+
+Przykładowe użycie w ViewModelu:
+```java
+public class ViewModel {
+  //place your models here
+  public final ObservableList<String> items = new ObservableArrayList<>();
+  //describe how they should bind to layouts
+  public final ItemBinding<String> itemBinding = ItemBinding.of(BR.item, R.layout.item);
+}
+```
 
 {pagebreak}
 
