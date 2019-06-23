@@ -120,7 +120,7 @@ W celu maksymalizacji wydajności korzystania z AS, warto poświęcić trochę c
 | *Cena*        | FREE                                                 |
 | *Alternatywy* | Maven, Buck                                           |
 
-{width=50%}
+{width:50%}
 ![](images/gradle_logo.png)
 
 Gradle został wybrany przez Google jako podstawa New Build System, który używany jest m.in. w Android Studio. Dzięki mechanizmowi zarządzania zależnościami wykorzystującymi istniejące repozytoria, używane dotychczas przez Maven, możliwe jest korzystanie z setek bibliotek. Wystarczy dodać do pliku build.gradle, po jednej linii tekstu, opisującej każdą z wymaganych zależności. Zastosowanie Gradle pozwoliło ujednolicić konfigurację projektu, dzięki czemu w chwili obecnej budowanie z linii poleceń oraz IDE wygląda tak samo i korzysta z tej samej konfiguracji.
@@ -128,7 +128,7 @@ Gradle został wybrany przez Google jako podstawa New Build System, który używ
 Warto poświęcić kilka godzin, aby poznać bardziej zaawansowane możliwości systemu np. Flavors (smaki projektu), możliwość pisania fragmentów skryptu w języku Groovy lub Kotlin czy choćby opcje dostępne w Android Plugin dla Gradle.
 
 {title="Prosty plik build.gradle dla aplikacji Android"}
-~~~~~~~~
+```groovy
 apply plugin: 'com.android.application'
 android {
     compileSdkVersion 21
@@ -152,7 +152,7 @@ dependencies { //zależności, czyli zewnętrzne biblioteki
     compile fileTree(dir: 'libs', include: ['*.jar'])
     compile 'com.android.support:appcompat-v7:21.0.3'
 }
-~~~~~~~~
+```
 
 {pagebreak}
 
@@ -162,7 +162,7 @@ dependencies { //zależności, czyli zewnętrzne biblioteki
 | *Cena*        | FREE                   |
 | *Alternatywy* | Mercurial, SVN, Baazar |
 
-{width=40%}
+{width:40%}
 ![](images/git_logo.png)
 
 Git to rozproszony system kontroli wersji, który powstał aby zarządzać kodem jądra systemu Linux. Jest podstawowym narzędziem, które każdy programista powinien sobie przyswoić, ponieważ pozwala współdzielić kod w zespole, podmieniać wersje, zapisuje również każda modyfikację pliku.
@@ -184,7 +184,7 @@ Dużą wartością Git jest bardzo łatwy i lekki sposób pracy z gałęziami (b
 | *Cena*        | FREE                        |
 | *Alternatywy* | Travis CI, Bamboo, TeamCity |
 
-{width=50%}
+{width:50%}
 ![](images/jenkins_logo.png)
 
 Continous Integration (CI), to technika, w której serwer co pewien czas pobiera kod źródłowy i sprawdza czy uda się go skompilować, uruchomić i przetestować. Dzięki temu już w kilka minut po umieszczeniu zmian w systemie kontroli wersji, możemy się dowiedzieć czy coś zepsuliśmy np. poprzez mail rozsyłany do osób zainteresowanych.
@@ -213,7 +213,7 @@ Przykładowy cykl, który może realizować Jenkins CI:
 | *Cena*        | $99/rok                                      |
 | *Alternatywy* | Figma, Photoshop CC |
 
-{width=30%}
+{width:30%}
 ![](images/sketch_logo.png)
 
 Sketch staje się w środowisku designerów następcą Photoshopa. Jego główne zalety to: dostosowanie do pracy z koncepcją ekranów, niska cena, prostota obsługi. Natomiast podstawowa wada, to konieczność korzystania z OS X.
@@ -247,7 +247,7 @@ W pierwszym kroku designer eksportuje projekt do InVision korzystają z pluginu,
 | *Cena*        | FREE                       |
 | *Alternatywy* | RESTClient dla Firefox     |
 
-{width=65%}
+{width:65%}
 ![](images/postman-logo.png)
 
 Bardzo przydatny narzędzie, pozwalające na testowanie API REST, bez konieczności pisania kodu. Przyjemy interfejs użytkownika pozwala na zarządzanie wieloma zapytaniami jednocześnie i testowanie API, z którym będzie się komunikowała nasza aplikacja.
@@ -395,7 +395,7 @@ Szybki generator palety kolorów, do wykorzystania w aplikacjach zgodnych z Mate
 | *Cena*        | FREE                   |
 | *Alternatywy* | Bitbucket, Gitlab         |
 
-{width=50%}
+{width:50%}
 ![](images/github_logo.png)
 
 
@@ -415,7 +415,7 @@ Dlatego też polecam założenie konta na Github każdemu programiście i tworz
 | *Cena*        | FREE do 30 req/s                                  |
 | *Alternatywy* | Firebase, Google AppEngine, Azure Mobile Services |
 
-{width=50%}
+{width:50%}
 ![](images/logo_parseserver.png)
 
 Parse było rozwiązaniem typu Mobile Backend as a Service, czyli część serwerowa dla naszej aplikacji, bez konieczności pisania kodu. Twórcy tej usługi postawili sobie za cel uproszczenie do maksimum czynności, które do tej pory trzeba było implementować w API.
@@ -464,7 +464,7 @@ Model biznesowy przypomina trochę dealera narkotyków: dla bardzo małych aplik
 | *Cena*        | FREE                               |
 | *Alternatywy* | Applause, Splunk MINT |
 
-{width=50%}
+{width:50%}
 ![](images/crashlytics_logo.png)
 
 Każda aplikacja umieszczona na sklepie wcześniej lub później będzie miała crashe. Nie da się tego uniknąć, bo nie da się też przetestować aplikacji na każdym z dziesiątek tysięcy urządzeń. Dlatego warto wyposażyć naszą aplikację w mechanizm automatycznego zgłaszania błędów, który w przypadku wystąpienia błędu wyśle krótką wiadomość na nasz serwer. Crashlytics sprawdza się w tej roli świetnie, a dodatkowo posiada piękny interfejs web, na którym można przeglądać informację o zaistniałych błędach łącznie z informacjami, na jakim modelu, wersji systemu i sprzęcie wystąpiły.
@@ -494,7 +494,7 @@ Dzięki temu programiści mobilni mogą zacząć tworzyć i testować aplikację
 | *Cena*        | FREE                    |
 | *Alternatywy* | -                       |
 
-{width=50%}
+{width:50%}
 ![](images/stackoverflow_logo.png)
 
 StackOverflow jest najczęściej na pierwszym miejscu jeśli zadasz w Google pytanie, o konkretny problem. Baza licząca ponad pół miliona pytań dotyczących samego Androida, pozwala często uniknąć godzin siedzenia w poszukiwaniu rozwiązania problemu. Warto jednak wiedzieć, dlaczego to co wklejamy działa, tak aby nie zostawić w swoim kodzie magicznej *czarnej skrzynki*, której każdy boi się dotknąć.
@@ -512,7 +512,7 @@ StackOverflow to jednak dużo więcej niż zbiór pytań i odpowiedzi. To społe
 | *Cena*        | FREE                  |
 | *Alternatywy* | Appthwack, Saucelabs  |
 
-{width=50%}
+{width:50%}
 ![](images/testdroid_logo.jpg)
 
 Testdroid jest jedną z wielu, bardzo podobnych usług do testowania aplikacji mobilnych. W odpowiedzi na zwiększającą się fragmentację urządzeń korzystających z systemu Android, pojawiły się problemy z przetestowaniem aplikacji na dużej liczbie różnych urządzeń. Pojawił się więc pomysł, aby stworzyć miejsca, gdzie można uzyskać dostęp do dużej liczby fizycznych urządzeń, w zamian za niewielką opłatę. 
@@ -531,7 +531,7 @@ Dodatkową cechą wyróżniającą, jest możliwość użycia narzędzia Testdro
 | *Cena*        | FREE                       |
 | *Alternatywy* | Proto.io, Balsamiq Mockups |
 
-{width=50%}
+{width:50%}
 ![](images/protoio_logo.png)
 
 Klikalne prototypy stanowią jedną z najlepszych form dokumentacji w komunikacji programista<->klient. Pozwalają przedstawić potrzebne ekrany, sposoby nawigacji pomiędzy nimi oraz przetestować aplikację na żywym organizmie, bez konieczności uruchamiania IDE. Bardzo często zmniejszają ryzyko niedomówień lub ujawniają braki w projekcie.
@@ -553,7 +553,7 @@ Każdy programista dochodzi do takiego momentu, gdy stwierdza, że coraz więcej
 | *Cena*        | FREE                                 |
 | *Alternatywy* | - |
 
-{width=50%}
+{width:50%}
 ![](images/jetpack-hero.png)
 
 
@@ -725,6 +725,7 @@ https://github.com/android/plaid
 
 {width: 50%, align: left}
 ![](images/plaid_1.png)
+
 {width: 50%, align: right}
 ![](images/plaid_2.png)
 
@@ -806,7 +807,7 @@ Nietypowa książka autorstwa Mark'a Murphy'ego. Dostępna jedynie w postaci 12-
 | *Twitter* | https://twitter.com/JakeWharton       |
 | *G+*      | https://plus.google.com/+JakeWharton/ |
 
-{width=10%, float=right}
+{width:10%, float=right}
 ![](images/jake_wharton.png)
 
 Człowiek instytucja. Twórca wielu z przytoczonych bibliotek. Autorytet w kwestii upraszczania kodu, korzystania z anotacji oraz SDK.
@@ -817,7 +818,7 @@ Człowiek instytucja. Twórca wielu z przytoczonych bibliotek. Autorytet w kwest
 | *Twitter* | https://twitter.com/romainguy       | 
 | *G+*      | https://plus.google.com/+RomainGuy/ |
 
-{width=10%, float=right}
+{width:10%, float=right}
 ![](images/romain_guy.jpg)
 
 Googler pracujący nad Androidem. Często prezentuje nowości związane z UI.
@@ -832,7 +833,7 @@ Googler pracujący nad Androidem. Często prezentuje nowości związane z UI.
 | *Twitter* | https://twitter.com/chrisbanes       |
 | *G+*      | https://plus.google.com/+ChrisBanes/ |
 
-{width=10%, float=right}
+{width:10%, float=right}
 ![](images/chris_banes.jpg)
 
 Googler odpowiedzialny za relacje z developerami. Twórca wielu elementów biblioteki zgodności m.in. AppCompat.
@@ -847,7 +848,7 @@ Często dzieli się na swoich profilach fragmentami kodów, realizujących konkr
 | *Twitter* | https://twitter.com/crafty            |
 | *G+*      | https://plus.google.com/+NickButcher/ |
 
-{width=10%, float=right}
+{width:10%, float=right}
 ![](images/nick_butcher.jpg)
 
 Googler odpowiedzialny za relacje na styku design/development. Umieszcza bardzo fajne prezentacje i przykłady. Dużo udziela się na kanale YouTube Android Developers.
@@ -859,7 +860,7 @@ Googler odpowiedzialny za relacje na styku design/development. Umieszcza bardzo 
 | *Twitter* | https://twitter.com/crafty            |
 | *GitHub*      | https://plus.google.com/+NickButcher/ |
 
-{width=10%, float=right}
+{width:10%, float=right}
 ![](images/wojtek.jpeg)
 
 TODO
@@ -870,7 +871,7 @@ TODO
 | *Twitter* | https://twitter.com/commonsguy  |
 | *G+*      | -                               |
 
-{width=10%, float=right}
+{width:10%, float=right}
 ![](images/mark_murphy.jpg)
 
 Twórca CommonsWare i autor ksiązki "The Busy Coder’s Guide to Android Development". Znajduje się w Top 10 najbardziej aktywnych osób na StackOverflow. Jeśli szukasz odpowiedzi na pytanie o Androida, duża szansa, że to on odpowie. Twórca dużej ilości bibliotek i częsty speaker na popularnych konferencjach mobilnych.
