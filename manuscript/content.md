@@ -2,7 +2,6 @@
 [//]: # (Lepszy subtytul)
 [//]: # (Dodac Drozer?)
 [//]: # (Screen invision i ikona)
-[//]: # (Screen burp i ikona)
 [//]: # (Nowy obrazek AS i ikona)
 [//]: # (Lottie Screenshot)
 [//]: # (Screenshot jsontokotlin)
@@ -102,12 +101,12 @@ Jeśli chcesz zacząć przygodę z Kotlinem, to sprawdź mój [darmowy mini-kurs
 | *Alternatywy* | IntelliJ IDEA (€207)            |
 
 {width:30%}
-![](images/android_studio_logo.png)
+![](images/as_logo.png)
 
 Android Studio (AS) powstało jako rozwinięcie wsparcia dla Androida, dostępnego w edytorze IntelliJ IDEA Community Edition. 
 Na Google IO 2013 zostało ogłoszone przez Google jako nowe oficjalne środowisko programistyczne (Integrated Development Environment, IDE) do tworzenia aplikacji na platformę Android. Dzięki połączeniu doskonałego IDE (latami dopracowywanego przez firmę JetBrains) z oficjalnym wsparciem zespołu Google, jest ono zdecydowanie lepsze od ADT (IDE opartego o Eclipse).
 
-![Android Studio w trybie edycji layoutów z podglądem.](images/android_studio.png)
+![Android Studio w trybie edycji layoutów z podglądem.](images/as.png)
 
 
 W celu maksymalizacji wydajności korzystania z AS, warto poświęcić trochę czasu i nauczyć się skrótów klawiszowych oraz poznać np. mechanizm szablonów generujący kod, który często się powtarza. Każda minuta poświęcona na naukę sztuczek w AS, to inwestycja w przyszłość. Istnieje wiele czynności, które da się przyśpieszyć np.: generowanie par getter/setter, refaktoryzacja kodu, czy chociażby obsługa systemów kontroli wersji z poziomu IDE.
@@ -728,10 +727,10 @@ Warto przejrzeć, choć z doświadczenia wiem, że kod nie jest idealny i trudny
 
 https://github.com/android/plaid
 
-{width: 50%, align: left}
+{width: 30%, align: left}
 ![](images/plaid_1.png)
 
-{width: 50%, align: right}
+{width: 30%, align: right}
 ![](images/plaid_3.png)
 
 Przeglądarka wiadomości ze stron Designer News, Dribbble i Product Hunt stworzona przez ludzi z zespołu Androida. Bardzo dobrze ilustruje sposób implementacji Material Design oraz architektury w oparciu o Architecture Components.
@@ -812,7 +811,7 @@ Nietypowa książka autorstwa Mark'a Murphy'ego. Dostępna jedynie w postaci 12-
 | *Twitter* | https://twitter.com/JakeWharton       |
 | *G+*      | https://plus.google.com/+JakeWharton/ |
 
-{width:10%, float=right}
+{width:10%, float: right}
 ![](images/jake_wharton.png)
 
 Człowiek instytucja. Twórca wielu z przytoczonych bibliotek. Autorytet w kwestii upraszczania kodu, korzystania z anotacji oraz SDK.
@@ -823,7 +822,7 @@ Człowiek instytucja. Twórca wielu z przytoczonych bibliotek. Autorytet w kwest
 | *Twitter* | https://twitter.com/romainguy       | 
 | *G+*      | https://plus.google.com/+RomainGuy/ |
 
-{width:10%, float=right}
+{width:10%, float: right}
 ![](images/romain_guy.jpg)
 
 Googler pracujący nad Androidem. Często prezentuje nowości związane z UI.
@@ -838,7 +837,7 @@ Googler pracujący nad Androidem. Często prezentuje nowości związane z UI.
 | *Twitter* | https://twitter.com/chrisbanes       |
 | *G+*      | https://plus.google.com/+ChrisBanes/ |
 
-{width:10%, float=right}
+{width:10%, float: right}
 ![](images/chris_banes.jpg)
 
 Googler odpowiedzialny za relacje z developerami. Twórca wielu elementów biblioteki zgodności m.in. AppCompat.
@@ -853,7 +852,7 @@ Często dzieli się na swoich profilach fragmentami kodów, realizujących konkr
 | *Twitter* | https://twitter.com/crafty            |
 | *G+*      | https://plus.google.com/+NickButcher/ |
 
-{width:10%, float=right}
+{width:10%, float: right}
 ![](images/nick_butcher.jpg)
 
 Googler odpowiedzialny za relacje na styku design/development. Umieszcza bardzo fajne prezentacje i przykłady. Dużo udziela się na kanale YouTube Android Developers.
@@ -865,7 +864,7 @@ Googler odpowiedzialny za relacje na styku design/development. Umieszcza bardzo 
 | *Twitter* | https://twitter.com/crafty            |
 | *GitHub*      | https://plus.google.com/+NickButcher/ |
 
-{width:10%, float=right}
+{width:10%, float: right}
 ![](images/wojtek.jpeg)
 
 TODO
@@ -876,7 +875,7 @@ TODO
 | *Twitter* | https://twitter.com/commonsguy  |
 | *G+*      | -                               |
 
-{width:10%, float=right}
+{width:10%, float: right}
 ![](images/mark_murphy.jpg)
 
 Twórca CommonsWare i autor ksiązki "The Busy Coder’s Guide to Android Development". Znajduje się w Top 10 najbardziej aktywnych osób na StackOverflow. Jeśli szukasz odpowiedzi na pytanie o Androida, duża szansa, że to on odpowie. Twórca dużej ilości bibliotek i częsty speaker na popularnych konferencjach mobilnych.
