@@ -1,12 +1,15 @@
+[//]: # (Lepszy tytul)
+[//]: # (Lepszy subtytul)
 [//]: # (Dodac Drozer?)
-[//]: # (Nowy obrazek AS)
+[//]: # (Screen invision i ikona)
+[//]: # (Screen burp i ikona)
+[//]: # (Nowy obrazek AS i ikona)
 [//]: # (Lottie Screenshot)
+[//]: # (Screenshot jsontokotlin)
 [//]: # (https://github.com/mockk/mockk)
-[//]: # ()
 [//]: # (https://github.com/aritraroy/UltimateAndroidReference/blob/master/README.md)
-
-[//]: # (https://github.com/mortenjust/androidtool-mac
-https://devknox.io/)
+[//]: # (https://github.com/mortenjust/androidtool-mac)
+[//]: # (https://devknox.io/)
 [//]: # (https://github.com/codepath/android_guides)
 [//]: # (https://guides.codepath.com/android/Sample-Android-Apps)
 [//]: # (Code like a pro: 31 tools for Android app developers)
@@ -98,7 +101,7 @@ Jeśli chcesz zacząć przygodę z Kotlinem, to sprawdź mój [darmowy mini-kurs
 | *Cena*        | FREE                                        |
 | *Alternatywy* | IntelliJ IDEA (€207)            |
 
-{width=30%}
+{width:30%}
 ![](images/android_studio_logo.png)
 
 Android Studio (AS) powstało jako rozwinięcie wsparcia dla Androida, dostępnego w edytorze IntelliJ IDEA Community Edition. 
@@ -292,6 +295,8 @@ Dodatkowo, polecam czasem przeanalizować co wysyłają na serwer inne aplikacje
 ![Dużą zaletą Charles jest prostota nawigacji pomiędzy zapytaniami. Źródło: http://www.charlesproxy.com/](images/charles_proxy.png)
 
 
+{pagebreak}
+
 ## JADX
 
 | *Strona*      | https://github.com/skylot/jadx |
@@ -310,7 +315,7 @@ Podstawowe narzędzie do statycznej analizy w przypadku testów bezpiczeczeństw
 ## Vysor
 
 | *Strona*      | https://www.vysor.io/ |
-| *Cena*        | FREE / Vysor Pro $2.50/mo, $10/yr, or $40/lifetime                          |
+| *Cena*        | FREE / Vysor Pro $2.50/mo, $10/yr, or $40/lifetime |
 | *Alternatywy* | Mobizen                    |
 
 
@@ -318,7 +323,11 @@ Sposób na podejrzenie ekranu telefonu na ekranie komputera. Przydatne zwłaszcz
 
 Darmowa wersja wyświetla reklamy, więc przed demo dla klienta warto zainwestować w pełną wersję albo poszukać alternatyw.
 
+
+{pagebreak}
+
 ## Lottie
+
 | *Strona*      | https://airbnb.io/lottie/#/ |
 | *Cena*        | FREE                          |
 | *Alternatywy* | -                    |
@@ -448,6 +457,7 @@ Firebase zaczynało jako alternatywa do Parse, mBaaS pozwalający na przechowywa
 Model biznesowy przypomina trochę dealera narkotyków: dla bardzo małych aplikacji aplikacja 
 
 
+
 ## Firebase Crashlytics
 
 | *Strona*      | https://firebase.google.com/docs/crashlytics/          |
@@ -460,8 +470,6 @@ Model biznesowy przypomina trochę dealera narkotyków: dla bardzo małych aplik
 Każda aplikacja umieszczona na sklepie wcześniej lub później będzie miała crashe. Nie da się tego uniknąć, bo nie da się też przetestować aplikacji na każdym z dziesiątek tysięcy urządzeń. Dlatego warto wyposażyć naszą aplikację w mechanizm automatycznego zgłaszania błędów, który w przypadku wystąpienia błędu wyśle krótką wiadomość na nasz serwer. Crashlytics sprawdza się w tej roli świetnie, a dodatkowo posiada piękny interfejs web, na którym można przeglądać informację o zaistniałych błędach łącznie z informacjami, na jakim modelu, wersji systemu i sprzęcie wystąpiły.
 
 W przypadku, gdy korzystaliśmy z mechanizmu obfuskacji w ProGuard, będziemy potrzebowali pliku z mapowaniem, ponieważ nazwy metod w których wystąpił błąd będą już zmienione.
-
-![Crashlytics wyświetla błędy w postaci czytelnej tablicy.](images/crashlytics.png)
 
 {pagebreak}
 
@@ -477,6 +485,7 @@ Apiary stanowi interaktywnej dokumentacji API, która opisuje jakie endpointy s�
 
 Dzięki temu programiści mobilni mogą zacząć tworzyć i testować aplikację zanim powstanie infrastuktura serwerowa. Oczywiście zakładając, że dokumentacja będzie zdodna z rzeczywistością. 
 
+{pagebreak}
 
 
 ## StackOverflow
@@ -524,8 +533,6 @@ Dodatkową cechą wyróżniającą, jest możliwość użycia narzędzia Testdro
 
 {width=50%}
 ![](images/protoio_logo.png)
-
-TODO przyciac
 
 Klikalne prototypy stanowią jedną z najlepszych form dokumentacji w komunikacji programista<->klient. Pozwalają przedstawić potrzebne ekrany, sposoby nawigacji pomiędzy nimi oraz przetestować aplikację na żywym organizmie, bez konieczności uruchamiania IDE. Bardzo często zmniejszają ryzyko niedomówień lub ujawniają braki w projekcie.
 
@@ -716,7 +723,10 @@ Warto przejrzeć, choć z doświadczenia wiem, że kod nie jest idealny i trudny
 
 https://github.com/android/plaid
 
-<img src="images/plaid_1.png" width="300"/> <img src="images/plaid_3.png" width="300"/> 
+{width: 50%, align: left}
+![](images/plaid_1.png)
+{width: 50%, align: right}
+![](images/plaid_2.png)
 
 Przeglądarka wiadomości ze stron Designer News, Dribbble i Product Hunt stworzona przez ludzi z zespołu Androida. Bardzo dobrze ilustruje sposób implementacji Material Design oraz architektury w oparciu o Architecture Components.
 
@@ -851,6 +861,8 @@ Googler odpowiedzialny za relacje na styku design/development. Umieszcza bardzo 
 
 {width=10%, float=right}
 ![](images/wojtek.jpeg)
+
+TODO
 
 ## Mark Murphy
 
