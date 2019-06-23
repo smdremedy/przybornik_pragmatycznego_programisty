@@ -1,12 +1,8 @@
-[//]: # (TODO)
-[//]: # (Dodac Firebase)
-[//]: # (Dodac vysor albo konkurencje)
-[//]: # (Dodac link do kursu kotlina na yt)
 [//]: # (Dodac Drozer?)
 [//]: # (Nowy obrazek AS)
 [//]: # (Lottie Screenshot)
 [//]: # (https://github.com/mockk/mockk)
-[//]: # (https://github.com/android/plaid)
+[//]: # ()
 [//]: # (https://github.com/aritraroy/UltimateAndroidReference/blob/master/README.md)
 
 [//]: # (https://github.com/mortenjust/androidtool-mac
@@ -89,7 +85,10 @@ public final class Person {
    }
 }
 
+
 ```
+
+Jeśli chcesz zacząć przygodę z Kotlinem, to sprawdź mój [darmowy mini-kurs Kotlina](https://szkoleniaandroid.pl/kurs-kotlina)
 
 {pagebreak}
 
@@ -431,6 +430,24 @@ Przykładowo: utworzenie backendu dla aplikacji typu Tinder nie wymaga od nas pi
 
 {pagebreak}
 
+## Firebase
+
+https://firebase.google.com/
+
+Firebase zaczynało jako alternatywa do Parse, mBaaS pozwalający na przechowywanie danych z możliwością odświeżania aplikacji w czasie rzeczywistym t.j. po każdej modyfikacji danych na serwerze. Google kupując Firebase przekształcił je w kombajn dostarczający wszystko co może przydać się twórcą aplikacji mobilnych. Obecnie Firebase zawiera m.in.:
+
+* bazę danych (odpowiednik Parse),  
+* bazę danych pracującą w trybie Real Time,
+* obsługę autentykacji użytkowników (logowanie, rejestracja itp.),
+* miejsce na plików użytkowników,
+* możliwość pisania logiki w JS,
+* zbieranie informacji o błędach w aplikacji (patrz Crashlytics),
+* obsługę wysyłania wiadomości Push do użytkowników,
+* i masę innych.
+
+Model biznesowy przypomina trochę dealera narkotyków: dla bardzo małych aplikacji aplikacja 
+
+
 ## Firebase Crashlytics
 
 | *Strona*      | https://firebase.google.com/docs/crashlytics/          |
@@ -632,9 +649,32 @@ RxJava nie jest biblioteką, którą mogę polecić początkującym programistom
 
 ## Stetho
 
-| *Strona*      | TODO |
+| *Strona*      | https://facebook.github.io/stetho/ |
 | *Cena*        | FREE                       |
 | *Alternatywy* | -     |
+
+Stetho to biblioteka, która pozwala debugować aplikację z użyciem Chrome Developer Tools. Pozwala, w czasie rzeczywistym, podglądać hierarchię widoków, zawartość bazy danych i SharedPreferences, a nawet monitorować zapytania HTTP.
+
+Integracja jest bardzo łatwa i sprowadza się do dodania zależności w Gradle oraz zainicjalizowania biblioteki przy starcie aplikacji.
+
+```java
+public class MyApplication extends Application {
+  public void onCreate() {
+    super.onCreate();
+    Stetho.initializeWithDefaults(this);
+  }
+}
+```
+
+Opcjonalnie można dodać jeszcze interceptor do OkHttp, aby móc podsłuchiwać ruch HTTP.
+
+```java
+new OkHttpClient.Builder()
+    .addNetworkInterceptor(new StethoInterceptor())
+    .build();
+```
+
+![](images/inspector-sqlite.png)
 
 
 ## BindingCollectionAdapter
@@ -648,6 +688,7 @@ Prosta biblioteka, która sprawi, że zapomnisz jakim bólem było pisanie adapt
 Łatwo można dodać obsługę wielu typów elementów na liście albo np. dodać obsługę kliknięcia na elemencie.
 
 Przykładowe użycie w ViewModelu:
+
 ```java
 public class ViewModel {
   //place your models here
@@ -663,12 +704,21 @@ public class ViewModel {
 # Kody źródłowe
 
 ## Google IO App
+
 https://github.com/google/iosched
 
 Każdego roku Google IO jest najważniejszą konferencją, na której ekipa z Mountain View prezentuje nowości w SDK Androida. Niedługo po tym wydarzeniu udostępniany jest kod źródłowy oficjalnej aplikacji, powstałej na to wydarzenie, która jednocześnie prezentuje jak najwięcej z nowości w SDK.
 
 Warto przejrzeć, choć z doświadczenia wiem, że kod nie jest idealny i trudny w czytaniu, ale zdecydowanie prezentuje dużo nowości.
 
+
+## Plaid 
+
+https://github.com/android/plaid
+
+<img src="images/plaid_1.png" width="300"/> <img src="images/plaid_3.png" width="300"/> 
+
+Przeglądarka wiadomości ze stron Designer News, Dribbble i Product Hunt stworzona przez ludzi z zespołu Androida. Bardzo dobrze ilustruje sposób implementacji Material Design oraz architektury w oparciu o Architecture Components.
 
 # Źródła wiedzy
 
@@ -681,7 +731,7 @@ Znane źródło bardzo dopracowanych tutoriali opisujących popularne zagadnieni
 
 
 ### SzkoleniaAndroid.pl - Blog
-https://SzkoleniaAndroid.pl
+https://SzkoleniaAndroid.pl/blog/
 
 Blog, który tworzę w wolnym czasie pomiędzy projektami i szkoleniami. Staram się przekazywać spostrzeżenia dotyczące tworzenia aplikacji, zwłaszcza od strony warsztatu programisty.
 
@@ -792,6 +842,16 @@ Często dzieli się na swoich profilach fragmentami kodów, realizujących konkr
 
 Googler odpowiedzialny za relacje na styku design/development. Umieszcza bardzo fajne prezentacje i przykłady. Dużo udziela się na kanale YouTube Android Developers.
 
+
+## Wojtek Kaliciński
+
+| *Strona*  | https://medium.com/@wkalicinski     |
+| *Twitter* | https://twitter.com/crafty            |
+| *GitHub*      | https://plus.google.com/+NickButcher/ |
+
+{width=10%, float=right}
+![](images/wojtek.jpeg)
+
 ## Mark Murphy
 
 | *Strona*  | https://commonsware.com/mmurphy |
@@ -805,11 +865,11 @@ Twórca CommonsWare i autor ksiązki "The Busy Coder’s Guide to Android Develo
 
 # Reklama :)
 
-## Zasubskrybuj SzkoleniaAndroid na YouTube
+## Zasubskrybuj kanał Szkolenia Android na YouTube
 https://www.youtube.com/channel/UCQUuM6One5W6odx8dDJ8Vsw?sub_confirmation=1
 
 ## Śledź Sylwester Madej na Twitter
 https://twitter.com/smdremedy
 
 ## A przede wszystkim czytaj bloga
-https://SzkoleniaAndroid.pl
+https://SzkoleniaAndroid.pl/blog/
