@@ -286,13 +286,18 @@ Kolejne proste narzędzie, które pomoże zaoszczędzić godziny przy tworzeniu 
 | *Cena*        | FREE                         |
 | *Alternatywy* | CharlesProxy, Fiddler, Mitmproxy |
 
+{width:20%}
+![](images/burp_logo.png)
+
+
 BurpSuite pozwala na debugowanie komunikacji HTTP pomiędzy aplikacją mobilną, a serwerem. Do działania wykorzystuje mechanizm proxy, czyli urządzenia, przez które przechodzi cały ruch sieciowy. Wystarczy wystartować program i ustawić na urządzeniu nasz komputer, jako serwer proxy, aby móc podejrzeć każdy bajt informacji przesyłany po HTTP, nawet w przypadku szyfrowania SSL.
 
 Właśnie wsparcie dla SSL oraz prostota obsługi sprawiają, że narzędzie to może oszczędzić godziny. Często korzystam też z narzędzia interceptor, które niczym w debugerze, pozwala przerwać request w trakcie i np. zmodyfikować odpowiedź z serwera, jeśli chcę przetestować inny przypadek.
 
 Dodatkowo, polecam czasem przeanalizować co wysyłają na serwer inne aplikacje lub np. usługi Google.
 
-![Dużą zaletą Charles jest prostota nawigacji pomiędzy zapytaniami. Źródło: http://www.charlesproxy.com/](images/charles_proxy.png)
+
+![](images/burp_suite.png)
 
 
 {pagebreak}
@@ -727,7 +732,7 @@ https://github.com/android/plaid
 ![](images/plaid_1.png)
 
 {width: 50%, align: right}
-![](images/plaid_2.png)
+![](images/plaid_3.png)
 
 Przeglądarka wiadomości ze stron Designer News, Dribbble i Product Hunt stworzona przez ludzi z zespołu Androida. Bardzo dobrze ilustruje sposób implementacji Material Design oraz architektury w oparciu o Architecture Components.
 
