@@ -1,8 +1,6 @@
 [//]: # (Lepszy tytul)
 [//]: # (Lepszy subtytul)
-[//]: # (Dodac Drozer?)
 [//]: # (Screen invision i ikona)
-[//]: # (Nowy obrazek AS i ikona)
 [//]: # (Lottie Screenshot)
 [//]: # (Screenshot jsontokotlin)
 [//]: # (https://github.com/mockk/mockk)
@@ -101,12 +99,12 @@ Jeśli chcesz zacząć przygodę z Kotlinem, to sprawdź mój [darmowy mini-kurs
 | *Alternatywy* | IntelliJ IDEA (€207)            |
 
 {width:30%}
-![](images/as_logo.png)
+![](resources/images/as_logo.png)
 
 Android Studio (AS) powstało jako rozwinięcie wsparcia dla Androida, dostępnego w edytorze IntelliJ IDEA Community Edition. 
 Na Google IO 2013 zostało ogłoszone przez Google jako nowe oficjalne środowisko programistyczne (Integrated Development Environment, IDE) do tworzenia aplikacji na platformę Android. Dzięki połączeniu doskonałego IDE (latami dopracowywanego przez firmę JetBrains) z oficjalnym wsparciem zespołu Google, jest ono zdecydowanie lepsze od ADT (IDE opartego o Eclipse).
 
-![Android Studio w trybie edycji layoutów z podglądem.](images/as.png)
+![Android Studio w trybie edycji layoutów z podglądem.](resources/images/as.png)
 
 
 W celu maksymalizacji wydajności korzystania z AS, warto poświęcić trochę czasu i nauczyć się skrótów klawiszowych oraz poznać np. mechanizm szablonów generujący kod, który często się powtarza. Każda minuta poświęcona na naukę sztuczek w AS, to inwestycja w przyszłość. Istnieje wiele czynności, które da się przyśpieszyć np.: generowanie par getter/setter, refaktoryzacja kodu, czy chociażby obsługa systemów kontroli wersji z poziomu IDE.
@@ -200,7 +198,7 @@ Przykładowy cykl, który może realizować Jenkins CI:
 
 4. Uruchomienie testów z wykorzystaniem np. Calabash lub Espresso.
 
-5. Po udanym zbudowaniu i przetestowaniu, wysłanie do kanału Alpha w Google Play lub na jakąś usługę do dystrybucji paczek np. Crashlytics.
+5. Po udanym zbudowaniu i przetestowaniu, wysłanie do kanału Alpha w Google Play lub na jakąś usługę do dystrybucji paczek np. Crashlytics Beta.
 
 ![Prognoza jest dobra - buildy się udały. Źródło: https://www.morlunk.com/jenkins/](images/jenkins_android.png)
 
@@ -285,7 +283,7 @@ Kolejne proste narzędzie, które pomoże zaoszczędzić godziny przy tworzeniu 
 | *Cena*        | FREE                         |
 | *Alternatywy* | CharlesProxy, Fiddler, Mitmproxy |
 
-{width:20%}
+{width:30%}
 ![](images/burp_logo.png)
 
 
@@ -332,9 +330,9 @@ Darmowa wersja wyświetla reklamy, więc przed demo dla klienta warto zainwestow
 
 ## Lottie
 
-| *Strona*      | https://airbnb.io/lottie/#/ |
-| *Cena*        | FREE                          |
-| *Alternatywy* | -                    |
+| *Strona*      | https://airbnb.io/lottie/ |
+| *Cena*        | FREE                      |
+| *Alternatywy* | -                         |
 
 Biblioteka na Androida (i inne platformy) oraz plugin do After Effects. Pozwala na wyświetlanie w aplikacji bardzo efektownych wizualnie animacji, szczególnie przydatny przy tworzeniu splash screen, ekranów logowania i aplikacji lifestylowych, które muszą ładnie wyglądać.
 
@@ -351,7 +349,15 @@ Programista dodaje do projektu bibliotekę Lottie, wrzuca plik json do zasobów 
 | *Cena*        | FREE                          |
 | *Alternatywy* | -                    |
 
+
+{width:30%}
+![](resources/images/json_logo.png)
+
+
 Świetny plugin do AS i InteliJ Idea, pozwalający przekształcić kod JSON na obiekty modelowe w Kotlinie. Koniec z pracochłonnym, ręcznym budowaniem modelu na podstawie dokumentacji. Wystarczy wynik zapytania np. z Postmana i w kilku kliknięciach otrzymasz gotową strukturę klas.
+
+![](resources/images/json_to_kotlin.png)
+
 
 # Usługi i narzędzia Web
 
@@ -848,24 +854,28 @@ Często dzieli się na swoich profilach fragmentami kodów, realizujących konkr
 
 ## Nick Butcher
 
+{width:10%, float: right}
+![](images/nick_butcher.jpg)
+
+
 | *Strona*  | http://www.curious-creature.com/      |
 | *Twitter* | https://twitter.com/crafty            |
 | *G+*      | https://plus.google.com/+NickButcher/ |
 
-{width:10%, float: right}
-![](images/nick_butcher.jpg)
 
 Googler odpowiedzialny za relacje na styku design/development. Umieszcza bardzo fajne prezentacje i przykłady. Dużo udziela się na kanale YouTube Android Developers.
 
 
 ## Wojtek Kaliciński
 
+{width:10%, float: left}
+![](images/wojtek.jpeg)
+
+
 | *Strona*  | https://medium.com/@wkalicinski     |
 | *Twitter* | https://twitter.com/crafty            |
 | *GitHub*      | https://plus.google.com/+NickButcher/ |
 
-{width:10%, float: right}
-![](images/wojtek.jpeg)
 
 TODO
 
@@ -883,6 +893,7 @@ Twórca CommonsWare i autor ksiązki "The Busy Coder’s Guide to Android Develo
 # Reklama :)
 
 ## Zasubskrybuj kanał Szkolenia Android na YouTube
+https://SzkoleniaAndroid.pl/youtube
 https://www.youtube.com/channel/UCQUuM6One5W6odx8dDJ8Vsw?sub_confirmation=1
 
 ## Śledź Sylwester Madej na Twitter
