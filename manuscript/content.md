@@ -15,6 +15,16 @@ Zacznę od crème de la crème spośród narzędzi do tworzenia aplikacji mobiln
 
 ## Kotlin
 
+{height:10%}
+![](resources/images/kotlin.png)
+
+
+| *Strona*      | https://kotlinlang.org/ |
+| *Cena*        | FREE                                        |
+| *Alternatywy* | Java            |
+
+
+
 Zapomnij o Javie. Obecnie w świecie Androida liczy się tylko jeden język. Kotlin powstał jako wewnętrzny projekt twórców Android Studio, firmy JetBrains. Jednak łatwość integracji z AS i współpracy z Javą w projektach Androidowych spowodował, że coraz większa część programistów Androida postanowiła przenieść swoje projekty do Kotlina. 
 Google zauważył ten trend i na Google I/O w 2017 ogłosił oficjalne wsparcie dla Kotlina, a w 2019 ogłosił Kotlina jako podstawowy język dla tej platformy.
 
@@ -80,30 +90,35 @@ Jeśli chcesz zacząć przygodę z Kotlinem, to sprawdź mój [darmowy mini-kurs
 
 ## Android Studio
 
+{height:10%}
+![](resources/images/as_logo.png)
+
+
 | *Strona*      | https://developer.android.com/studio |
 | *Cena*        | FREE                                        |
 | *Alternatywy* | IntelliJ IDEA (€207)            |
 
-{height:10%}
-![](resources/images/as_logo.png)
 
 Android Studio (AS) powstało jako rozwinięcie wsparcia dla Androida, dostępnego w edytorze IntelliJ IDEA Community Edition. 
 Na Google IO 2013 zostało ogłoszone przez Google jako nowe oficjalne środowisko programistyczne (Integrated Development Environment, IDE) do tworzenia aplikacji na platformę Android. Dzięki połączeniu doskonałego IDE (latami dopracowywanego przez firmę JetBrains) z oficjalnym wsparciem zespołu Google, jest ono zdecydowanie lepsze od ADT (IDE opartego o Eclipse).
 
 W celu maksymalizacji wydajności korzystania z AS, warto poświęcić trochę czasu i nauczyć się skrótów klawiszowych oraz poznać np. mechanizm szablonów generujący kod, który często się powtarza. Każda minuta poświęcona na naukę sztuczek w AS, to inwestycja w przyszłość. Istnieje wiele czynności, które da się przyśpieszyć np.: generowanie par getter/setter, refaktoryzacja kodu, czy chociażby obsługa systemów kontroli wersji z poziomu IDE.
 
+{height:30%}
 ![Android Studio w trybie edycji layoutów z podglądem.](resources/images/as.png)
 
 {pagebreak}
 
 ## Gradle (New Build System)
 
+{height:10%}
+![](images/gradle_logo.png)
+
+
 | *Strona*      | http://tools.android.com/tech-docs/new-build-system/ |
 | *Cena*        | FREE                                                 |
 | *Alternatywy* | Maven, Buck                                           |
 
-{height:10%}
-![](images/gradle_logo.png)
 
 Gradle został wybrany przez Google jako podstawa New Build System, który używany jest m.in. w Android Studio. Dzięki mechanizmowi zarządzania zależnościami wykorzystującymi istniejące repozytoria, używane dotychczas przez Maven, możliwe jest korzystanie z setek bibliotek. Wystarczy dodać do pliku build.gradle, po jednej linii tekstu, opisującej każdą z wymaganych zależności. Zastosowanie Gradle pozwoliło ujednolicić konfigurację projektu, dzięki czemu w chwili obecnej budowanie z linii poleceń oraz IDE wygląda tak samo i korzysta z tej samej konfiguracji.
 
@@ -501,7 +516,7 @@ Dzięki temu programiści mobilni mogą zacząć tworzyć i testować aplikację
 | *Cena*        | FREE                    |
 | *Alternatywy* | -                       |
 
-{width:50%}
+{height:10%}
 ![](images/stackoverflow_logo.png)
 
 StackOverflow jest najczęściej na pierwszym miejscu jeśli zadasz w Google pytanie, o konkretny problem. Baza licząca ponad pół miliona pytań dotyczących samego Androida, pozwala często uniknąć godzin siedzenia w poszukiwaniu rozwiązania problemu. Warto jednak wiedzieć, dlaczego to co wklejamy działa, tak aby nie zostawić w swoim kodzie magicznej *czarnej skrzynki*, której każdy boi się dotknąć.
@@ -519,7 +534,7 @@ StackOverflow to jednak dużo więcej niż zbiór pytań i odpowiedzi. To społe
 | *Cena*        | FREE                  |
 | *Alternatywy* | Appthwack, Saucelabs  |
 
-{width:50%}
+{height:10%}
 ![](images/testdroid_logo.jpg)
 
 Testdroid jest jedną z wielu, bardzo podobnych usług do testowania aplikacji mobilnych. W odpowiedzi na zwiększającą się fragmentację urządzeń korzystających z systemu Android, pojawiły się problemy z przetestowaniem aplikacji na dużej liczbie różnych urządzeń. Pojawił się więc pomysł, aby stworzyć miejsca, gdzie można uzyskać dostęp do dużej liczby fizycznych urządzeń, w zamian za niewielką opłatę. 
@@ -538,7 +553,7 @@ Dodatkową cechą wyróżniającą, jest możliwość użycia narzędzia Testdro
 | *Cena*        | FREE                       |
 | *Alternatywy* | Proto.io, Balsamiq Mockups |
 
-{width:50%}
+{height:10%}
 ![](images/protoio_logo.png)
 
 Klikalne prototypy stanowią jedną z najlepszych form dokumentacji w komunikacji programista<->klient. Pozwalają przedstawić potrzebne ekrany, sposoby nawigacji pomiędzy nimi oraz przetestować aplikację na żywym organizmie, bez konieczności uruchamiania IDE. Bardzo często zmniejszają ryzyko niedomówień lub ujawniają braki w projekcie.
@@ -730,11 +745,8 @@ Warto przejrzeć, choć z doświadczenia wiem, że kod nie jest idealny i trudny
 
 https://github.com/android/plaid
 
-{width: 30%, align: left}
+{height: 30%}
 ![](images/plaid_1.png)
-
-{width: 30%, align: right}
-![](images/plaid_3.png)
 
 Przeglądarka wiadomości ze stron Designer News, Dribbble i Product Hunt stworzona przez ludzi z zespołu Androida. Bardzo dobrze ilustruje sposób implementacji Material Design oraz architektury w oparciu o Architecture Components.
 
