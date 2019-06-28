@@ -1,14 +1,3 @@
-[//]: # (Lepszy tytul)
-[//]: # (Lepszy subtytul)
-[//]: # (https://github.com/mockk/mockk)
-[//]: # (https://github.com/aritraroy/UltimateAndroidReference/blob/master/README.md)
-[//]: # (https://github.com/mortenjust/androidtool-mac)
-[//]: # (https://devknox.io/)
-[//]: # (https://github.com/codepath/android_guides)
-[//]: # (https://guides.codepath.com/android/Sample-Android-Apps)
-[//]: # (Code like a pro: 31 tools for Android app developers)
-
-
 
 # Wstęp
 Celem niniejszego ebooka jest przedstawienie zestawu narzędzi i zasobów, których używanie wpływa na jakość i wydajność pracy programisty. Każde z nich przetestowałem na własnej skórze, podczas tworzenia wielu aplikacji. Wybór ten potwierdziło wielu programistów, z którymi rozmawiałem na imprezach branżowych, takich jak Mobile Warsaw, Droidcon czy Mobilization.
@@ -95,16 +84,15 @@ Jeśli chcesz zacząć przygodę z Kotlinem, to sprawdź mój [darmowy mini-kurs
 | *Cena*        | FREE                                        |
 | *Alternatywy* | IntelliJ IDEA (€207)            |
 
-{width:30%}
+{height:10%}
 ![](resources/images/as_logo.png)
 
 Android Studio (AS) powstało jako rozwinięcie wsparcia dla Androida, dostępnego w edytorze IntelliJ IDEA Community Edition. 
 Na Google IO 2013 zostało ogłoszone przez Google jako nowe oficjalne środowisko programistyczne (Integrated Development Environment, IDE) do tworzenia aplikacji na platformę Android. Dzięki połączeniu doskonałego IDE (latami dopracowywanego przez firmę JetBrains) z oficjalnym wsparciem zespołu Google, jest ono zdecydowanie lepsze od ADT (IDE opartego o Eclipse).
 
-![Android Studio w trybie edycji layoutów z podglądem.](resources/images/as.png)
-
-
 W celu maksymalizacji wydajności korzystania z AS, warto poświęcić trochę czasu i nauczyć się skrótów klawiszowych oraz poznać np. mechanizm szablonów generujący kod, który często się powtarza. Każda minuta poświęcona na naukę sztuczek w AS, to inwestycja w przyszłość. Istnieje wiele czynności, które da się przyśpieszyć np.: generowanie par getter/setter, refaktoryzacja kodu, czy chociażby obsługa systemów kontroli wersji z poziomu IDE.
+
+![Android Studio w trybie edycji layoutów z podglądem.](resources/images/as.png)
 
 {pagebreak}
 
@@ -114,7 +102,7 @@ W celu maksymalizacji wydajności korzystania z AS, warto poświęcić trochę c
 | *Cena*        | FREE                                                 |
 | *Alternatywy* | Maven, Buck                                           |
 
-{width:50%}
+{height:10%}
 ![](images/gradle_logo.png)
 
 Gradle został wybrany przez Google jako podstawa New Build System, który używany jest m.in. w Android Studio. Dzięki mechanizmowi zarządzania zależnościami wykorzystującymi istniejące repozytoria, używane dotychczas przez Maven, możliwe jest korzystanie z setek bibliotek. Wystarczy dodać do pliku build.gradle, po jednej linii tekstu, opisującej każdą z wymaganych zależności. Zastosowanie Gradle pozwoliło ujednolicić konfigurację projektu, dzięki czemu w chwili obecnej budowanie z linii poleceń oraz IDE wygląda tak samo i korzysta z tej samej konfiguracji.
@@ -165,8 +153,7 @@ Git w chwili obecnej jest de facto standardem w projektach informatycznych i ka�
 
 Idea pracy z Git opiera się na zapisywaniu kolejnych wersji interesujących nas plików, w lokalnym repozytorium, które znajduje się w katalogu projektu. Dzięki temu możemy śledzić zmiany bez połączenia z siecią i synchronizować się z innymi członkami zespołu, tylko kiedy tego potrzebujemy.
 
-![Przenoszenie zmian pomiędzy lokalizacjami lokalnymi i zdalnymi.  
-Źródło: http://pl.wikibooks.org/wiki/Git/Podstawy](images/git_flow.png)
+![Przenoszenie zmian pomiędzy lokalizacjami lokalnymi i zdalnymi. Źródło: http://pl.wikibooks.org/wiki/Git/Podstawy](resources/images/git_flow.png)
 
 Dużą wartością Git jest bardzo łatwy i lekki sposób pracy z gałęziami (branches), które pozwalają np. pisać nowe elementy aplikacji, jednocześnie mając dostęp do wersji stabilnej.
 
@@ -207,7 +194,7 @@ Przykładowy cykl, który może realizować Jenkins CI:
 | *Cena*        | $99/rok                                      |
 | *Alternatywy* | Figma, Photoshop CC |
 
-{width:30%}
+{height:10%}
 ![](images/sketch_logo.png)
 
 Sketch staje się w środowisku designerów następcą Photoshopa. Jego główne zalety to: dostosowanie do pracy z koncepcją ekranów, niska cena, prostota obsługi. Natomiast podstawowa wada, to konieczność korzystania z OS X.
@@ -226,7 +213,7 @@ Jest to produkt otwarty na rozwój, z dobrym community, co przekłada się na du
 | *Cena*        | FREE (1 projekt)                      |
 | *Alternatywy* | Zeplin, Avocode              |
 
-{width:30%}
+{height:10%}
 ![](resources/images/invision_logo.jpg)
 
 
@@ -235,6 +222,7 @@ Ważnym elementem każdego projektu jest współpraca na linii programista-desig
 Takie podejście powodowało stratę czasu i niedokłaności w odwzorowaniu projektu wynikające np. z trudności zmierzenia odstępów pomiędzy elementami. Na szczęście pojawiła się cała gama rozwiązań, które ułatwiają tę współpracę. Ostatnio najczęściej korzystam z InVision. Jest to aplikacja webowa oraz zestaw pluginów do najpopularniejszych narzędzi graficznych.
 W pierwszym kroku designer eksportuje projekt do InVision korzystają z pluginu, a następnie programista może sprawdzać odstępy, kolory i fonty użyte w projekcie oraz samemu eksportować zasoby graficzne do formatów rastrowych lub wektorowych.
 
+{width:80%}
 ![DB Browser pozwala m.in. podejrzeć strukturę bazy danych.](resources/images/invision_inspect.png)
 
 {pagebreak}
@@ -247,8 +235,8 @@ W pierwszym kroku designer eksportuje projekt do InVision korzystają z pluginu,
 | *Cena*        | FREE                       |
 | *Alternatywy* | RESTClient dla Firefox     |
 
-{width:65%}
-![](images/postman-logo.png)
+{height:10%}
+![](resources/images/postman_logo_only.png)
 
 Bardzo przydatny narzędzie, pozwalające na testowanie API REST, bez konieczności pisania kodu. Przyjemy interfejs użytkownika pozwala na zarządzanie wieloma zapytaniami jednocześnie i testowanie API, z którym będzie się komunikowała nasza aplikacja.
 
@@ -264,7 +252,7 @@ Do głównych zalet Postman'a należy zaliczyć:
 
 Narzędzie to warto wykorzystać, aby sprawdzić API zanim jeszcze zaczniemy implementować dane zapytanie po stronie aplikacji. Ponadto jest to idealne rozwiązanie dla programistów tworzących API, którzy chcą przetestować jak będzie się ono zachowywało dla prawdziwych danych.
 
-![Przykładowe zapytanie do API Tumblr w Postman.](images/postman-default-view.png)
+![Przykładowe zapytanie do API w Postman.](images/postman-default-view.png)
 
 {pagebreak}
 
@@ -297,7 +285,7 @@ Właśnie wsparcie dla SSL oraz prostota obsługi sprawiają, że narzędzie to 
 Dodatkowo, polecam czasem przeanalizować co wysyłają na serwer inne aplikacje lub np. usługi Google.
 
 
-![](images/burp_suite.png)
+![](resources/images/burp_suite.png)
 
 
 {pagebreak}
@@ -572,7 +560,7 @@ Każdy programista dochodzi do takiego momentu, gdy stwierdza, że coraz więcej
 | *Cena*        | FREE                                 |
 | *Alternatywy* | - |
 
-{width:50%}
+{height:10%}
 ![](images/jetpack-hero.png)
 
 
