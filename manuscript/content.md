@@ -155,12 +155,14 @@ dependencies { //zależności, czyli zewnętrzne biblioteki
 
 ## Git
 
+{height:10%}
+![](resources/images/git_logo.png)
+
+
 | *Strona*      | http://git-scm.com/    |
 | *Cena*        | FREE                   |
 | *Alternatywy* | Mercurial, SVN, Baazar |
 
-{width:40%}
-![](resources/images/git_logo.png)
 
 Git to rozproszony system kontroli wersji, który powstał aby zarządzać kodem jądra systemu Linux. Jest podstawowym narzędziem, które każdy programista powinien sobie przyswoić, ponieważ pozwala współdzielić kod w zespole, podmieniać wersje, zapisuje również każda modyfikację pliku.
 
@@ -176,12 +178,15 @@ Dużą wartością Git jest bardzo łatwy i lekki sposób pracy z gałęziami (b
 
 ## Jenkins CI
 
+
+{height:10%}
+![](resources/images/jenkins_logo.png)
+
+
 | *Strona*      | http://jenkins-ci.org/      |
 | *Cena*        | FREE                        |
 | *Alternatywy* | Travis CI, Bamboo, TeamCity |
 
-{width:50%}
-![](resources/images/jenkins_logo.png)
 
 Continous Integration (CI), to technika, w której serwer co pewien czas pobiera kod źródłowy i sprawdza czy uda się go skompilować, uruchomić i przetestować. Dzięki temu już w kilka minut po umieszczeniu zmian w systemie kontroli wersji, możemy się dowiedzieć czy coś zepsuliśmy np. poprzez mail rozsyłany do osób zainteresowanych.
 
@@ -205,12 +210,15 @@ Przykładowy cykl, który może realizować Jenkins CI:
 
 ## Sketch
 
+
+{height:10%}
+![](resources/images/sketch_logo.png)
+
+
 | *Strona*      | https://www.sketch.com       |
 | *Cena*        | $99/rok                                      |
 | *Alternatywy* | Figma, Photoshop CC |
 
-{height:10%}
-![](resources/images/sketch_logo.png)
 
 Sketch staje się w środowisku designerów następcą Photoshopa. Jego główne zalety to: dostosowanie do pracy z koncepcją ekranów, niska cena, prostota obsługi. Natomiast podstawowa wada, to konieczność korzystania z OS X.
 
@@ -224,12 +232,14 @@ Jest to produkt otwarty na rozwój, z dobrym community, co przekłada się na du
 
 ## InVision 
 
+{height:10%}
+![](resources/images/invision_logo.jpg)
+
+
 | *Strona*      | https://www.invisionapp.com/ |
 | *Cena*        | FREE (1 projekt)                      |
 | *Alternatywy* | Zeplin, Avocode              |
 
-{height:10%}
-![](resources/images/invision_logo.jpg)
 
 
 Ważnym elementem każdego projektu jest współpraca na linii programista-designer. Jeszcze kilka lat temu oznaczało to, że programista musiał mieć dostęp do Photoshopa, albo musiał polegać na projektancie, który wyeksportuje mu widoki ekranów i zasoby graficzne do popularnego formatu graficznego (PNG, JPG).
@@ -237,8 +247,8 @@ Ważnym elementem każdego projektu jest współpraca na linii programista-desig
 Takie podejście powodowało stratę czasu i niedokłaności w odwzorowaniu projektu wynikające np. z trudności zmierzenia odstępów pomiędzy elementami. Na szczęście pojawiła się cała gama rozwiązań, które ułatwiają tę współpracę. Ostatnio najczęściej korzystam z InVision. Jest to aplikacja webowa oraz zestaw pluginów do najpopularniejszych narzędzi graficznych.
 W pierwszym kroku designer eksportuje projekt do InVision korzystają z pluginu, a następnie programista może sprawdzać odstępy, kolory i fonty użyte w projekcie oraz samemu eksportować zasoby graficzne do formatów rastrowych lub wektorowych.
 
-{width:80%}
-![DB Browser pozwala m.in. podejrzeć strukturę bazy danych.](resources/images/invision_inspect.png)
+{height:30%}
+![](resources/images/invision_inspect.png)
 
 {pagebreak}
 
@@ -246,12 +256,14 @@ W pierwszym kroku designer eksportuje projekt do InVision korzystają z pluginu,
 
 ## Postman – Rest client
 
+{height:10%}
+![](resources/images/postman_logo_only.png)
+
+
 | *Strona*      | http://www.getpostman.com/ |
 | *Cena*        | FREE                       |
 | *Alternatywy* | RESTClient dla Firefox     |
 
-{height:10%}
-![](resources/images/postman_logo_only.png)
 
 Bardzo przydatny narzędzie, pozwalające na testowanie API REST, bez konieczności pisania kodu. Przyjemy interfejs użytkownika pozwala na zarządzanie wieloma zapytaniami jednocześnie i testowanie API, z którym będzie się komunikowała nasza aplikacja.
 
@@ -267,6 +279,7 @@ Do głównych zalet Postman'a należy zaliczyć:
 
 Narzędzie to warto wykorzystać, aby sprawdzić API zanim jeszcze zaczniemy implementować dane zapytanie po stronie aplikacji. Ponadto jest to idealne rozwiązanie dla programistów tworzących API, którzy chcą przetestować jak będzie się ono zachowywało dla prawdziwych danych.
 
+{height:30%}
 ![Przykładowe zapytanie do API w Postman.](resources/images/postman-default-view.png)
 
 {pagebreak}
@@ -285,12 +298,14 @@ Kolejne proste narzędzie, które pomoże zaoszczędzić godziny przy tworzeniu 
 
 ## Burp Suite
 
+{height:10%}
+![](resources/images/burp_logo.png)
+
+
 | *Strona*      | https://portswigger.net/burp |
 | *Cena*        | FREE                         |
 | *Alternatywy* | CharlesProxy, Fiddler, Mitmproxy |
 
-{width:30%}
-![](resources/images/burp_logo.png)
 
 
 BurpSuite pozwala na debugowanie komunikacji HTTP pomiędzy aplikacją mobilną, a serwerem. Do działania wykorzystuje mechanizm proxy, czyli urządzenia, przez które przechodzi cały ruch sieciowy. Wystarczy wystartować program i ustawić na urządzeniu nasz komputer, jako serwer proxy, aby móc podejrzeć każdy bajt informacji przesyłany po HTTP, nawet w przypadku szyfrowania SSL.
@@ -299,7 +314,7 @@ Właśnie wsparcie dla SSL oraz prostota obsługi sprawiają, że narzędzie to 
 
 Dodatkowo, polecam czasem przeanalizować co wysyłają na serwer inne aplikacje lub np. usługi Google.
 
-
+{height:30%}
 ![](resources/images/burp_suite.png)
 
 
@@ -336,12 +351,14 @@ Darmowa wersja wyświetla reklamy, więc przed demo dla klienta warto zainwestow
 
 ## Lottie
 
+{height:10%}
+![](resources/images/lottie_logo.png)
+
+
 | *Strona*      | https://airbnb.io/lottie/ |
 | *Cena*        | FREE                      |
 | *Alternatywy* | -                         |
 
-{width:30%}
-![](resources/images/lottie_logo.png)
 
 
 Biblioteka na Androida (i inne platformy) oraz plugin do After Effects. Pozwala na wyświetlanie w aplikacji bardzo efektownych wizualnie animacji, szczególnie przydatny przy tworzeniu splash screen, ekranów logowania i aplikacji lifestylowych, które muszą ładnie wyglądać.
@@ -357,13 +374,13 @@ Programista dodaje do projektu bibliotekę Lottie, wrzuca plik json do zasobów 
 
 ## JsonToKotlinClass
 
+{height:10%}
+![](resources/images/json_logo.png)
+
+
 | *Strona*      | https://github.com/wuseal/JsonToKotlinClass |
 | *Cena*        | FREE                          |
 | *Alternatywy* | -                    |
-
-
-{width:30%}
-![](resources/images/json_logo.png)
 
 
 Świetny plugin do AS i InteliJ Idea, pozwalający przekształcić kod JSON na obiekty modelowe w Kotlinie. Koniec z pracochłonnym, ręcznym budowaniem modelu na podstawie dokumentacji. Wystarczy wynik zapytania np. z Postmana i w kilku kliknięciach otrzymasz gotową strukturę klas.
@@ -413,12 +430,14 @@ Szybki generator palety kolorów, do wykorzystania w aplikacjach zgodnych z Mate
 
 ## Github
 
+{height:10%}
+![](resources/images/github_logo.png)
+
+
+
 | *Strona*      | https://github.com/ |
 | *Cena*        | FREE                   |
 | *Alternatywy* | Bitbucket, Gitlab         |
-
-{width:50%}
-![](resources/images/github_logo.png)
 
 
 Github to od lat standard jeśli chodzi o przechowywanie kodu w publicznych repozytoriach. Tutaj lądują projekty Open Source, z których korzystasz. Tutaj rekruterzy szukają programistów, którzy nie wstydzą się swojego kodu. Po akwizycji przez Microsoft, Github pozwala też na przechowywanie nieograniczonej ilości prywatnych repozytoriów za darmo. Usługa ta sprawdza się to bardzo dobrze nawet dla dużych zespołów/projektów i pozwala zacząć pracę z Gitem, bez konieczności konfigurowania własnego serwera.
@@ -433,12 +452,14 @@ Dlatego też polecam założenie konta na Github każdemu programiście i tworz
 
 ## Parse
 
+{height:10%}
+![](resources/images/logo_parseserver.png)
+
+
 | *Strona*      | https://parse.com                                 |
 | *Cena*        | FREE do 30 req/s                                  |
 | *Alternatywy* | Firebase, Google AppEngine, Azure Mobile Services |
 
-{width:50%}
-![](resources/images/logo_parseserver.png)
 
 Parse było rozwiązaniem typu Mobile Backend as a Service, czyli część serwerowa dla naszej aplikacji, bez konieczności pisania kodu. Twórcy tej usługi postawili sobie za cel uproszczenie do maksimum czynności, które do tej pory trzeba było implementować w API.
 
@@ -482,12 +503,14 @@ Model biznesowy przypomina trochę dealera narkotyków: dla bardzo małych aplik
 
 ## Firebase Crashlytics
 
+{height:10%}
+![](resources/images/crashlytics_logo.png)
+
+
 | *Strona*      | https://firebase.google.com/docs/crashlytics/          |
 | *Cena*        | FREE                               |
 | *Alternatywy* | Applause, Splunk MINT |
 
-{width:50%}
-![](resources/images/crashlytics_logo.png)
 
 Każda aplikacja umieszczona na sklepie wcześniej lub później będzie miała crashe. Nie da się tego uniknąć, bo nie da się też przetestować aplikacji na każdym z dziesiątek tysięcy urządzeń. Dlatego warto wyposażyć naszą aplikację w mechanizm automatycznego zgłaszania błędów, który w przypadku wystąpienia błędu wyśle krótką wiadomość na nasz serwer. Crashlytics sprawdza się w tej roli świetnie, a dodatkowo posiada piękny interfejs web, na którym można przeglądać informację o zaistniałych błędach łącznie z informacjami, na jakim modelu, wersji systemu i sprzęcie wystąpiły.
 
@@ -512,12 +535,14 @@ Dzięki temu programiści mobilni mogą zacząć tworzyć i testować aplikację
 
 ## StackOverflow
 
+{height:10%}
+![](resources/images/stackoverflow_logo.png)
+
+
 | *Strona*      | https://crashlytics.com |
 | *Cena*        | FREE                    |
 | *Alternatywy* | -                       |
 
-{height:10%}
-![](resources/images/stackoverflow_logo.png)
 
 StackOverflow jest najczęściej na pierwszym miejscu jeśli zadasz w Google pytanie, o konkretny problem. Baza licząca ponad pół miliona pytań dotyczących samego Androida, pozwala często uniknąć godzin siedzenia w poszukiwaniu rozwiązania problemu. Warto jednak wiedzieć, dlaczego to co wklejamy działa, tak aby nie zostawić w swoim kodzie magicznej *czarnej skrzynki*, której każdy boi się dotknąć.
 
@@ -530,12 +555,14 @@ StackOverflow to jednak dużo więcej niż zbiór pytań i odpowiedzi. To społe
 
 ## TestDroid
 
+{height:10%}
+![](resources/images/testdroid_logo.jpg)
+
+
 | *Strona*      | http://testdroid.com/ |
 | *Cena*        | FREE                  |
 | *Alternatywy* | Appthwack, Saucelabs  |
 
-{height:10%}
-![](resources/images/testdroid_logo.jpg)
 
 Testdroid jest jedną z wielu, bardzo podobnych usług do testowania aplikacji mobilnych. W odpowiedzi na zwiększającą się fragmentację urządzeń korzystających z systemu Android, pojawiły się problemy z przetestowaniem aplikacji na dużej liczbie różnych urządzeń. Pojawił się więc pomysł, aby stworzyć miejsca, gdzie można uzyskać dostęp do dużej liczby fizycznych urządzeń, w zamian za niewielką opłatę. 
 
@@ -549,12 +576,14 @@ Dodatkową cechą wyróżniającą, jest możliwość użycia narzędzia Testdro
 
 ## Proto.io
 
+{height:10%}
+![](resources/images/protoio_logo.png)
+
+
 | *Strona*      | https://www.fluidui.com/   |
 | *Cena*        | FREE                       |
 | *Alternatywy* | Proto.io, Balsamiq Mockups |
 
-{height:10%}
-![](resources/images/protoio_logo.png)
 
 Klikalne prototypy stanowią jedną z najlepszych form dokumentacji w komunikacji programista<->klient. Pozwalają przedstawić potrzebne ekrany, sposoby nawigacji pomiędzy nimi oraz przetestować aplikację na żywym organizmie, bez konieczności uruchamiania IDE. Bardzo często zmniejszają ryzyko niedomówień lub ujawniają braki w projekcie.
 
@@ -571,12 +600,14 @@ Każdy programista dochodzi do takiego momentu, gdy stwierdza, że coraz więcej
 
 ## Android Jetpack
 
+{height:10%}
+![](resources/images/jetpack-hero.png)
+
+
 | *Strona*      | https://developer.android.com/jetpack   |
 | *Cena*        | FREE                                 |
 | *Alternatywy* | - |
 
-{height:10%}
-![](resources/images/jetpack-hero.png)
 
 
 Jetpack to duży ukłon firmy Google w kierunku programistów. Jest to zestaw bibliotek i narzędzi, które stworzone zostały, aby dobrze się uzupełniać i tworzyć spójną architekturę. Warto przejrzeć je wszystkie, przynajmniej pobieżnie, a szczególną uwagę zwrócić na [Architecture Components](https://developer.android.com/topic/libraries/architecture/).
