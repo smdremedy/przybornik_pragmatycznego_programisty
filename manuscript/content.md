@@ -1,8 +1,5 @@
 [//]: # (Lepszy tytul)
 [//]: # (Lepszy subtytul)
-[//]: # (Screen invision i ikona)
-[//]: # (Lottie Screenshot)
-[//]: # (Screenshot jsontokotlin)
 [//]: # (https://github.com/mockk/mockk)
 [//]: # (https://github.com/aritraroy/UltimateAndroidReference/blob/master/README.md)
 [//]: # (https://github.com/mortenjust/androidtool-mac)
@@ -229,10 +226,16 @@ Jest to produkt otwarty na rozwój, z dobrym community, co przekłada się na du
 | *Cena*        | FREE (1 projekt)                      |
 | *Alternatywy* | Zeplin, Avocode              |
 
+{width:30%}
+![](resources/images/invision_logo.jpg)
+
+
 Ważnym elementem każdego projektu jest współpraca na linii programista-designer. Jeszcze kilka lat temu oznaczało to, że programista musiał mieć dostęp do Photoshopa, albo musiał polegać na projektancie, który wyeksportuje mu widoki ekranów i zasoby graficzne do popularnego formatu graficznego (PNG, JPG).
 
 Takie podejście powodowało stratę czasu i niedokłaności w odwzorowaniu projektu wynikające np. z trudności zmierzenia odstępów pomiędzy elementami. Na szczęście pojawiła się cała gama rozwiązań, które ułatwiają tę współpracę. Ostatnio najczęściej korzystam z InVision. Jest to aplikacja webowa oraz zestaw pluginów do najpopularniejszych narzędzi graficznych.
 W pierwszym kroku designer eksportuje projekt do InVision korzystają z pluginu, a następnie programista może sprawdzać odstępy, kolory i fonty użyte w projekcie oraz samemu eksportować zasoby graficzne do formatów rastrowych lub wektorowych.
+
+![DB Browser pozwala m.in. podejrzeć strukturę bazy danych.](resources/images/invision_inspect.png)
 
 {pagebreak}
 
@@ -334,11 +337,17 @@ Darmowa wersja wyświetla reklamy, więc przed demo dla klienta warto zainwestow
 | *Cena*        | FREE                      |
 | *Alternatywy* | -                         |
 
+{width:30%}
+![](resources/images/lottie_logo.png)
+
+
 Biblioteka na Androida (i inne platformy) oraz plugin do After Effects. Pozwala na wyświetlanie w aplikacji bardzo efektownych wizualnie animacji, szczególnie przydatny przy tworzeniu splash screen, ekranów logowania i aplikacji lifestylowych, które muszą ładnie wyglądać.
 
 Designer może projektować animacje korzystając z After Effects (de facto standard dla animacji), a następnie wyeksportować animację do pliku JSON i na tym jego rola się kończy.
 
 Programista dodaje do projektu bibliotekę Lottie, wrzuca plik json do zasobów i w kilku liniach kodu jest wstanie zaimplementować dokładnie taki efekt jaki wymyślił designer. Żyjemy w przyszłości! ;)
+
+![](resources/images/lottie.gif)
 
 {pagebreak}
 
