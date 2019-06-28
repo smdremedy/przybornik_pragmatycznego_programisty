@@ -112,7 +112,7 @@ W celu maksymalizacji wydajności korzystania z AS, warto poświęcić trochę c
 ## Gradle (New Build System)
 
 {height:10%}
-![](images/gradle_logo.png)
+![](resources/images/gradle_logo.png)
 
 
 | *Strona*      | http://tools.android.com/tech-docs/new-build-system/ |
@@ -160,7 +160,7 @@ dependencies { //zależności, czyli zewnętrzne biblioteki
 | *Alternatywy* | Mercurial, SVN, Baazar |
 
 {width:40%}
-![](images/git_logo.png)
+![](resources/images/git_logo.png)
 
 Git to rozproszony system kontroli wersji, który powstał aby zarządzać kodem jądra systemu Linux. Jest podstawowym narzędziem, które każdy programista powinien sobie przyswoić, ponieważ pozwala współdzielić kod w zespole, podmieniać wersje, zapisuje również każda modyfikację pliku.
 
@@ -181,7 +181,7 @@ Dużą wartością Git jest bardzo łatwy i lekki sposób pracy z gałęziami (b
 | *Alternatywy* | Travis CI, Bamboo, TeamCity |
 
 {width:50%}
-![](images/jenkins_logo.png)
+![](resources/images/jenkins_logo.png)
 
 Continous Integration (CI), to technika, w której serwer co pewien czas pobiera kod źródłowy i sprawdza czy uda się go skompilować, uruchomić i przetestować. Dzięki temu już w kilka minut po umieszczeniu zmian w systemie kontroli wersji, możemy się dowiedzieć czy coś zepsuliśmy np. poprzez mail rozsyłany do osób zainteresowanych.
 
@@ -199,7 +199,7 @@ Przykładowy cykl, który może realizować Jenkins CI:
 
 5. Po udanym zbudowaniu i przetestowaniu, wysłanie do kanału Alpha w Google Play lub na jakąś usługę do dystrybucji paczek np. Crashlytics Beta.
 
-![Prognoza jest dobra - buildy się udały. Źródło: https://www.morlunk.com/jenkins/](images/jenkins_android.png)
+![Prognoza jest dobra - buildy się udały. Źródło: https://www.morlunk.com/jenkins/](resources/images/jenkins_android.png)
 
 {pagebreak}
 
@@ -210,13 +210,13 @@ Przykładowy cykl, który może realizować Jenkins CI:
 | *Alternatywy* | Figma, Photoshop CC |
 
 {height:10%}
-![](images/sketch_logo.png)
+![](resources/images/sketch_logo.png)
 
 Sketch staje się w środowisku designerów następcą Photoshopa. Jego główne zalety to: dostosowanie do pracy z koncepcją ekranów, niska cena, prostota obsługi. Natomiast podstawowa wada, to konieczność korzystania z OS X.
 
 Warto posiadać Sketch jeśli często otrzymujemy projekty graficzne wykonane w tym narzędziu i nie chcemy polegać na kimś, kto może akurat nie mieć czasu. Korzystanie z programu jest proste - można nawet używać go jako narzędzia do tworzenia Mockup'ów aplikacji.
 
-![Główne okno Sketch.](images/sketch.png)
+![Główne okno Sketch.](resources/images/sketch.png)
 
 Jest to produkt otwarty na rozwój, z dobrym community, co przekłada się na dużą ilość wtyczek, pozwalających m.in.: na szybki eksport grafik do różnych rozdzielczości. Widziałem nawet wersje, umożliwiające generowanie kodu layoutów prosto z projektu w Sketch.
 
@@ -267,7 +267,7 @@ Do głównych zalet Postman'a należy zaliczyć:
 
 Narzędzie to warto wykorzystać, aby sprawdzić API zanim jeszcze zaczniemy implementować dane zapytanie po stronie aplikacji. Ponadto jest to idealne rozwiązanie dla programistów tworzących API, którzy chcą przetestować jak będzie się ono zachowywało dla prawdziwych danych.
 
-![Przykładowe zapytanie do API w Postman.](images/postman-default-view.png)
+![Przykładowe zapytanie do API w Postman.](resources/images/postman-default-view.png)
 
 {pagebreak}
 
@@ -279,7 +279,7 @@ Narzędzie to warto wykorzystać, aby sprawdzić API zanim jeszcze zaczniemy imp
 
 Kolejne proste narzędzie, które pomoże zaoszczędzić godziny przy tworzeniu aplikacji mobilnych. DB Browser, jak sama nazwa wskazuje, służy do przeglądania zawartości bazy SQLite. Poza przeglądaniem daje także możliwości edycji oraz wykonywania zapytań SQL i podglądu wyników. Jest to doskonała alternatywa dla konsolowego klienta *sqlite3*, który jest dostarczany z SDK Androida. Jedyną wadą jest konieczność pobrania pliku z urządzenia do lokalnego systemu plików np. poleceniem `adb pull`. Gdy to już zrobimy mamy gotowy plik, na którym możemy wykonywać dowolne operacje. Jeśli dokonamy jakichkolwiek zmian, to ten zmieniony plik musimy ponownie umieścić na urządzeniu za pomocą polecenia: `adb push`.
 
-![DB Browser pozwala m.in. podejrzeć strukturę bazy danych.](images/dbbrowser.png)
+![DB Browser pozwala m.in. podejrzeć strukturę bazy danych.](resources/images/dbbrowser.png)
 
 {pagebreak}
 
@@ -290,7 +290,7 @@ Kolejne proste narzędzie, które pomoże zaoszczędzić godziny przy tworzeniu 
 | *Alternatywy* | CharlesProxy, Fiddler, Mitmproxy |
 
 {width:30%}
-![](images/burp_logo.png)
+![](resources/images/burp_logo.png)
 
 
 BurpSuite pozwala na debugowanie komunikacji HTTP pomiędzy aplikacją mobilną, a serwerem. Do działania wykorzystuje mechanizm proxy, czyli urządzenia, przez które przechodzi cały ruch sieciowy. Wystarczy wystartować program i ustawić na urządzeniu nasz komputer, jako serwer proxy, aby móc podejrzeć każdy bajt informacji przesyłany po HTTP, nawet w przypadku szyfrowania SSL.
@@ -315,7 +315,7 @@ Dekompilator bajtkodu w formacie dex do Java. Pozwala zobaczyć zawartość wyge
 
 Podstawowe narzędzie do statycznej analizy w przypadku testów bezpiczeczeństwa oraz debugowania kwestii związanych np. z obfuskacją kodu przez ProGuard albo R8.
 
-![](images/jadx.png)
+![](resources/images/jadx.png)
 
 {pagebreak}
 
@@ -383,7 +383,7 @@ Narzędzie online, które pozwala na pracę z animacjami na obrazach wektorowych
 
 Jest to bardzo dobry sposób na dodanie do aplikacji efektu WOW, bez konieczności tworzenia animacji w kodzie albo w ręcznie w plikach XML. Projekt jest ciągle rozwijany i zmierza w kierunku pełnoprawnego edytora.
 
-![](images/shapeshifter.png)
+![](resources/images/shapeshifter.png)
 
 {pagebreak}
 
@@ -395,7 +395,7 @@ Jest to bardzo dobry sposób na dodanie do aplikacji efektu WOW, bez koniecznoś
 
 Wymiary obiektów na ekranie Androida można podawać w wielu jednostkach. Pixel Calculator pozwala sprawnie poruszać się pomiędzy tymi jednostkami. Dzięki temu można szybko przeliczyć wielkość w dp lub sp, niezależnie od tego dla jakiej gęstości został przygotowany projekt graficzny.
 
-![W trybie prostym wystarczy podać wartość w jednej jednostce i gęstość, aby otrzymać pozostałe.](images/pixel_calculator.png)
+![W trybie prostym wystarczy podać wartość w jednej jednostce i gęstość, aby otrzymać pozostałe.](resources/images/pixel_calculator.png)
 
 {pagebreak}
 
@@ -407,7 +407,7 @@ Wymiary obiektów na ekranie Androida można podawać w wielu jednostkach. Pixel
 
 Szybki generator palety kolorów, do wykorzystania w aplikacjach zgodnych z Material Design.
 
-![Wystarczy dwa kolory główne i paleta gotowa](images/material_palette.png)
+![Wystarczy dwa kolory główne i paleta gotowa](resources/images/material_palette.png)
 
 {pagebreak}
 
@@ -418,7 +418,7 @@ Szybki generator palety kolorów, do wykorzystania w aplikacjach zgodnych z Mate
 | *Alternatywy* | Bitbucket, Gitlab         |
 
 {width:50%}
-![](images/github_logo.png)
+![](resources/images/github_logo.png)
 
 
 Github to od lat standard jeśli chodzi o przechowywanie kodu w publicznych repozytoriach. Tutaj lądują projekty Open Source, z których korzystasz. Tutaj rekruterzy szukają programistów, którzy nie wstydzą się swojego kodu. Po akwizycji przez Microsoft, Github pozwala też na przechowywanie nieograniczonej ilości prywatnych repozytoriów za darmo. Usługa ta sprawdza się to bardzo dobrze nawet dla dużych zespołów/projektów i pozwala zacząć pracę z Gitem, bez konieczności konfigurowania własnego serwera.
@@ -427,7 +427,7 @@ Ponadto serwis stał się swoistą siecią społecznościową dla programistów,
 
 Dlatego też polecam założenie konta na Github każdemu programiście i tworzenie własnych projektów publicznych lub też udział w istniejących już przedsięwzięciach, poprzez zgłaszanie poprawek w postaci tzw. Pull Request.
 
-![Na Github można znaleźć kod wielu popularnych bibliotek OpenSource.](images/github.png)
+![Na Github można znaleźć kod wielu popularnych bibliotek OpenSource.](resources/images/github.png)
 
 {pagebreak}
 
@@ -438,7 +438,7 @@ Dlatego też polecam założenie konta na Github każdemu programiście i tworz
 | *Alternatywy* | Firebase, Google AppEngine, Azure Mobile Services |
 
 {width:50%}
-![](images/logo_parseserver.png)
+![](resources/images/logo_parseserver.png)
 
 Parse było rozwiązaniem typu Mobile Backend as a Service, czyli część serwerowa dla naszej aplikacji, bez konieczności pisania kodu. Twórcy tej usługi postawili sobie za cel uproszczenie do maksimum czynności, które do tej pory trzeba było implementować w API.
 
@@ -457,7 +457,7 @@ Przykładowo: utworzenie backendu dla aplikacji typu Tinder nie wymaga od nas pi
 * powiadamiania użytkownika o nowych aktywnościach na profilu, poprzez wiadomości PUSH.
 
 
-![Widok danych pozwala zarządzać bazą w prosty sposób.](images/parse.png)
+![Widok danych pozwala zarządzać bazą w prosty sposób.](resources/images/parse.png)
 
 {pagebreak}
 
@@ -487,7 +487,7 @@ Model biznesowy przypomina trochę dealera narkotyków: dla bardzo małych aplik
 | *Alternatywy* | Applause, Splunk MINT |
 
 {width:50%}
-![](images/crashlytics_logo.png)
+![](resources/images/crashlytics_logo.png)
 
 Każda aplikacja umieszczona na sklepie wcześniej lub później będzie miała crashe. Nie da się tego uniknąć, bo nie da się też przetestować aplikacji na każdym z dziesiątek tysięcy urządzeń. Dlatego warto wyposażyć naszą aplikację w mechanizm automatycznego zgłaszania błędów, który w przypadku wystąpienia błędu wyśle krótką wiadomość na nasz serwer. Crashlytics sprawdza się w tej roli świetnie, a dodatkowo posiada piękny interfejs web, na którym można przeglądać informację o zaistniałych błędach łącznie z informacjami, na jakim modelu, wersji systemu i sprzęcie wystąpiły.
 
@@ -517,13 +517,13 @@ Dzięki temu programiści mobilni mogą zacząć tworzyć i testować aplikację
 | *Alternatywy* | -                       |
 
 {height:10%}
-![](images/stackoverflow_logo.png)
+![](resources/images/stackoverflow_logo.png)
 
 StackOverflow jest najczęściej na pierwszym miejscu jeśli zadasz w Google pytanie, o konkretny problem. Baza licząca ponad pół miliona pytań dotyczących samego Androida, pozwala często uniknąć godzin siedzenia w poszukiwaniu rozwiązania problemu. Warto jednak wiedzieć, dlaczego to co wklejamy działa, tak aby nie zostawić w swoim kodzie magicznej *czarnej skrzynki*, której każdy boi się dotknąć.
 
 StackOverflow to jednak dużo więcej niż zbiór pytań i odpowiedzi. To społeczność programistów, którzy chętnie dzielą się wiedzą. Wszystko wspomagane systemem punktowym, który pozwala wyróżnić się aktywnym użytkownikom. Dobra reputacja (punkty są nazywane właśnie reputacją) na StackOverflow, to obok konta Github, ważny element wyróżniający CV.
 
-![Wśród 624 tysięcy pytań o Androida, może znajdziesz odpowiedź na swoje.](images/stackoverflow.png)
+![Wśród 624 tysięcy pytań o Androida, może znajdziesz odpowiedź na swoje.](resources/images/stackoverflow.png)
 
 {pagebreak}
 
@@ -535,7 +535,7 @@ StackOverflow to jednak dużo więcej niż zbiór pytań i odpowiedzi. To społe
 | *Alternatywy* | Appthwack, Saucelabs  |
 
 {height:10%}
-![](images/testdroid_logo.jpg)
+![](resources/images/testdroid_logo.jpg)
 
 Testdroid jest jedną z wielu, bardzo podobnych usług do testowania aplikacji mobilnych. W odpowiedzi na zwiększającą się fragmentację urządzeń korzystających z systemu Android, pojawiły się problemy z przetestowaniem aplikacji na dużej liczbie różnych urządzeń. Pojawił się więc pomysł, aby stworzyć miejsca, gdzie można uzyskać dostęp do dużej liczby fizycznych urządzeń, w zamian za niewielką opłatę. 
 
@@ -543,7 +543,7 @@ Tak jak wspomniałem, serwisów takich jest wiele. Różnią się liczbą dostę
 
 Dodatkową cechą wyróżniającą, jest możliwość użycia narzędzia Testdroid Recorder, które pozwala nagrywać testy manualne i powtarzać je, na wielu urządzeniach jednocześnie.
 
-![Widok wyników testu na urządzeniu Acer Iconia Tab 8.](images/testdroid.png)
+![Widok wyników testu na urządzeniu Acer Iconia Tab 8.](resources/images/testdroid.png)
 
 {pagebreak}
 
@@ -554,7 +554,7 @@ Dodatkową cechą wyróżniającą, jest możliwość użycia narzędzia Testdro
 | *Alternatywy* | Proto.io, Balsamiq Mockups |
 
 {height:10%}
-![](images/protoio_logo.png)
+![](resources/images/protoio_logo.png)
 
 Klikalne prototypy stanowią jedną z najlepszych form dokumentacji w komunikacji programista<->klient. Pozwalają przedstawić potrzebne ekrany, sposoby nawigacji pomiędzy nimi oraz przetestować aplikację na żywym organizmie, bez konieczności uruchamiania IDE. Bardzo często zmniejszają ryzyko niedomówień lub ujawniają braki w projekcie.
 
@@ -562,7 +562,7 @@ Warto zacząć tworzenie prototypu już na etapie tworzenia lub czytania specyfi
 
 Proto.io jest przykładem rozwiązania, które pozwala zaprojektować ekrany, dodać proste akcje (np. przejścia pomiędzy ekranami po naciśnięciu przycisku) i zaprezentować wynik w przeglądarce na telefonie klienta. Wystarczy przesłać link do wygenerowanego prototypu, który potencjalny użytkownik, może sobie przetestować na urządzeniu.
 
-![Proto.io pozwala testować prototypy bezpośrednio na urządzeniu.](images/protoio.png)
+![Proto.io pozwala testować prototypy bezpośrednio na urządzeniu.](resources/images/protoio.png)
 
 {pagebreak}
 
@@ -576,7 +576,7 @@ Każdy programista dochodzi do takiego momentu, gdy stwierdza, że coraz więcej
 | *Alternatywy* | - |
 
 {height:10%}
-![](images/jetpack-hero.png)
+![](resources/images/jetpack-hero.png)
 
 
 Jetpack to duży ukłon firmy Google w kierunku programistów. Jest to zestaw bibliotek i narzędzi, które stworzone zostały, aby dobrze się uzupełniać i tworzyć spójną architekturę. Warto przejrzeć je wszystkie, przynajmniej pobieżnie, a szczególną uwagę zwrócić na [Architecture Components](https://developer.android.com/topic/libraries/architecture/).
@@ -703,7 +703,7 @@ new OkHttpClient.Builder()
     .build();
 ```
 
-![](images/inspector-sqlite.png)
+![](resources/images/inspector-sqlite.png)
 
 
 ## BindingCollectionAdapter
@@ -746,7 +746,7 @@ Warto przejrzeć, choć z doświadczenia wiem, że kod nie jest idealny i trudny
 https://github.com/android/plaid
 
 {height: 30%}
-![](images/plaid_1.png)
+![](resources/images/plaid.png)
 
 Przeglądarka wiadomości ze stron Designer News, Dribbble i Product Hunt stworzona przez ludzi z zespołu Androida. Bardzo dobrze ilustruje sposób implementacji Material Design oraz architektury w oparciu o Architecture Components.
 
@@ -827,7 +827,7 @@ Nietypowa książka autorstwa Mark'a Murphy'ego. Dostępna jedynie w postaci 12-
 | *G+*      | https://plus.google.com/+JakeWharton/ |
 
 {width:10%, float: right}
-![](images/jake_wharton.png)
+![](resources/images/jake_wharton.png)
 
 Człowiek instytucja. Twórca wielu z przytoczonych bibliotek. Autorytet w kwestii upraszczania kodu, korzystania z anotacji oraz SDK.
 
@@ -838,13 +838,9 @@ Człowiek instytucja. Twórca wielu z przytoczonych bibliotek. Autorytet w kwest
 | *G+*      | https://plus.google.com/+RomainGuy/ |
 
 {width:10%, float: right}
-![](images/romain_guy.jpg)
+![](resources/images/romain_guy.jpg)
 
 Googler pracujący nad Androidem. Często prezentuje nowości związane z UI.
-&nbsp;  &nbsp;
-  &nbsp;&nbsp;
-  &nbsp;&nbsp;
-  &nbsp;&nbsp;
 
 ## Chris Banes
 
@@ -853,7 +849,7 @@ Googler pracujący nad Androidem. Często prezentuje nowości związane z UI.
 | *G+*      | https://plus.google.com/+ChrisBanes/ |
 
 {width:10%, float: right}
-![](images/chris_banes.jpg)
+![](resources/images/chris_banes.jpg)
 
 Googler odpowiedzialny za relacje z developerami. Twórca wielu elementów biblioteki zgodności m.in. AppCompat.
 
@@ -864,7 +860,7 @@ Często dzieli się na swoich profilach fragmentami kodów, realizujących konkr
 ## Nick Butcher
 
 {width:10%, float: right}
-![](images/nick_butcher.jpg)
+![](resources/images/nick_butcher.jpg)
 
 
 | *Strona*  | http://www.curious-creature.com/      |
@@ -878,7 +874,7 @@ Googler odpowiedzialny za relacje na styku design/development. Umieszcza bardzo 
 ## Wojtek Kaliciński
 
 {width:10%, float: left}
-![](images/wojtek.jpeg)
+![](resources/images/wojtek.jpeg)
 
 
 | *Strona*  | https://medium.com/@wkalicinski     |
@@ -895,7 +891,7 @@ TODO
 | *G+*      | -                               |
 
 {width:10%, float: right}
-![](images/mark_murphy.jpg)
+![](resources/images/mark_murphy.jpg)
 
 Twórca CommonsWare i autor ksiązki "The Busy Coder’s Guide to Android Development". Znajduje się w Top 10 najbardziej aktywnych osób na StackOverflow. Jeśli szukasz odpowiedzi na pytanie o Androida, duża szansa, że to on odpowie. Twórca dużej ilości bibliotek i częsty speaker na popularnych konferencjach mobilnych.
 
