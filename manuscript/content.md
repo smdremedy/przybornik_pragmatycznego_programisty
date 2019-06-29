@@ -346,6 +346,8 @@ Sposób na podejrzenie ekranu telefonu na ekranie komputera. Przydatne zwłaszcz
 
 Darmowa wersja wyświetla reklamy, więc przed demo dla klienta warto zainwestować w pełną wersję albo poszukać alternatyw.
 
+![Źródło: https://www.vysor.io](resources/images/vysor-desktop.jpg)
+
 
 {pagebreak}
 
@@ -680,7 +682,24 @@ Picasso to biblioteka służąca do wyświetlania obrazków z internetu. Kropka.
 
 ### Timber
 
+{height:10%}
+![](resources/images/timber.png)
+
+
+| *Strona*      | https://github.com/JakeWharton/timber |
+| *Cena*        | FREE                            |
+| *Alternatywy* | -              |
+
+
+
+
 ### Leak Canary
+
+| *Strona*      | https://github.com/square/leakcanary |
+| *Cena*        | FREE                            |
+| *Alternatywy* | -              |
+
+![](resources/images/leak_canary.png)
 
 
 {pagebreak}
@@ -697,6 +716,11 @@ Dagger to implementacja wzorca Dependency Injection, czyli wstrzykiwania zależn
 
 ## RxJava
 
+{height:10%}
+![](resources/images/Rx_logo.png)
+
+
+
 | *Strona*      | https://github.com/ReactiveX/RxJava |
 | *Cena*        | FREE                                   |
 | *Alternatywy* | -                                      |
@@ -704,6 +728,16 @@ Dagger to implementacja wzorca Dependency Injection, czyli wstrzykiwania zależn
 Biblioteka RxJava, pozwala wprowadzić do Javy nowy paradygmat - programowanie reaktywne (Reactive Programming). Jest to podejście upraszczające w znaczny sposób kod, którego zadaniem jest zarządzanie wieloma zadaniami asynchronicznymi, zwłaszcza takimi, które operują na danych. Dobrym przykładem jest fragment aplikacji wymagający np. jednoczesnego wywołania wielu zapytań HTTP i połączenia ich wyników. 
 
 RxJava nie jest biblioteką, którą mogę polecić początkującym programistom. Jeśli jednak Twoje aplikacje stają się coraz większe i rośnie liczba zdarzeń lub zapytań HTTP, które wysyłasz to polecam przestudiowanie dokumentacji https://github.com/ReactiveX/RxJava/wiki.
+
+
+```java
+Flowable.range(1, 10)
+  .parallel()
+  .runOn(Schedulers.computation())
+  .map(v -> v * v)
+  .sequential()
+  .blockingSubscribe(System.out::println);
+```
 
 {pagebreak}
 
