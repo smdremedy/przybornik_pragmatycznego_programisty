@@ -680,6 +680,17 @@ Call<List<Repo>> repos = service.listRepos("octocat");
 Picasso to biblioteka służąca do wyświetlania obrazków z internetu. Kropka. Posiada proste API i automatyzuje pobieranie plików graficznych, zmianę ich rozmiaru, wyświetlanie w ImageView, cache w pamięci ram i flash. Dzięki temu możemy skupić się na tym, co ma być wyświetlone, a nie jak.
 
 
+```java
+Picasso.get()
+    .load(url)
+    .placeholder(R.drawable.user_placeholder)
+    .error(R.drawable.user_placeholder_error)
+    .into(imageView);
+```
+
+![](resources/images/picasso_sample.png)
+
+
 ### Timber
 
 {height:10%}
@@ -690,6 +701,7 @@ Picasso to biblioteka służąca do wyświetlania obrazków z internetu. Kropka.
 | *Cena*        | FREE                            |
 | *Alternatywy* | -              |
 
+Timber to narzędzie proste i przyjemne. Jest to nakładka na mechanizm logowania wbudowany w Androida. Pozwala szybciej dodać log do aplikacji (np. ograniczając konieczność podawania TAG) oraz zwiększa kontrolę nad logowaniem w całej aplikacji np. pozwalając na usunięcie logów jedną flagą.
 
 
 
@@ -699,7 +711,14 @@ Picasso to biblioteka służąca do wyświetlania obrazków z internetu. Kropka.
 | *Cena*        | FREE                            |
 | *Alternatywy* | -              |
 
-![](resources/images/leak_canary.png)
+
+Wycieki pamięci to temat, z którym każdy programista Androida musi się zmierzyć. Często wynikają z nieznajomości architektury Androida lub cyklu życia jego komponentów, ale czasem są następstwem użycia jakiegoś mechanizmu cache lub źle napisanej biblioteki. Powodów może być wiele i często samo zdiagnozowanie takiego wycieku jest trudniejsze niż jego usunięcie.
+
+I tutaj wchodzi Leak Canary, cały na biało. Jest to biblioteka wyszukująca wycieki pamięci, którą integruje się z aplikacją. Jeśli wyciek zostanie zlokalizowany to otrzymamy notyfikację, która po kliknięciu wyświetli nam szczegóły wycieku. Wszystko bezpośrednio na urządeniu testowym lub emulatorze.
+
+Polecam zwłaszcza początkującym programistom, którzy nie wiedzą jeszcze jakie konstrukcje prowadzą do wycieków (np. anonimowe klasy wewnętrzne), ponieważ da im to szybką informację o potencjalnych problemach.
+
+![Uuups. Obiekt aplikacji trzyma referencje do widoków.](resources/images/leak_canary.png)
 
 
 {pagebreak}
@@ -742,6 +761,11 @@ Flowable.range(1, 10)
 {pagebreak}
 
 ## Stetho
+
+{height:10%}
+![](resources/images/logo_stetho.png)
+
+
 
 | *Strona*      | https://facebook.github.io/stetho/ |
 | *Cena*        | FREE                       |
@@ -938,7 +962,7 @@ Googler odpowiedzialny za relacje na styku design/development. Umieszcza bardzo 
 
 ## Wojtek Kaliciński
 
-{width:10%, float: left}
+{width:10%, float: right}
 ![](resources/images/wojtek.jpeg)
 
 
@@ -955,7 +979,7 @@ TODO
 | *Twitter* | https://twitter.com/commonsguy  |
 | *G+*      | -                               |
 
-{width:10%, float: right}
+{height:10%, float: right}
 ![](resources/images/mark_murphy.jpg)
 
 Twórca CommonsWare i autor ksiązki "The Busy Coder’s Guide to Android Development". Znajduje się w Top 10 najbardziej aktywnych osób na StackOverflow. Jeśli szukasz odpowiedzi na pytanie o Androida, duża szansa, że to on odpowie. Twórca dużej ilości bibliotek i częsty speaker na popularnych konferencjach mobilnych.
