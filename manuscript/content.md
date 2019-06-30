@@ -38,8 +38,7 @@ Odpowiednik w Java
 
 ```java
 public final class Person {
-   @NotNull
-   private String name;
+   @NotNull private String name;
 
    @NotNull
    public final String getName() {
@@ -75,13 +74,9 @@ public final class Person {
             }
          }
          return false;
-      } else {
-         return true;
-      }
+      } else { return true; }
    }
 }
-
-
 ```
 
 Jeśli chcesz zacząć przygodę z Kotlinem, to sprawdź mój [darmowy mini-kurs Kotlina](https://szkoleniaandroid.pl/kurs-kotlina)
@@ -104,7 +99,7 @@ Na Google IO 2013 zostało ogłoszone przez Google jako nowe oficjalne środowis
 
 W celu maksymalizacji wydajności korzystania z AS, warto poświęcić trochę czasu i nauczyć się skrótów klawiszowych oraz poznać np. mechanizm szablonów generujący kod, który często się powtarza. Każda minuta poświęcona na naukę sztuczek w AS, to inwestycja w przyszłość. Istnieje wiele czynności, które da się przyśpieszyć np.: generowanie par getter/setter, refaktoryzacja kodu, czy chociażby obsługa systemów kontroli wersji z poziomu IDE.
 
-{height:30%}
+{height:40%}
 ![Android Studio w trybie edycji layoutów z podglądem.](resources/images/as.png)
 
 {pagebreak}
@@ -224,9 +219,10 @@ Sketch staje się w środowisku designerów następcą Photoshopa. Jego główne
 
 Warto posiadać Sketch jeśli często otrzymujemy projekty graficzne wykonane w tym narzędziu i nie chcemy polegać na kimś, kto może akurat nie mieć czasu. Korzystanie z programu jest proste - można nawet używać go jako narzędzia do tworzenia Mockup'ów aplikacji.
 
-![Główne okno Sketch.](resources/images/sketch.png)
-
 Jest to produkt otwarty na rozwój, z dobrym community, co przekłada się na dużą ilość wtyczek, pozwalających m.in.: na szybki eksport grafik do różnych rozdzielczości. Widziałem nawet wersje, umożliwiające generowanie kodu layoutów prosto z projektu w Sketch.
+
+{height:30%}
+![Główne okno Sketch.](resources/images/sketch.png)
 
 {pagebreak}
 
@@ -314,7 +310,7 @@ Właśnie wsparcie dla SSL oraz prostota obsługi sprawiają, że narzędzie to 
 
 Dodatkowo, polecam czasem przeanalizować co wysyłają na serwer inne aplikacje lub np. usługi Google.
 
-{height:30%}
+{height:50%}
 ![](resources/images/burp_suite.png)
 
 
@@ -387,6 +383,7 @@ Programista dodaje do projektu bibliotekę Lottie, wrzuca plik json do zasobów 
 
 Świetny plugin do AS i InteliJ Idea, pozwalający przekształcić kod JSON na obiekty modelowe w Kotlinie. Koniec z pracochłonnym, ręcznym budowaniem modelu na podstawie dokumentacji. Wystarczy wynik zapytania np. z Postmana i w kilku kliknięciach otrzymasz gotową strukturę klas.
 
+{height:30%}
 ![](resources/images/json_to_kotlin.png)
 
 
@@ -402,6 +399,7 @@ Narzędzie online, które pozwala na pracę z animacjami na obrazach wektorowych
 
 Jest to bardzo dobry sposób na dodanie do aplikacji efektu WOW, bez konieczności tworzenia animacji w kodzie albo w ręcznie w plikach XML. Projekt jest ciągle rozwijany i zmierza w kierunku pełnoprawnego edytora.
 
+{height:30%}
 ![](resources/images/shapeshifter.png)
 
 {pagebreak}
@@ -448,6 +446,7 @@ Ponadto serwis stał się swoistą siecią społecznościową dla programistów,
 
 Dlatego też polecam założenie konta na Github każdemu programiście i tworzenie własnych projektów publicznych lub też udział w istniejących już przedsięwzięciach, poprzez zgłaszanie poprawek w postaci tzw. Pull Request.
 
+{height:30%}
 ![Na Github można znaleźć kod wielu popularnych bibliotek OpenSource.](resources/images/github.png)
 
 {pagebreak}
