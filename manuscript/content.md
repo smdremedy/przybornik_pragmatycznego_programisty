@@ -99,7 +99,7 @@ Na Google IO 2013 zostało ogłoszone przez Google jako nowe oficjalne środowis
 
 W celu maksymalizacji wydajności korzystania z AS, warto poświęcić trochę czasu i nauczyć się skrótów klawiszowych oraz poznać np. mechanizm szablonów generujący kod, który często się powtarza. Każda minuta poświęcona na naukę sztuczek w AS, to inwestycja w przyszłość. Istnieje wiele czynności, które da się przyśpieszyć np.: generowanie par getter/setter, refaktoryzacja kodu, czy chociażby obsługa systemów kontroli wersji z poziomu IDE.
 
-{height:40%}
+{height:35%}
 ![Android Studio w trybie edycji layoutów z podglądem.](resources/images/as.png)
 
 {pagebreak}
@@ -123,26 +123,23 @@ Warto poświęcić kilka godzin, aby poznać bardziej zaawansowane możliwości 
 ```groovy
 apply plugin: 'com.android.application'
 android {
-    compileSdkVersion 21
-    buildToolsVersion "21.1.2"
-    defaultConfig { //podstawowa konfiguracja aplikacji
+    compileSdkVersion 28
+    defaultConfig {//podstawowa konfiguracja aplikacji
         applicationId "pl.szkoleniaandroid.myapplication"
-        minSdkVersion 15
-        targetSdkVersion 21
+        minSdkVersion 21
+        targetSdkVersion 28
         versionCode 1
         versionName "1.0"
     }
     buildTypes {
-        release { //włącz ProGuard przy budowaniu release
-            minifyEnabled true
-            proguardFiles getDefaultProguardFile('proguard-android.txt'),
-		 'proguard-rules.pro'
+        release {
+            minifyEnabled true//włącz obfuskację przy budowaniu release
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
 }
-dependencies { //zależności, czyli zewnętrzne biblioteki
-    compile fileTree(dir: 'libs', include: ['*.jar'])
-    compile 'com.android.support:appcompat-v7:21.0.3'
+dependencies {//zależności, czyli zewnętrzne biblioteki
+    implementation 'androidx.appcompat:appcompat:1.0.2'
 }
 ```
 
@@ -221,7 +218,7 @@ Warto posiadać Sketch jeśli często otrzymujemy projekty graficzne wykonane w 
 
 Jest to produkt otwarty na rozwój, z dobrym community, co przekłada się na dużą ilość wtyczek, pozwalających m.in.: na szybki eksport grafik do różnych rozdzielczości. Widziałem nawet wersje, umożliwiające generowanie kodu layoutów prosto z projektu w Sketch.
 
-{height:30%}
+{height:35%}
 ![Główne okno Sketch.](resources/images/sketch.png)
 
 {pagebreak}
@@ -243,7 +240,7 @@ Ważnym elementem każdego projektu jest współpraca na linii programista-desig
 Takie podejście powodowało stratę czasu i niedokłaności w odwzorowaniu projektu wynikające np. z trudności zmierzenia odstępów pomiędzy elementami. Na szczęście pojawiła się cała gama rozwiązań, które ułatwiają tę współpracę. Ostatnio najczęściej korzystam z InVision. Jest to aplikacja webowa oraz zestaw pluginów do najpopularniejszych narzędzi graficznych.
 W pierwszym kroku designer eksportuje projekt do InVision korzystają z pluginu, a następnie programista może sprawdzać odstępy, kolory i fonty użyte w projekcie oraz samemu eksportować zasoby graficzne do formatów rastrowych lub wektorowych.
 
-{height:30%}
+{height:35%}
 ![](resources/images/invision_inspect.png)
 
 {pagebreak}
@@ -310,7 +307,7 @@ Właśnie wsparcie dla SSL oraz prostota obsługi sprawiają, że narzędzie to 
 
 Dodatkowo, polecam czasem przeanalizować co wysyłają na serwer inne aplikacje lub np. usługi Google.
 
-{height:50%}
+{height:40%}
 ![](resources/images/burp_suite.png)
 
 
@@ -383,7 +380,7 @@ Programista dodaje do projektu bibliotekę Lottie, wrzuca plik json do zasobów 
 
 Świetny plugin do AS i InteliJ Idea, pozwalający przekształcić kod JSON na obiekty modelowe w Kotlinie. Koniec z pracochłonnym, ręcznym budowaniem modelu na podstawie dokumentacji. Wystarczy wynik zapytania np. z Postmana i w kilku kliknięciach otrzymasz gotową strukturę klas.
 
-{height:30%}
+{height:50%}
 ![](resources/images/json_to_kotlin.png)
 
 
@@ -521,6 +518,10 @@ W przypadku, gdy korzystaliśmy z mechanizmu obfuskacji w ProGuard, będziemy po
 
 ## Apiary
 
+
+{height:10%}
+![](resources/images/apiary_logo.png)
+
 | *Strona*      | https://apiary.io |
 | *Cena*        | FREE                    |
 | *Alternatywy* | -                       |
@@ -531,6 +532,9 @@ Apiary stanowi interaktywnej dokumentacji API, która opisuje jakie endpointy s�
 
 Dzięki temu programiści mobilni mogą zacząć tworzyć i testować aplikację zanim powstanie infrastuktura serwerowa. Oczywiście zakładając, że dokumentacja będzie zdodna z rzeczywistością. 
 
+{height:30%}
+![](resources/images/apiary.jpeg)
+
 {pagebreak}
 
 
@@ -540,7 +544,7 @@ Dzięki temu programiści mobilni mogą zacząć tworzyć i testować aplikację
 ![](resources/images/stackoverflow_logo.png)
 
 
-| *Strona*      | https://crashlytics.com |
+| *Strona*      | https://stackoverflow.com/ |
 | *Cena*        | FREE                    |
 | *Alternatywy* | -                       |
 
