@@ -974,12 +974,14 @@ TODO
 
 ## Mark Murphy
 
+{height:10%, float: right}
+![](resources/images/mark_murphy.jpg)
+
+
 | *Strona*  | https://commonsware.com/mmurphy |
 | *Twitter* | https://twitter.com/commonsguy  |
 | *G+*      | -                               |
 
-{height:10%, float: right}
-![](resources/images/mark_murphy.jpg)
 
 Twórca CommonsWare i autor ksiązki "The Busy Coder’s Guide to Android Development". Znajduje się w Top 10 najbardziej aktywnych osób na StackOverflow. Jeśli szukasz odpowiedzi na pytanie o Androida, duża szansa, że to on odpowie. Twórca dużej ilości bibliotek i częsty speaker na popularnych konferencjach mobilnych.
 
@@ -987,7 +989,6 @@ Twórca CommonsWare i autor ksiązki "The Busy Coder’s Guide to Android Develo
 
 ## Zasubskrybuj kanał Szkolenia Android na YouTube
 https://SzkoleniaAndroid.pl/youtube
-https://www.youtube.com/channel/UCQUuM6One5W6odx8dDJ8Vsw?sub_confirmation=1
 
 ## Śledź Sylwester Madej na Twitter
 https://twitter.com/smdremedy
