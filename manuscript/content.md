@@ -17,7 +17,7 @@ Mam nadzieję, że programiści zaczynający swoją przygodę z profesjonalnym t
 Lubię książki, które podają konkretne kroki i od samego początku przynoszą wartość. Dlatego też mam prośbę: wybierz 1 narzędzie i zacznij z niego korzystać. Gwarantuję, że już po tygodniu zauważysz zmianę na plus!
 
 # Narzędzia
-Zacznę od crème de la crème spośród narzędzi do tworzenia aplikacji mobilnych, czyli produktów dostępnych jako aplikacje desktop-owe lub wtyczki do takich aplikacji. Są to elementy, z którymi programista spędza najwięcej czasu. Starałem się, aby wybrane narzędzia dobrze się uzupełniały i stanowiły ekosystem, w którym praca staje się prostsza.
+Zacznę od crème de la crème spośród narzędzi do tworzenia aplikacji mobilnych, czyli produktów dostępnych jako aplikacje desktopowe lub wtyczki do takich aplikacji. Są to elementy, z którymi programista spędza najwięcej czasu. Starałem się, aby wybrane narzędzia dobrze się uzupełniały i stanowiły ekosystem, w którym praca staje się prostsza.
 
 ## Kotlin
 
@@ -247,7 +247,7 @@ Jest to produkt otwarty na rozwój, z dobrym community, co przekłada się na du
 
 Ważnym elementem każdego projektu jest współpraca na linii programista-designer. Jeszcze kilka lat temu oznaczało to, że programista musiał mieć dostęp do Photoshopa, albo musiał polegać na projektancie, który wyeksportuje mu widoki ekranów i zasoby graficzne do popularnego formatu graficznego (PNG, JPG).
 
-Takie podejście powodowało stratę czasu i niedokłaności w odwzorowaniu projektu wynikające np. z trudności zmierzenia odstępów pomiędzy elementami. Na szczęście pojawiła się cała gama rozwiązań, które ułatwiają tę współpracę. Ostatnio najczęściej korzystam z InVision. Jest to aplikacja webowa oraz zestaw pluginów do najpopularniejszych narzędzi graficznych.
+Takie podejście powodowało stratę czasu i niedokładność w odwzorowaniu projektu wynikające np. z trudności zmierzenia odstępów pomiędzy elementami. Na szczęście pojawiła się cała gama rozwiązań, które ułatwiają tę współpracę. Ostatnio najczęściej korzystam z InVision. Jest to aplikacja webowa oraz zestaw pluginów do najpopularniejszych narzędzi graficznych.
 W pierwszym kroku designer eksportuje projekt do InVision korzystają z pluginu, a następnie programista może sprawdzać odstępy, kolory i fonty użyte w projekcie oraz samemu eksportować zasoby graficzne do formatów rastrowych lub wektorowych.
 
 {height:35%}
@@ -268,7 +268,7 @@ W pierwszym kroku designer eksportuje projekt do InVision korzystają z pluginu,
 | *Alternatywy* | RESTClient dla Firefox     |
 
 
-Bardzo przydatny narzędzie, pozwalające na testowanie API REST, bez konieczności pisania kodu. Przyjemy interfejs użytkownika pozwala na zarządzanie wieloma zapytaniami jednocześnie i testowanie API, z którym będzie się komunikowała nasza aplikacja.
+Bardzo przydatny narzędzie, pozwalające na testowanie API REST, bez konieczności pisania kodu. Przyjemny interfejs użytkownika pozwala na zarządzanie wieloma zapytaniami jednocześnie i testowanie API, z którym będzie się komunikowała nasza aplikacja.
 
 Do głównych zalet Postman'a należy zaliczyć:
 
@@ -276,7 +276,7 @@ Do głównych zalet Postman'a należy zaliczyć:
 
 * obsługa metod uwierzytelnienia używanych w HTTP, w tym OAuth,
 
-* formatowanie wyniku zapytania jako JSON albo XML,
+* formatowanie wyniku zapytania jako JSON lub XML,
 
 * historia zapytań.
 
@@ -370,7 +370,7 @@ Biblioteka na Androida (i inne platformy) oraz plugin do After Effects. Pozwala 
 
 Designer może projektować animacje korzystając z After Effects (de facto standard dla animacji), a następnie wyeksportować animację do pliku JSON i na tym jego rola się kończy.
 
-Programista dodaje do projektu bibliotekę Lottie, wrzuca plik json do zasobów i w kilku liniach kodu jest wstanie zaimplementować dokładnie taki efekt jaki wymyślił designer. Żyjemy w przyszłości! ;)
+Programista dodaje do projektu bibliotekę Lottie, wrzuca plik json do zasobów i w kilku liniach kodu jest w stanie zaimplementować dokładnie taki efekt jaki wymyślił designer. Żyjemy w przyszłości! ;)
 
 ![Ciężko zaprezentować animacje w ebooku. Wierzcie mi: są efektowne.](resources/images/lottie.png)
 
@@ -471,7 +471,7 @@ Dlatego też polecam założenie konta na Github każdemu programiście i tworz
 
 Parse było rozwiązaniem typu Mobile Backend as a Service, czyli część serwerowa dla naszej aplikacji, bez konieczności pisania kodu. Twórcy tej usługi postawili sobie za cel uproszczenie do maksimum czynności, które do tej pory trzeba było implementować w API.
 
-Niestety, Facebook najpierw kupił Parse.com, a potem postanowił zawiesić jej działanie (czyli typowy przykład acqui-hire). Na szczęście jednak duża część kodu została udostępniona jako Parse Server, który każdy może zainstalować na własnym serwerze. Jeśli nie chcemy zajmować się instalacją rozwiązania, to możemy skorzystać z jednego z dostawców, którzy oferują hosting pod jednym kliknięciem np. https://back4app.com. Sam często wykorzystuje to rozwiązanie na szkoleniach, dzięki czemu uczestnicy mogą sami stworzyć własną instancję serwera w kilka minut, bez konieczności płacenia w ramach limitów developerskich (np. max 10 req/sec).
+Niestety, Facebook najpierw kupił Parse.com, a potem postanowił zawiesić jej działanie (czyli typowy przykład acqui-hire). Na szczęście jednak duża część kodu została udostępniona jako Parse Server, który każdy może zainstalować na własnym serwerze. Jeśli nie chcemy zajmować się instalacją rozwiązania, to możemy skorzystać z jednego z dostawców, którzy oferują hosting pod jednym kliknięciem np. https://back4app.com. Sam często wykorzystuje to rozwiązanie na szkoleniach, dzięki czemu uczestnicy mogą sami stworzyć własną instancję serwera w kilka minut, bez konieczności płacenia w ramach limitów deweloperskich (np. max 10 req/sec).
 
 
 ![Widok danych pozwala zarządzać bazą w prosty sposób.](resources/images/parse.png)
@@ -482,7 +482,7 @@ Przykładowo: utworzenie backendu dla aplikacji typu Tinder nie wymaga od nas pi
 
 * logowania FB i automatycznego tworzenia kont w Parse,
 
-* zapisywania profilów, wiadomości, położenia użytkownika w odpowiednich tabelach,
+* zapisywania profilii, wiadomości, położenia użytkownika w odpowiednich tabelach,
 
 * wyszukiwania użytkowników w określonej odległości dzięki geoquery,
 
@@ -542,9 +542,9 @@ W przypadku, gdy korzystaliśmy z mechanizmu obfuskacji w ProGuard, będziemy po
 
 Firebase Lab jest jedną z wielu, bardzo podobnych usług do testowania aplikacji mobilnych. W odpowiedzi na zwiększającą się fragmentację urządzeń korzystających z systemu Android, pojawiły się problemy z przetestowaniem aplikacji na dużej liczbie różnych urządzeń. Pojawił się więc pomysł, aby stworzyć miejsca, gdzie można uzyskać dostęp do dużej liczby fizycznych urządzeń, w zamian za niewielką opłatę. 
 
-Tak jak wspomniałem, serwisów takich jest wiele. Różnią się liczbą dostępnych urządzeń, ceną oraz rodzajami testów jakie da się na nich uruchomić. Rzeczą, która wyróżnia Firebase Lab jest możliwość założenia darmowego konta i dostęp do kilku darmowych urządzeń. To pozwala na zapoznanie się z zasadami funkcjonowania serwisu oraz na przeprowadznie testów na kilku dodatkowych urządzeniach.
+Tak jak wspomniałem, serwisów takich jest wiele. Różnią się liczbą dostępnych urządzeń, ceną oraz rodzajami testów jakie da się na nich uruchomić. Rzeczą, która wyróżnia Firebase Lab jest możliwość założenia darmowego konta i dostęp do kilku darmowych urządzeń. To pozwala na zapoznanie się z zasadami funkcjonowania serwisu oraz na przeprowadzanie testów na kilku dodatkowych urządzeniach.
 
-Dodatkową cechą wyróżniającą, jest integracja z Android Studio oraz wieloma usługiami CI.
+Dodatkową cechą wyróżniającą, jest integracja z Android Studio oraz wieloma usługami CI.
 
 ![](resources/images/firebase_lab.png)
 
@@ -561,11 +561,11 @@ Dodatkową cechą wyróżniającą, jest integracja z Android Studio oraz wielom
 | *Cena*        | FREE                    |
 | *Alternatywy* | -                       |
 
-Większosć aplikacji mobilnych na pewnym etapie swojego rozwoju zaczyna korzystać z API (zwykle REST), które często powstaje równolegle z aplikacją. Apiary ma za zadanie ułatwić proces współpracy pomiędzy twórcami API, a twórcami aplikacji.
+Większość aplikacji mobilnych na pewnym etapie swojego rozwoju zaczyna korzystać z API (zwykle REST), które często powstaje równolegle z aplikacją. Apiary ma za zadanie ułatwić proces współpracy pomiędzy twórcami API, a twórcami aplikacji.
 
 Apiary stanowi interaktywnej dokumentacji API, która opisuje jakie endpointy są dostępne i jednocześnie pozwala wystawić tzw. mock czyli zaślepkę zwracającą wbite na sztywno dane.
 
-Dzięki temu programiści mobilni mogą zacząć tworzyć i testować aplikację zanim powstanie infrastuktura serwerowa. Oczywiście zakładając, że dokumentacja będzie zdodna z rzeczywistością. 
+Dzięki temu programiści mobilni mogą zacząć tworzyć i testować aplikację zanim powstanie infrastruktura serwerowa. Oczywiście zakładając, że dokumentacja będzie zgodna z rzeczywistością. 
 
 {height:30%}
 ![](resources/images/apiary.jpeg)
@@ -640,11 +640,11 @@ Biblioteka pozwalająca na łączenie widoków z danymi na poziomie plików XML 
 Bardzo prosta biblioteka zdejmująca z programisty błędogenny proces przechowywania stanu obiektów pomiędzy zmianami konfiguracji poprzez automatyczne zarządzanie cyklem życia obiektów typu ViewModel z MVVM.
 
 ### Room
-Bardzo dobrze napisana biblioteka ORM (do mapowania obiektowo-relacyjnego), która upraszcza pracę z bazą SQLite w naszej aplikacji. Większość kodu generowana jest na etapie kompilacji na podstawie metadanych, które podamy m.in. zapytań SQL. Ważną zaleta jest dobra integracja z Android Studio, która pozwala m.in. na podpowiadanie kodu przy pisaniu zapytań SQL. 
+Bardzo dobrze napisana biblioteka ORM (do mapowania obiektowo-relacyjnego), która upraszcza pracę z bazą SQLite w naszej aplikacji. Większość kodu generowana jest na etapie kompilacji na podstawie metadanych, które podamy m.in. zapytań SQL. Ważną zaletą jest dobra integracja z Android Studio, która pozwala m.in. na podpowiadanie kodu przy pisaniu zapytań SQL. 
 
 ### LiveData
 Implementacja wzorca Obserwatora, która doskonale pozwala łączyć powyższe elementy, dzięki czemu np. widok (DataBinding) może reagować na zmiany w bazie danych (Room) poprzez obiekt LiveData przechowywany w ViewModelu.
-Obiekty typu LiveData pozwalają na przekształcanie obiektów pomiędzy warstwami naszej aplikacji lub łączeniem kilku obiektów w jeden. 
+Obiekty typu LiveData pozwalają na przekształcanie obiektów między warstwami naszej aplikacji lub łączeniem kilku obiektów w jeden. 
 
 {pagebreak}
 
@@ -682,7 +682,7 @@ Retrofit retrofit = new Retrofit.Builder()
 GitHubService service = retrofit.create(GitHubService.class);
 ```
 
-Teraz wystarczy tylko zawołać wygenerowaną metode i pronto!
+Teraz wystarczy tylko zawołać wygenerowaną metodę i pronto!
 
 ```java
 Call<List<Repo>> repos = service.listRepos("octocat");
@@ -721,7 +721,7 @@ Picasso.get()
 
 Wycieki pamięci to temat, z którym każdy programista Androida musi się zmierzyć. Często wynikają z nieznajomości architektury Androida lub cyklu życia jego komponentów, ale czasem są następstwem użycia jakiegoś mechanizmu cache lub źle napisanej biblioteki. Powodów może być wiele i często samo zdiagnozowanie takiego wycieku jest trudniejsze niż jego usunięcie.
 
-I tutaj wchodzi Leak Canary, cały na biało. Jest to biblioteka wyszukująca wycieki pamięci, którą integruje się z aplikacją. Jeśli wyciek zostanie zlokalizowany to otrzymamy notyfikację, która po kliknięciu wyświetli nam szczegóły wycieku. Wszystko bezpośrednio na urządeniu testowym lub emulatorze.
+I tutaj wchodzi Leak Canary, cały na biało. Jest to biblioteka wyszukująca wycieki pamięci, którą integruje się z aplikacją. Jeśli wyciek zostanie zlokalizowany to otrzymamy notyfikację, która po kliknięciu wyświetli nam szczegóły wycieku. Wszystko bezpośrednio na urządzeniu testowym lub emulatorze.
 
 Polecam zwłaszcza początkującym programistom, którzy nie wiedzą jeszcze jakie konstrukcje prowadzą do wycieków (np. anonimowe klasy wewnętrzne), ponieważ da im to szybką informację o potencjalnych problemach.
 
@@ -750,7 +750,7 @@ Timber to narzędzie proste i przyjemne. Jest to nakładka na mechanizm logowani
 | *Cena*        | FREE                            |
 | *Alternatywy* | Koin              |
 
-Dagger to implementacja wzorca Dependency Injection, czyli wstrzykiwania zależności. Celem tego podejścia jest minimalizacja ilości miejsc, w których tworzymy obiekty poprzez `new NazwaKlasy()` i stworzenie centralnego repozytorium obiektów, które możemy wstrzyknąć w dowolnym miejscu aplikacji. W przypadku Androida jest to szczególnie przydatne, ponieważ często potrzebujemy w różnych Activity albo Fragmentach dostępu do np. SharedPreferences. Polecam przeczytanie dokumentacji i rozpoczęcie od wstrzykiwania prostych obiektów np. swoich Managerów.
+Dagger to implementacja wzorca Dependency Injection, czyli wstrzykiwania zależności. Celem tego podejścia jest minimalizacja ilości miejsc, w których tworzymy obiekty poprzez `new NazwaKlasy()` i utworzenie centralnego repozytorium obiektów, które możemy wstrzyknąć w dowolnym miejscu aplikacji. W przypadku Androida jest to szczególnie przydatne, ponieważ często potrzebujemy w różnych Activity albo Fragmentach dostępu do np. SharedPreferences. Polecam przeczytanie dokumentacji i rozpoczęcie od wstrzykiwania prostych obiektów np. swoich Managerów.
 
 {pagebreak}
 
@@ -892,12 +892,12 @@ Blog, który tworzę w wolnym czasie pomiędzy projektami i szkoleniami. Staram 
 ### Android Weekly
 http://androidweekly.net/
 
-Cotygodniowa porcja przydatnych zasobów dotyczących programowania na Androida, przebranych i zebranych w jednym miejscu. Nowe biblioteki, posty na blogach i filmy wideo. Istnieje możliwość przeglądania na stronie internetowej, lub zamówienie subskrybcji wprost do skrzynki email.
+Cotygodniowa porcja przydatnych zasobów dotyczących programowania na Androida, przebranych i zebranych w jednym miejscu. Nowe biblioteki, posty na blogach i filmy wideo. Istnieje możliwość przeglądania na stronie internetowej, lub zamówienie subskrypcji wprost do skrzynki email.
 
 ### MaterialUp
 http://www.materialup.com/
 
-Ładny katalog ładnych aplikacji. Celem MaterialUp jest prezentowanie dobrych przykładów impementacji stylu Material Design w aplikacjach. Są tu nie tylko aplikacje Android, ale także iOS, a nawet aplikacje Web. Dobre źródło inspiracji i benchmarków. Zawsze polecam swoim klientom, aby zobaczyli co mogą zyskać idąc w kierunku Material Design.
+Ładny katalog ładnych aplikacji. Celem MaterialUp jest prezentowanie dobrych przykładów implementacji stylu Material Design w aplikacjach. Są tu nie tylko aplikacje Android, ale także iOS, a nawet aplikacje Web. Dobre źródło inspiracji i benchmarków. Zawsze polecam swoim klientom, aby zobaczyli co mogą zyskać idąc w kierunku Material Design.
 
 ### Android Arsenal
 https://android-arsenal.com/
@@ -1008,7 +1008,7 @@ Nasz człowiek w Google. Wojtek pełni tam rolę Android Developer Advocate, czy
 | *GitHub*      | https://github.com/commonsguy                               |
 
 
-Twórca CommonsWare i autor ksiązki "The Busy Coder’s Guide to Android Development". Znajduje się w Top 10 najbardziej aktywnych osób na StackOverflow. Jeśli szukasz odpowiedzi na pytanie o Androida, duża szansa, że to on odpowie. Twórca dużej ilości bibliotek i częsty speaker na popularnych konferencjach mobilnych.
+Twórca CommonsWare i autor książki "The Busy Coder’s Guide to Android Development". Znajduje się w Top 10 najbardziej aktywnych osób na StackOverflow. Jeśli szukasz odpowiedzi na pytanie o Androida, duża szansa, że to on odpowie. Twórca dużej ilości bibliotek i częsty speaker na popularnych konferencjach mobilnych.
 
 # Reklama :)
 
