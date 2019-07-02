@@ -1,9 +1,10 @@
 
 # Wstęp
 
+{height:20%}
 ![](resources/images/smd.jpeg)
 
-Cześć, nazywam się Sylwester Madej i od 7 lat pomagam ludziom tworzyć aplikacje na Androida. Poza kodowaniem, prowadzę także szkolenia stacjonarne i online. Często uczestnicy pytają się mnie o sprawdzone narzędzia, które warto poznać. Postanowiłem zebrać moje rekomendacje w tego ebooka.
+Cześć, nazywam się **Sylwester Madej** i od 7 lat pomagam ludziom tworzyć aplikacje na Androida. Poza kodowaniem, prowadzę także szkolenia stacjonarne i online w ramach **https://SzkoleniaAndroid.pl**. Często uczestnicy pytają się mnie o sprawdzone narzędzia, które warto poznać. Postanowiłem zebrać moje rekomendacje w tego ebooka.
 
 Celem niniejszego ebooka jest przedstawienie zestawu narzędzi i zasobów, których używanie wpływa na jakość i wydajność pracy programisty. Każde z nich przetestowałem na własnej skórze, podczas tworzenia wielu aplikacji. Wybór ten potwierdziło wielu programistów, z którymi rozmawiałem na imprezach branżowych, takich jak Mobile Warsaw, Droidcon czy Mobilization.
 
@@ -189,6 +190,11 @@ Continous Integration (CI), to technika, w której serwer co pewien czas pobiera
 
 Jenkins, to jedna z lepszych implementacji CI, a do tego darmowa. Dużą dodatkową zaletą jest możliwość skorzystania z dziesiątek pluginów, które potrafią obsługiwać różne narzędzia, systemy kontroli wersji lub po prostu wyświetlać czytelne raporty. Pluginem, który na pewno warto używać dla testowania aplikacji jest Android Emulator Plugin, który odpowiada za tworzenie emulatorów, uruchamianie ich i zarządzanie aktualnie uruchomionymi.
 
+
+
+![Prognoza jest dobra - buildy się udały. Źródło: https://www.morlunk.com/jenkins/](resources/images/jenkins_android.png)
+
+
 Przykładowy cykl, który może realizować Jenkins CI:
 
 1. Pobranie kodu z Git, SVN, Mercurial.
@@ -201,7 +207,6 @@ Przykładowy cykl, który może realizować Jenkins CI:
 
 5. Po udanym zbudowaniu i przetestowaniu, wysłanie do kanału Alpha w Google Play lub na jakąś usługę do dystrybucji paczek np. Crashlytics Beta.
 
-![Prognoza jest dobra - buildy się udały. Źródło: https://www.morlunk.com/jenkins/](resources/images/jenkins_android.png)
 
 {pagebreak}
 
@@ -468,6 +473,9 @@ Parse było rozwiązaniem typu Mobile Backend as a Service, czyli część serwe
 
 Niestety, Facebook najpierw kupił Parse.com, a potem postanowił zawiesić jej działanie (czyli typowy przykład acqui-hire). Na szczęście jednak duża część kodu została udostępniona jako Parse Server, który każdy może zainstalować na własnym serwerze. Jeśli nie chcemy zajmować się instalacją rozwiązania, to możemy skorzystać z jednego z dostawców, którzy oferują hosting pod jednym kliknięciem np. https://back4app.com. Sam często wykorzystuje to rozwiązanie na szkoleniach, dzięki czemu uczestnicy mogą sami stworzyć własną instancję serwera w kilka minut, bez konieczności płacenia w ramach limitów developerskich (np. max 10 req/sec).
 
+
+![Widok danych pozwala zarządzać bazą w prosty sposób.](resources/images/parse.png)
+
 Mamy więc mechanizm operowania na danych w tabelach, wysyłanie wiadomości PUSH, analitykę, logowanie FB i Twitter, a nawet pisanie logiki po stronie serwera w JS.
 
 Przykładowo: utworzenie backendu dla aplikacji typu Tinder nie wymaga od nas pisania kodu, ponieważ możemy skorzystać z:
@@ -481,7 +489,6 @@ Przykładowo: utworzenie backendu dla aplikacji typu Tinder nie wymaga od nas pi
 * powiadamiania użytkownika o nowych aktywnościach na profilu, poprzez wiadomości PUSH.
 
 
-![Widok danych pozwala zarządzać bazą w prosty sposób.](resources/images/parse.png)
 
 {pagebreak}
 
@@ -678,6 +685,7 @@ Teraz wystarczy tylko zawołać wygenerowaną metode i pronto!
 Call<List<Repo>> repos = service.listRepos("octocat");
 ```
 
+{pagebreak}
 
 ### Picasso
 
@@ -698,6 +706,7 @@ Picasso.get()
 
 ![](resources/images/picasso_sample.png)
 
+{pagebreak}
 
 ### Timber
 
@@ -781,6 +790,10 @@ Flowable.range(1, 10)
 
 Stetho to biblioteka, która pozwala debugować aplikację z użyciem Chrome Developer Tools. Pozwala, w czasie rzeczywistym, podglądać hierarchię widoków, zawartość bazy danych i SharedPreferences, a nawet monitorować zapytania HTTP.
 
+{height:30%}
+![](resources/images/inspector-sqlite.png)
+
+
 Integracja jest bardzo łatwa i sprowadza się do dodania zależności w Gradle oraz zainicjalizowania biblioteki przy starcie aplikacji.
 
 ```java
@@ -799,8 +812,6 @@ new OkHttpClient.Builder()
     .addNetworkInterceptor(new StethoInterceptor())
     .build();
 ```
-
-![](resources/images/inspector-sqlite.png)
 
 
 ## BindingCollectionAdapter
@@ -829,15 +840,6 @@ public class ViewModel {
 
 # Kody źródłowe
 
-## Google IO App
-
-https://github.com/google/iosched
-
-Każdego roku Google IO jest najważniejszą konferencją, na której ekipa z Mountain View prezentuje nowości w SDK Androida. Niedługo po tym wydarzeniu udostępniany jest kod źródłowy oficjalnej aplikacji, powstałej na to wydarzenie, która jednocześnie prezentuje jak najwięcej z nowości w SDK.
-
-Warto przejrzeć, choć z doświadczenia wiem, że kod nie jest idealny i trudny w czytaniu, ale zdecydowanie prezentuje dużo nowości.
-
-
 ## Plaid 
 
 https://github.com/android/plaid
@@ -846,6 +848,16 @@ https://github.com/android/plaid
 ![](resources/images/plaid.png)
 
 Przeglądarka wiadomości ze stron Designer News, Dribbble i Product Hunt stworzona przez ludzi z zespołu Androida. Bardzo dobrze ilustruje sposób implementacji Material Design oraz architektury w oparciu o Architecture Components.
+
+
+## Google IO App
+
+https://github.com/google/iosched
+
+Każdego roku Google IO jest najważniejszą konferencją, na której ekipa z Mountain View prezentuje nowości w SDK Androida. Niedługo po tym wydarzeniu udostępniany jest kod źródłowy oficjalnej aplikacji, powstałej na to wydarzenie, która jednocześnie prezentuje jak najwięcej z nowości w SDK.
+
+Warto przejrzeć, choć z doświadczenia wiem, że kod nie jest idealny i trudny w czytaniu, ale zdecydowanie prezentuje dużo nowości.
+
 
 # Źródła wiedzy
 
