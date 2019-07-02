@@ -372,7 +372,7 @@ Designer może projektować animacje korzystając z After Effects (de facto stan
 
 Programista dodaje do projektu bibliotekę Lottie, wrzuca plik json do zasobów i w kilku liniach kodu jest wstanie zaimplementować dokładnie taki efekt jaki wymyślił designer. Żyjemy w przyszłości! ;)
 
-![](resources/images/lottie.gif)
+![Ciężko zaprezentować animacje w ebooku. Wierzcie mi: są efektowne.](resources/images/lottie.png)
 
 {pagebreak}
 
@@ -509,7 +509,11 @@ Firebase zaczynało jako alternatywa do Parse, mBaaS pozwalający na przechowywa
 
 Model biznesowy przypomina trochę dealera narkotyków: dla bardzo małych aplikacji aplikacja 
 
+{height:30%}
+![](resources/images/firebase_services.png)
 
+
+{pagebreak}
 
 ## Firebase Crashlytics
 
@@ -527,6 +531,25 @@ Każda aplikacja umieszczona na sklepie wcześniej lub później będzie miała 
 W przypadku, gdy korzystaliśmy z mechanizmu obfuskacji w ProGuard, będziemy potrzebowali pliku z mapowaniem, ponieważ nazwy metod w których wystąpił błąd będą już zmienione.
 
 {pagebreak}
+
+## Firebase Lab
+
+
+| *Strona*      | https://firebase.google.com/products/test-lab |
+| *Cena*        | FREE (5 testów/dzień)                  |
+| *Alternatywy* | Appthwack, Saucelabs  |
+
+
+Firebase Lab jest jedną z wielu, bardzo podobnych usług do testowania aplikacji mobilnych. W odpowiedzi na zwiększającą się fragmentację urządzeń korzystających z systemu Android, pojawiły się problemy z przetestowaniem aplikacji na dużej liczbie różnych urządzeń. Pojawił się więc pomysł, aby stworzyć miejsca, gdzie można uzyskać dostęp do dużej liczby fizycznych urządzeń, w zamian za niewielką opłatę. 
+
+Tak jak wspomniałem, serwisów takich jest wiele. Różnią się liczbą dostępnych urządzeń, ceną oraz rodzajami testów jakie da się na nich uruchomić. Rzeczą, która wyróżnia Firebase Lab jest możliwość założenia darmowego konta i dostęp do kilku darmowych urządzeń. To pozwala na zapoznanie się z zasadami funkcjonowania serwisu oraz na przeprowadznie testów na kilku dodatkowych urządzeniach.
+
+Dodatkową cechą wyróżniającą, jest integracja z Android Studio oraz wieloma usługiami CI.
+
+![](resources/images/firebase_lab.png)
+
+{pagebreak}
+
 
 ## Apiary
 
@@ -570,26 +593,6 @@ StackOverflow to jednak dużo więcej niż zbiór pytań i odpowiedzi. To społe
 {pagebreak}
 
 
-## TestDroid
-
-{height:10%}
-![](resources/images/testdroid_logo.jpg)
-
-
-| *Strona*      | http://testdroid.com/ |
-| *Cena*        | FREE                  |
-| *Alternatywy* | Appthwack, Saucelabs  |
-
-
-Testdroid jest jedną z wielu, bardzo podobnych usług do testowania aplikacji mobilnych. W odpowiedzi na zwiększającą się fragmentację urządzeń korzystających z systemu Android, pojawiły się problemy z przetestowaniem aplikacji na dużej liczbie różnych urządzeń. Pojawił się więc pomysł, aby stworzyć miejsca, gdzie można uzyskać dostęp do dużej liczby fizycznych urządzeń, w zamian za niewielką opłatę. 
-
-Tak jak wspomniałem, serwisów takich jest wiele. Różnią się liczbą dostępnych urządzeń, ceną oraz rodzajami testów jakie da się na nich uruchomić. Rzeczą, która wyróżnia Testdroid jest możliwość założenia darmowego konta i dostęp do kilku darmowych urządzeń (dzięki współpracy z firmą Intel, są to głównie urządzenia z procesorami Intel Atom). To pozwala na zapoznanie się z zasadami funkcjonowania serwisu oraz na przeprowadznie testów na kilku dodatkowych urządzeniach.
-
-Dodatkową cechą wyróżniającą, jest możliwość użycia narzędzia Testdroid Recorder, które pozwala nagrywać testy manualne i powtarzać je, na wielu urządzeniach jednocześnie.
-
-![Widok wyników testu na urządzeniu Acer Iconia Tab 8.](resources/images/testdroid.png)
-
-{pagebreak}
 
 ## Proto.io
 
@@ -775,6 +778,9 @@ Flowable.range(1, 10)
   .blockingSubscribe(System.out::println);
 ```
 
+{height:20%}
+![Diagramy kulkowe (marble diagrams) pozwalają lepiej zrozumieć działanie operatorów Rx. Źródło: https://rxmables.com](resources/images/marble.png)
+
 {pagebreak}
 
 ## Stetho
@@ -854,6 +860,11 @@ Przeglądarka wiadomości ze stron Designer News, Dribbble i Product Hunt stworz
 
 https://github.com/google/iosched
 
+
+{height: 30%}
+![](resources/images/iosched.png)
+
+
 Każdego roku Google IO jest najważniejszą konferencją, na której ekipa z Mountain View prezentuje nowości w SDK Androida. Niedługo po tym wydarzeniu udostępniany jest kod źródłowy oficjalnej aplikacji, powstałej na to wydarzenie, która jednocześnie prezentuje jak najwięcej z nowości w SDK.
 
 Warto przejrzeć, choć z doświadczenia wiem, że kod nie jest idealny i trudny w czytaniu, ale zdecydowanie prezentuje dużo nowości.
@@ -907,17 +918,6 @@ https://www.youtube.com/channel/UCVHFbqXqoYvEWM1Ddxl0QDg
 
 Ważny kanał dla tych, którzy chcą wiedzieć co nowego Google tym razem dodał do Androida. Oficjalny kanał, na którym zespół programistów z Google informuje o zmianach, a także pokazuje najlepsze praktyki. Aktywny najbardziej po Google IO, gdy następują ogłoszenia nowych API i narzędzi.
 
-### Google Developers
-https://www.youtube.com/channel/UC_x5XG1OV2P6uZZ5FSM9Ttw
-
-Drugi oficjalny kanał. Związany nie tylko z samym Androidem, ale także otaczającym go ekosystemem usług Google.
-
-### NewCircle Training
-https://www.youtube.com/channel/UCkQX1tChV7Z7l1LFF4L9j_g
-
-Świetne źródło doskonałych prezentacji z zakresu różnych zagadnień. Warto obejrzeć zwłaszcza serię Android Bootcamp. Jest już nieco czasowa, ale większość poruszonych tam tematów nadal jest aktualna i bardzo dobrze wytłumaczona.
-
-
 {pagebreak}
 
 ## Książki
@@ -933,18 +933,18 @@ Nietypowa książka autorstwa Mark'a Murphy'ego. Dostępna jedynie w postaci 12-
 
 | *Strona*  | http://jakewharton.com/               |
 | *Twitter* | https://twitter.com/JakeWharton       |
-| *G+*      | https://plus.google.com/+JakeWharton/ |
+| *GitHub*      | https://github.com/JakeWharton |
 
 {width:10%, float: right}
 ![](resources/images/jake_wharton.png)
 
-Człowiek instytucja. Twórca wielu z przytoczonych bibliotek. Autorytet w kwestii upraszczania kodu, korzystania z anotacji oraz SDK.
+Człowiek-legenda. Twórca wielu z przytoczonych bibliotek. Autorytet w kwestii upraszczania kodu, korzystania z anotacji oraz SDK. Wcześniej tworzył biblioteki w Square, obecnie pomaga developerom w Google.
 
 ## Romain Guy
 
 | *Strona*  | http://www.curious-creature.com/    |
 | *Twitter* | https://twitter.com/romainguy       | 
-| *G+*      | https://plus.google.com/+RomainGuy/ |
+| *GitHub*      | https://github.com/romainguy |
 
 {width:10%, float: right}
 ![](resources/images/romain_guy.jpg)
@@ -955,7 +955,7 @@ Googler pracujący nad Androidem. Często prezentuje nowości związane z UI.
 
 | *Strona*  | https://chris.banes.me/              |
 | *Twitter* | https://twitter.com/chrisbanes       |
-| *G+*      | https://plus.google.com/+ChrisBanes/ |
+| *GitHub*      | https://github.com/chrisbanes |
 
 {width:10%, float: right}
 ![](resources/images/chris_banes.jpg)
@@ -974,7 +974,7 @@ Często dzieli się na swoich profilach fragmentami kodów, realizujących konkr
 
 | *Strona*  | http://www.curious-creature.com/      |
 | *Twitter* | https://twitter.com/crafty            |
-| *G+*      | https://plus.google.com/+NickButcher/ |
+| *G+*      | https://github.com/nickbutcher |
 
 
 Googler odpowiedzialny za relacje na styku design/development. Umieszcza bardzo fajne prezentacje i przykłady. Dużo udziela się na kanale YouTube Android Developers.
@@ -987,11 +987,11 @@ Googler odpowiedzialny za relacje na styku design/development. Umieszcza bardzo 
 
 
 | *Strona*  | https://medium.com/@wkalicinski     |
-| *Twitter* | https://twitter.com/crafty            |
-| *GitHub*      | https://plus.google.com/+NickButcher/ |
+| *Twitter* | https://twitter.com/wkalic         |
+| *GitHub*      | https://github.com/wojtek-kalicinski |
 
 
-TODO
+Nasz człowiek w Google. Wojtek pełni tam rolę Android Developer Advocate, czyli odpowiada za komunikacje z developerami. Możesz go spotkać na prawie każdej liczącej się konferencji, gdzie zwykle opowiada o najnowszych narzędziach od Google albo dobrych praktykach.
 
 ## Mark Murphy
 
@@ -1001,7 +1001,7 @@ TODO
 
 | *Strona*  | https://commonsware.com/mmurphy |
 | *Twitter* | https://twitter.com/commonsguy  |
-| *G+*      | -                               |
+| *GitHub*      | https://github.com/commonsguy                               |
 
 
 Twórca CommonsWare i autor ksiązki "The Busy Coder’s Guide to Android Development". Znajduje się w Top 10 najbardziej aktywnych osób na StackOverflow. Jeśli szukasz odpowiedzi na pytanie o Androida, duża szansa, że to on odpowie. Twórca dużej ilości bibliotek i częsty speaker na popularnych konferencjach mobilnych.
