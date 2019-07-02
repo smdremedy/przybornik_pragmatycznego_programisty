@@ -4,7 +4,7 @@
 {height:20%}
 ![](resources/images/smd.jpeg)
 
-Cześć, nazywam się **Sylwester Madej** i od 7 lat pomagam ludziom tworzyć aplikacje na Androida. Poza kodowaniem, prowadzę także szkolenia stacjonarne i online w ramach **https://SzkoleniaAndroid.pl**. Często uczestnicy pytają się mnie o sprawdzone narzędzia, które warto poznać. Postanowiłem zebrać moje rekomendacje w tego ebooka.
+Cześć, nazywam się **Sylwester Madej** i od 7 lat pomagam ludziom tworzyć aplikacje na Androida. Poza kodowaniem, prowadzę także szkolenia stacjonarne i online w ramach **SzkoleniaAndroid.pl**. Często uczestnicy pytają się mnie o sprawdzone narzędzia, które warto poznać. Postanowiłem zebrać moje rekomendacje w tego ebooka.
 
 Celem niniejszego ebooka jest przedstawienie zestawu narzędzi i zasobów, których używanie wpływa na jakość i wydajność pracy programisty. Każde z nich przetestowałem na własnej skórze, podczas tworzenia wielu aplikacji. Wybór ten potwierdziło wielu programistów, z którymi rozmawiałem na imprezach branżowych, takich jak Mobile Warsaw, Droidcon czy Mobilization.
 
@@ -711,19 +711,6 @@ Picasso.get()
 
 {pagebreak}
 
-### Timber
-
-{height:10%}
-![](resources/images/timber.png)
-
-
-| *Strona*      | https://github.com/JakeWharton/timber |
-| *Cena*        | FREE                            |
-| *Alternatywy* | -              |
-
-Timber to narzędzie proste i przyjemne. Jest to nakładka na mechanizm logowania wbudowany w Androida. Pozwala szybciej dodać log do aplikacji (np. ograniczając konieczność podawania TAG) oraz zwiększa kontrolę nad logowaniem w całej aplikacji np. pozwalając na usunięcie logów jedną flagą.
-
-
 
 ### Leak Canary
 
@@ -740,6 +727,20 @@ Polecam zwłaszcza początkującym programistom, którzy nie wiedzą jeszcze jak
 
 ![Uuups. Obiekt aplikacji trzyma referencje do widoków.](resources/images/leak_canary.png)
 
+
+{pagebreak}
+
+### Timber
+
+{height:10%}
+![](resources/images/timber.png)
+
+
+| *Strona*      | https://github.com/JakeWharton/timber |
+| *Cena*        | FREE                            |
+| *Alternatywy* | -              |
+
+Timber to narzędzie proste i przyjemne. Jest to nakładka na mechanizm logowania wbudowany w Androida. Pozwala szybciej dodać log do aplikacji (np. ograniczając konieczność podawania TAG) oraz zwiększa kontrolę nad logowaniem w całej aplikacji np. pozwalając na usunięcie logów jedną flagą.
 
 {pagebreak}
 
@@ -819,6 +820,7 @@ new OkHttpClient.Builder()
     .build();
 ```
 
+{pagebreak}
 
 ## BindingCollectionAdapter
 
@@ -854,6 +856,8 @@ https://github.com/android/plaid
 ![](resources/images/plaid.png)
 
 Przeglądarka wiadomości ze stron Designer News, Dribbble i Product Hunt stworzona przez ludzi z zespołu Androida. Bardzo dobrze ilustruje sposób implementacji Material Design oraz architektury w oparciu o Architecture Components.
+
+{pagebreak}
 
 
 ## Google IO App
@@ -995,7 +999,7 @@ Nasz człowiek w Google. Wojtek pełni tam rolę Android Developer Advocate, czy
 
 ## Mark Murphy
 
-{height:10%, float: right}
+{width:10%, float: right}
 ![](resources/images/mark_murphy.jpg)
 
 
