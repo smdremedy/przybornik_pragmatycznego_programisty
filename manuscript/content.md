@@ -1,5 +1,10 @@
 
 # Wstęp
+
+![](resources/images/smd.jpeg)
+
+Cześć, nazywam się Sylwester Madej i od 7 lat pomagam ludziom tworzyć aplikacje na Androida. Poza kodowaniem, prowadzę także szkolenia stacjonarne i online. Często uczestnicy pytają się mnie o sprawdzone narzędzia, które warto poznać. Postanowiłem zebrać moje rekomendacje w tego ebooka.
+
 Celem niniejszego ebooka jest przedstawienie zestawu narzędzi i zasobów, których używanie wpływa na jakość i wydajność pracy programisty. Każde z nich przetestowałem na własnej skórze, podczas tworzenia wielu aplikacji. Wybór ten potwierdziło wielu programistów, z którymi rozmawiałem na imprezach branżowych, takich jak Mobile Warsaw, Droidcon czy Mobilization.
 
 Postarałem się wybrać po jednym elemencie, z każdej kategorii. W przypadku gdy znam inne, podobne rozwiązania, podaje je jako alternatywy. Ułatwia to proces wyboru osobom początkującym, choć sam wychodzę z założenia, że nie ma narzędzi idealnych do wszystkiego. Dlatego też sam co jakiś czas szukam nowych, lepszych rozwiązań.
@@ -79,7 +84,7 @@ public final class Person {
 }
 ```
 
-Jeśli chcesz zacząć przygodę z Kotlinem, to sprawdź mój [darmowy mini-kurs Kotlina](https://szkoleniaandroid.pl/kurs-kotlina)
+Jeśli chcesz dowiedzieć się więcej, to sprawdź mój [darmowy mini-kurs Kotlina](https://szkoleniaandroid.pl/kurs-kotlina)
 
 {pagebreak}
 
@@ -908,7 +913,7 @@ https://www.youtube.com/channel/UCkQX1tChV7Z7l1LFF4L9j_g
 ### The Busy Coder's Guide to Android Development
 http://commonsware.com/Android/
 
-Nietypowa książka autorstwa Mark'a Murphy'ego. Dostępna jedynie w postaci 12-miesięcznej subskrypcji, w trakcie której otrzymujemy dostęp do aktualizacji książki - zwykle jest kilka rocznie. Jedyny tytuł, który mogę polecić z czystym sumieniem, ponieważ w każdym momencie jest aktualna. No i ta objętość: prawie 3000 stron (tak, trzy tysiące)!
+Nietypowa książka autorstwa Mark'a Murphy'ego. Dostępna jedynie w postaci 12-miesięcznej subskrypcji, w trakcie której otrzymujemy dostęp do aktualizacji książki - zwykle jest kilka rocznie. Jedyny tytuł, który mogę polecić z czystym sumieniem, ponieważ w każdym momencie jest aktualna. No i ta objętość: ponad 4000 stron (tak, cztery tysiące)!
 
 # Warto śledzić
 
