@@ -229,7 +229,7 @@ Warto posiadać Sketch jeśli często otrzymujemy projekty graficzne wykonane w 
 Jest to produkt otwarty na rozwój, z dobrym community, co przekłada się na dużą ilość wtyczek, pozwalających m.in.: na szybki eksport grafik do różnych rozdzielczości. Widziałem nawet wersje, umożliwiające generowanie kodu layoutów prosto z projektu w Sketch.
 
 {height:35%}
-![Główne okno Sketch.](resources/images/sketch.png)
+![Główne okno Sketch. Źródło: https://sketch.com](resources/images/sketch.png)
 
 {pagebreak}
 
@@ -251,7 +251,7 @@ Takie podejście powodowało stratę czasu i niedokładność w odwzorowaniu pro
 W pierwszym kroku designer eksportuje projekt do InVision korzystają z pluginu, a następnie programista może sprawdzać odstępy, kolory i fonty użyte w projekcie oraz samemu eksportować zasoby graficzne do formatów rastrowych lub wektorowych.
 
 {height:35%}
-![](resources/images/invision_inspect.png)
+![Tryb inspect pozwala łatwo sprawdzić rozmiary i odstępy na projekcie. Źródło: https://www.invisionapp.com/](resources/images/invision_inspect.png)
 
 {pagebreak}
 
@@ -283,7 +283,7 @@ Do głównych zalet Postman'a należy zaliczyć:
 Narzędzie to warto wykorzystać, aby sprawdzić API zanim jeszcze zaczniemy implementować dane zapytanie po stronie aplikacji. Ponadto jest to idealne rozwiązanie dla programistów tworzących API, którzy chcą przetestować jak będzie się ono zachowywało dla prawdziwych danych.
 
 {height:30%}
-![Przykładowe zapytanie do API w Postman.](resources/images/postman-default-view.png)
+![Przykładowe zapytanie do API w Postman. Źródło: http://www.getpostman.com/](resources/images/postman-default-view.png)
 
 {pagebreak}
 
@@ -295,6 +295,7 @@ Narzędzie to warto wykorzystać, aby sprawdzić API zanim jeszcze zaczniemy imp
 
 Kolejne proste narzędzie, które pomoże zaoszczędzić godziny przy tworzeniu aplikacji mobilnych. DB Browser, jak sama nazwa wskazuje, służy do przeglądania zawartości bazy SQLite. Poza przeglądaniem daje także możliwości edycji oraz wykonywania zapytań SQL i podglądu wyników. Jest to doskonała alternatywa dla konsolowego klienta *sqlite3*, który jest dostarczany z SDK Androida. Jedyną wadą jest konieczność pobrania pliku z urządzenia do lokalnego systemu plików np. poleceniem `adb pull`. Gdy to już zrobimy mamy gotowy plik, na którym możemy wykonywać dowolne operacje. Jeśli dokonamy jakichkolwiek zmian, to ten zmieniony plik musimy ponownie umieścić na urządzeniu za pomocą polecenia: `adb push`.
 
+{height:40%}
 ![DB Browser pozwala m.in. podejrzeć strukturę bazy danych.](resources/images/dbbrowser.png)
 
 {pagebreak}
@@ -318,7 +319,7 @@ Właśnie wsparcie dla SSL oraz prostota obsługi sprawiają, że narzędzie to 
 Dodatkowo, polecam czasem przeanalizować co wysyłają na serwer inne aplikacje lub np. usługi Google.
 
 {height:40%}
-![](resources/images/burp_suite.png)
+![Podsłuchiwanie ruchu HTTPS wymaga jedynie zainstalowania root CA.](resources/images/burp_suite.png)
 
 
 {pagebreak}
@@ -333,7 +334,7 @@ Dekompilator bajtkodu w formacie dex do Java. Pozwala zobaczyć zawartość wyge
 
 Podstawowe narzędzie do statycznej analizy w przypadku testów bezpiczeczeństwa oraz debugowania kwestii związanych np. z obfuskacją kodu przez ProGuard albo R8.
 
-![](resources/images/jadx.png)
+![Zdekompilowany kod jest zaskakująco czytelny. Źródło: https://github.com/skylot/jadx](resources/images/jadx.png)
 
 {pagebreak}
 
@@ -372,7 +373,7 @@ Designer może projektować animacje korzystając z After Effects (de facto stan
 
 Programista dodaje do projektu bibliotekę Lottie, wrzuca plik json do zasobów i w kilku liniach kodu jest w stanie zaimplementować dokładnie taki efekt jaki wymyślił designer. Żyjemy w przyszłości! ;)
 
-![Ciężko zaprezentować animacje w ebooku. Wierzcie mi: są efektowne.](resources/images/lottie.png)
+![Ciężko zaprezentować animacje w ebooku. Wierzcie mi: są efektowne. Źródło: https://airbnb.io/lottie/](resources/images/lottie.png)
 
 {pagebreak}
 
@@ -510,7 +511,7 @@ Firebase zaczynało jako alternatywa do Parse, mBaaS pozwalający na przechowywa
 Model biznesowy przypomina trochę dealera narkotyków: dla bardzo małych aplikacji aplikacja 
 
 {height:30%}
-![](resources/images/firebase_services.png)
+![Pod nazwą Firebase kryje się naprawdę dużo narzędzi.](resources/images/firebase_services.png)
 
 
 {pagebreak}
@@ -546,7 +547,7 @@ Tak jak wspomniałem, serwisów takich jest wiele. Różnią się liczbą dostę
 
 Dodatkową cechą wyróżniającą, jest integracja z Android Studio oraz wieloma usługami CI.
 
-![](resources/images/firebase_lab.png)
+![Wystarczy wrzucić plik APK i już można testować.](resources/images/firebase_lab.png)
 
 {pagebreak}
 
@@ -568,7 +569,7 @@ Apiary stanowi interaktywnej dokumentacji API, która opisuje jakie endpointy s�
 Dzięki temu programiści mobilni mogą zacząć tworzyć i testować aplikację zanim powstanie infrastruktura serwerowa. Oczywiście zakładając, że dokumentacja będzie zgodna z rzeczywistością. 
 
 {height:30%}
-![](resources/images/apiary.jpeg)
+![Przykładowe API wystawione przez apiary. Źródło: https://apiary.io](resources/images/apiary.jpeg)
 
 {pagebreak}
 
@@ -600,9 +601,9 @@ StackOverflow to jednak dużo więcej niż zbiór pytań i odpowiedzi. To społe
 ![](resources/images/protoio_logo.png)
 
 
-| *Strona*      | https://www.fluidui.com/   |
-| *Cena*        | FREE                       |
-| *Alternatywy* | Proto.io, Balsamiq Mockups |
+| *Strona*      | https://proto.io   |
+| *Cena*        | FREE (max 5 ekranów)                      |
+| *Alternatywy* | FluidUI, Balsamiq Mockups |
 
 
 Klikalne prototypy stanowią jedną z najlepszych form dokumentacji w komunikacji programista<->klient. Pozwalają przedstawić potrzebne ekrany, sposoby nawigacji pomiędzy nimi oraz przetestować aplikację na żywym organizmie, bez konieczności uruchamiania IDE. Bardzo często zmniejszają ryzyko niedomówień lub ujawniają braki w projekcie.
@@ -611,7 +612,7 @@ Warto zacząć tworzenie prototypu już na etapie tworzenia lub czytania specyfi
 
 Proto.io jest przykładem rozwiązania, które pozwala zaprojektować ekrany, dodać proste akcje (np. przejścia pomiędzy ekranami po naciśnięciu przycisku) i zaprezentować wynik w przeglądarce na telefonie klienta. Wystarczy przesłać link do wygenerowanego prototypu, który potencjalny użytkownik, może sobie przetestować na urządzeniu.
 
-![Proto.io pozwala testować prototypy bezpośrednio na urządzeniu.](resources/images/protoio.png)
+![Proto.io pozwala łatwo tworzyć nawigację między ekranami. Źródło: https://proto.io](resources/images/proto.png)
 
 {pagebreak}
 
@@ -707,7 +708,7 @@ Picasso.get()
     .into(imageView);
 ```
 
-![](resources/images/picasso_sample.png)
+![Źródło: http://square.github.io/picasso/](resources/images/picasso_sample.png)
 
 {pagebreak}
 
@@ -725,7 +726,7 @@ I tutaj wchodzi Leak Canary, cały na biało. Jest to biblioteka wyszukująca wy
 
 Polecam zwłaszcza początkującym programistom, którzy nie wiedzą jeszcze jakie konstrukcje prowadzą do wycieków (np. anonimowe klasy wewnętrzne), ponieważ da im to szybką informację o potencjalnych problemach.
 
-![Uuups. Obiekt aplikacji trzyma referencje do widoków.](resources/images/leak_canary.png)
+![Uuups. Obiekt aplikacji trzyma referencje do widoków. Źródło: https://github.com/square/leakcanary](resources/images/leak_canary.png)
 
 
 {pagebreak}
@@ -798,7 +799,7 @@ Flowable.range(1, 10)
 Stetho to biblioteka, która pozwala debugować aplikację z użyciem Chrome Developer Tools. Pozwala, w czasie rzeczywistym, podglądać hierarchię widoków, zawartość bazy danych i SharedPreferences, a nawet monitorować zapytania HTTP.
 
 {height:30%}
-![](resources/images/inspector-sqlite.png)
+![Podgląd bazy danych na telefonie zdecydowanie ułatwia debugowanie. Źródło: https://facebook.github.io/stetho/](resources/images/inspector-sqlite.png)
 
 
 Integracja jest bardzo łatwa i sprowadza się do dodania zależności w Gradle oraz zainicjalizowania biblioteki przy starcie aplikacji.
@@ -853,7 +854,7 @@ public class ViewModel {
 https://github.com/android/plaid
 
 {height: 30%}
-![](resources/images/plaid.png)
+![Źródło: https://github.com/android/plaid](resources/images/plaid.png)
 
 Przeglądarka wiadomości ze stron Designer News, Dribbble i Product Hunt stworzona przez ludzi z zespołu Androida. Bardzo dobrze ilustruje sposób implementacji Material Design oraz architektury w oparciu o Architecture Components.
 
@@ -866,7 +867,7 @@ https://github.com/google/iosched
 
 
 {height: 30%}
-![](resources/images/iosched.png)
+![Źródło: https://github.com/google/iosched](resources/images/iosched.png)
 
 
 Każdego roku Google IO jest najważniejszą konferencją, na której ekipa z Mountain View prezentuje nowości w SDK Androida. Niedługo po tym wydarzeniu udostępniany jest kod źródłowy oficjalnej aplikacji, powstałej na to wydarzenie, która jednocześnie prezentuje jak najwięcej z nowości w SDK.
