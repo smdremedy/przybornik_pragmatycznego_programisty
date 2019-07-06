@@ -609,7 +609,7 @@ Warto zacząć tworzenie prototypu już na etapie tworzenia lub czytania specyfi
 
 Proto.io jest przykładem rozwiązania, które pozwala zaprojektować ekrany, dodać proste akcje (np. przejścia pomiędzy ekranami po naciśnięciu przycisku) i zaprezentować wynik w przeglądarce na telefonie klienta. Wystarczy przesłać link do wygenerowanego prototypu, który potencjalny użytkownik, może sobie przetestować na urządzeniu.
 
-{height:40%}
+{height:35%}
 ![Proto.io pozwala łatwo tworzyć nawigację między ekranami. Źródło: https://proto.io](resources/images/proto.png)
 
 {pagebreak}
@@ -991,6 +991,10 @@ Ważny kanał dla tych, którzy chcą wiedzieć co nowego Google tym razem doda�
 
 ### The Busy Coder's Guide to Android Development
 http://commonsware.com/Android/
+
+{height:20%}
+![](resources/images/guide_cover.png)
+
 
 Nietypowa książka autorstwa Mark'a Murphy'ego. Dostępna jedynie w postaci 12-miesięcznej subskrypcji, w trakcie której otrzymujemy dostęp do aktualizacji książki - zwykle jest kilka rocznie. Jedyny tytuł, który mogę polecić z czystym sumieniem, ponieważ w każdym momencie jest aktualna. No i ta objętość: ponad 4000 stron (tak, cztery tysiące)!
 
