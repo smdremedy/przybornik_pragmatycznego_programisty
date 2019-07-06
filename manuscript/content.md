@@ -40,7 +40,9 @@ Kotlin ma wiele zalet, ale przede wszystkim jest zwięzły:
 data class Person(var name: String)
 ```
 
-Odpowiednik w Java
+{pagebreak}
+
+Odpowiednik w Java:
 
 ```java
 public final class Person {
@@ -50,34 +52,27 @@ public final class Person {
    public final String getName() {
       return this.name;
    }
-
    public final void setName(@NotNull String var1) {
       Intrinsics.checkParameterIsNotNull(var1, "<set-?>");
       this.name = var1;
    }
-
    public Person(@NotNull String name) {
       Intrinsics.checkParameterIsNotNull(name, "name");
       super();
       this.name = name;
    }
-
    @NotNull
    public String toString() {
       return "Person(name=" + this.name + ")";
    }
-
    public int hashCode() {
       return this.name != null ? this.name.hashCode() : 0;
    }
-
    public boolean equals(@Nullable Object var1) {
       if (this != var1) {
          if (var1 instanceof Person) {
             Person var2 = (Person)var1;
-            if (Intrinsics.areEqual(this.name, var2.name)) {
-               return true;
-            }
+            if (Intrinsics.areEqual(this.name, var2.name)) { return true; }
          }
          return false;
       } else { return true; }
@@ -191,7 +186,7 @@ Continous Integration (CI), to technika, w której serwer co pewien czas pobiera
 Jenkins, to jedna z lepszych implementacji CI, a do tego darmowa. Dużą dodatkową zaletą jest możliwość skorzystania z dziesiątek pluginów, które potrafią obsługiwać różne narzędzia, systemy kontroli wersji lub po prostu wyświetlać czytelne raporty. Pluginem, który na pewno warto używać dla testowania aplikacji jest Android Emulator Plugin, który odpowiada za tworzenie emulatorów, uruchamianie ich i zarządzanie aktualnie uruchomionymi.
 
 
-
+{height:20%}
 ![Prognoza jest dobra - buildy się udały. Źródło: https://www.morlunk.com/jenkins/](resources/images/jenkins_android.png)
 
 
@@ -430,7 +425,9 @@ Wymiary obiektów na ekranie Androida można podawać w wielu jednostkach. Pixel
 | *Cena*        | FREE                            |
 | *Alternatywy* | -                               |
 
-Szybki generator palety kolorów, do wykorzystania w aplikacjach zgodnych z Material Design.
+Szybki generator palety kolorów, do wykorzystania w aplikacjach zgodnych z Material Design. 
+
+Wygenerowana paleta posiada kolory grawantujące dobry kontrast i czytelność. Jest to dobre rozwiązanie kiedy nie posiadam grafika w projekcie, a chcę aby aplikacja dobrze wyglądała. 
 
 ![Wystarczy dwa kolory główne i paleta gotowa](resources/images/material_palette.png)
 
@@ -510,7 +507,7 @@ Firebase zaczynało jako alternatywa do Parse, mBaaS pozwalający na przechowywa
 
 Model biznesowy przypomina trochę dealera narkotyków: dla bardzo małych aplikacji aplikacja 
 
-{height:30%}
+{height:40%}
 ![Pod nazwą Firebase kryje się naprawdę dużo narzędzi.](resources/images/firebase_services.png)
 
 
@@ -612,6 +609,7 @@ Warto zacząć tworzenie prototypu już na etapie tworzenia lub czytania specyfi
 
 Proto.io jest przykładem rozwiązania, które pozwala zaprojektować ekrany, dodać proste akcje (np. przejścia pomiędzy ekranami po naciśnięciu przycisku) i zaprezentować wynik w przeglądarce na telefonie klienta. Wystarczy przesłać link do wygenerowanego prototypu, który potencjalny użytkownik, może sobie przetestować na urządzeniu.
 
+{height:40%}
 ![Proto.io pozwala łatwo tworzyć nawigację między ekranami. Źródło: https://proto.io](resources/images/proto.png)
 
 {pagebreak}
@@ -751,7 +749,32 @@ Timber to narzędzie proste i przyjemne. Jest to nakładka na mechanizm logowani
 | *Cena*        | FREE                            |
 | *Alternatywy* | Koin              |
 
-Dagger to implementacja wzorca Dependency Injection, czyli wstrzykiwania zależności. Celem tego podejścia jest minimalizacja ilości miejsc, w których tworzymy obiekty poprzez `new NazwaKlasy()` i utworzenie centralnego repozytorium obiektów, które możemy wstrzyknąć w dowolnym miejscu aplikacji. W przypadku Androida jest to szczególnie przydatne, ponieważ często potrzebujemy w różnych Activity albo Fragmentach dostępu do np. SharedPreferences. Polecam przeczytanie dokumentacji i rozpoczęcie od wstrzykiwania prostych obiektów np. swoich Managerów.
+Dagger to implementacja wzorca Dependency Injection, czyli wstrzykiwania zależności. Celem tego podejścia jest minimalizacja ilości miejsc, w których tworzymy obiekty poprzez `new NazwaKlasy()` i utworzenie centralnego repozytorium obiektów, które możemy wstrzyknąć w dowolnym miejscu aplikacji. 
+
+W przypadku Androida jest to szczególnie przydatne, ponieważ często potrzebujemy w różnych Activity albo Fragmentach dostępu do np. SharedPreferences. Polecam przeczytanie dokumentacji i rozpoczęcie od wstrzykiwania prostych obiektów np. swoich Managerów.
+
+
+```java
+@Module
+class DripCoffeeModule {
+  @Provides static Heater provideHeater() {
+    return new ElectricHeater();
+  }
+
+  @Provides static Pump providePump(Thermosiphon pump) {
+    return pump;
+  }
+}
+
+@Component(modules = DripCoffeeModule.class)
+interface CoffeeShop {
+  CoffeeMaker maker();
+}
+
+CoffeeShop coffeeShop = DaggerCoffeeShop.builder()
+    .dripCoffeeModule(new DripCoffeeModule())
+    .build();
+```
 
 {pagebreak}
 
@@ -837,11 +860,50 @@ Przykładowe użycie w ViewModelu:
 
 ```java
 public class ViewModel {
-  //place your models here
-  public final ObservableList<String> items = new ObservableArrayList<>();
-  //describe how they should bind to layouts
-  public final ItemBinding<String> itemBinding = ItemBinding.of(BR.item, R.layout.item);
+    //place your models here
+    public final ObservableList<String> items = new ObservableArrayList<>();
+    //describe how they should bind to layouts
+    public final ItemBinding<String> itemBinding = 
+        ItemBinding.of(BR.item, R.layout.item);
 }
+```
+
+I potrzebna konfiguracja w XML:
+```xml
+<!-- layout.xml -->
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <data>
+      <import type="com.example.R" />
+      <variable name="viewModel" type="com.example.ViewModel"/>
+    </data>
+
+    <ListView
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      app:items="@{viewModel.items}"
+      app:itemBinding="@{viewModel.itemBinding}"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+      app:items="@{viewModel.items}"
+      app:itemBinding="@{viewModel.itemBinding}"/>
+</layout>
+
+<!-- item.xml -->
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <data>
+      <variable name="item" type="String"/>
+    </data>
+    <TextView
+      android:id="@+id/text"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:text="@{item}"/>
+</layout>
 ```
 
 {pagebreak}
