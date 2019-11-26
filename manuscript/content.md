@@ -441,7 +441,7 @@ Przykładowo: utworzenie backendu dla aplikacji typu Tinder nie wymaga od nas pi
 
 * logowania FB i automatycznego tworzenia kont w Parse,
 
-* zapisywania profilii, wiadomości, położenia użytkownika w odpowiednich tabelach,
+* zapisywania profili, wiadomości, położenia użytkownika w odpowiednich tabelach,
 
 * wyszukiwania użytkowników w określonej odległości dzięki geoquery,
 
@@ -594,7 +594,7 @@ Jetpack to duży ukłon firmy Google w kierunku programistów. Jest to zestaw bi
 
 ### Data Binding
 
-Biblioteka pozwalająca na łączenie widoków z danymi na poziomie plików XML z Layoutami. W najprostrzym przypadku pozwala pozbyć się findViewById(), jednak zwykle używana jest do odseparowania logiki od prezentacji z użyciem wzorca MVVM (Model-View-ViewModel).
+Biblioteka pozwalająca na łączenie widoków z danymi na poziomie plików XML z Layoutami. W najprostszym przypadku pozwala pozbyć się findViewById(), jednak zwykle używana jest do odseparowania logiki od prezentacji z użyciem wzorca MVVM (Model-View-ViewModel).
 
 ### ViewModel
 Bardzo prosta biblioteka zdejmująca z programisty błędogenny proces przechowywania stanu obiektów pomiędzy zmianami konfiguracji poprzez automatyczne zarządzanie cyklem życia obiektów typu ViewModel z MVVM.
@@ -909,7 +909,7 @@ Dodatkowo, polecam czasem przeanalizować co wysyłają na serwer inne aplikacje
 
 Dekompilator bajtkodu w formacie dex do Java. Pozwala zobaczyć zawartość wygenerowanego przez nas pliku APK i przeanalizować czy nie zostawiamy w kodzie zbyt dużo informacji, które ktoś może wykorzystać do niecnych celów.
 
-Podstawowe narzędzie do statycznej analizy w przypadku testów bezpiczeczeństwa oraz debugowania kwestii związanych np. z obfuskacją kodu przez ProGuard albo R8.
+Podstawowe narzędzie do statycznej analizy w przypadku testów bezpieczeczeństwa oraz debugowania kwestii związanych np. z obfuskacją kodu przez ProGuard albo R8.
 
 ![Zdekompilowany kod jest zaskakująco czytelny. Źródło: https://github.com/skylot/jadx](resources/images/jadx.png)
 
@@ -926,7 +926,7 @@ Podstawowe narzędzie do statycznej analizy w przypadku testów bezpiczeczeństw
 | *Alternatywy* | - |
 
 Najlepsze narzędzie do modyfikacji aplikacji na Androida. Pozwala rozpakować plik APK, zamienić bytecode na bardziej czytelny format SMALI. Pliki te mogą być modyfikowane, a następnie znów pakowane do pliku APK. 
-Dzięki temu mozna modyfikować zachowanie aplikacji lub jej wygląd.
+Dzięki temu można modyfikować zachowanie aplikacji lub jej wygląd.
 
 
 {pagebreak}
@@ -942,8 +942,8 @@ Dzięki temu mozna modyfikować zachowanie aplikacji lub jej wygląd.
 | *Cena*        | FREE                         |
 | *Alternatywy* | Frida |
 
-Framework pozwalający na method hooking czyli podmianę implementacji aplikacji na poziomie systemu. Dzięki temu, mozna modyfikować zachowanie aplikacji, bez konieczności modyfikacji plików APK.
-Poza tworzeniem własnych modułów (kodu modyfikującego zachowanie), mozna takze skorzystac z istniejacych modulow, które modyfikują zachowanie popularnych aplikacji lub nawet systemu. Popularnymi modulami są moduły wyłączające SSL Pinning np. JustTrustMe. 
+Framework pozwalający na method hooking czyli podmianę implementacji aplikacji na poziomie systemu. Dzięki temu, można modyfikować zachowanie aplikacji, bez konieczności modyfikacji plików APK.
+Poza tworzeniem własnych modułów (kodu modyfikującego zachowanie), można także skorzystać z istniejących modułow, które modyfikują zachowanie popularnych aplikacji lub nawet systemu. Przykładem są moduły wyłączające SSL Pinning np. JustTrustMe. 
 
 {pagebreak}
 
@@ -958,9 +958,9 @@ Poza tworzeniem własnych modułów (kodu modyfikującego zachowanie), mozna tak
 | *Cena*        | FREE                         |
 | *Alternatywy* | - |
 
-Drozer to narzędzie przyśpieszające dynamiczna analizę aplikacji tzn. uruchomioną na urządzeniu. Pozwala badac jakie komponenty sa dostepne z punktu widzenia innych aplikacji. Pozwala nawet automatycznie wyszukiwac podatnosci Path Traversal i SQLInjection.
+Drozer to narzędzie przyśpieszające analizę aplikacji bezpośrednio na urządzeniu. Pozwala badać jakie komponenty aplikacji są dostępne z punktu widzenia innych aplikacji. Posiada nawet skanery wyszukujące automatycznie podatności Path Traversal i SQLInjection.
 
-Drozer składa się agenta, którego instaluje sie na urzadzeniu i tekstowej konsoli, ktora się z nim łączy i pozwala nim sterować.
+Drozer składa się z agenta, którego instaluje się na urządzeniu i tekstowej konsoli, która się z nim łączy i pozwala nim sterować.
 
 ## Kali Linux
 
@@ -972,7 +972,8 @@ Drozer składa się agenta, którego instaluje sie na urzadzeniu i tekstowej kon
 | *Cena*        | FREE                         |
 | *Alternatywy* | Santoku |
 
-Dystrybucja Linuxa stanowiąca podstawowe narzędzie wszystkich ludzi zajmujących się zagadnieniami Security niezależnie od platformy i strony. Zawiera większość narzędzi do testowania sieci komputerowych, reverse engineeringu czy sociotechnik.
+Dystrybucja Linuxa stanowiąca podstawowe narzędzie wszystkich ludzi zajmujących się zagadnieniami Security niezależnie od platformy i strony. Zawiera większość narzędzi do testowania sieci komputerowych, reverse engineeringu czy socjotechnik.
+
 Doskonale sprawdza się jako baza do testowania aplikacji mobilnych, choć może wymagać doinstalowania kilku narzędzi z repozytorium.
 
 {pagebreak}
