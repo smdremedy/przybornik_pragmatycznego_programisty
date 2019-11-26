@@ -925,6 +925,10 @@ Podstawowe narzędzie do statycznej analizy w przypadku testów bezpiczeczeństw
 | *Cena*        | FREE                         |
 | *Alternatywy* | - |
 
+Najlepsze narzędzie do modyfikacji aplikacji na Androida. Pozwala rozpakować plik APK, zamienić bytecode na bardziej czytelny format SMALI. Pliki te mogą być modyfikowane, a następnie znów pakowane do pliku APK. 
+Dzięki temu mozna modyfikować zachowanie aplikacji lub jej wygląd.
+
+
 {pagebreak}
 
 
@@ -938,6 +942,9 @@ Podstawowe narzędzie do statycznej analizy w przypadku testów bezpiczeczeństw
 | *Cena*        | FREE                         |
 | *Alternatywy* | Frida |
 
+Framework pozwalający na method hooking czyli podmianę implementacji aplikacji na poziomie systemu. Dzięki temu, mozna modyfikować zachowanie aplikacji, bez konieczności modyfikacji plików APK.
+Poza tworzeniem własnych modułów (kodu modyfikującego zachowanie), mozna takze skorzystac z istniejacych modulow, które modyfikują zachowanie popularnych aplikacji lub nawet systemu. Popularnymi modulami są moduły wyłączające SSL Pinning np. JustTrustMe. 
+
 {pagebreak}
 
 
@@ -949,7 +956,11 @@ Podstawowe narzędzie do statycznej analizy w przypadku testów bezpiczeczeństw
 
 | *Strona*      | https://labs.f-secure.com/tools/drozer/ |
 | *Cena*        | FREE                         |
-| *Alternatywy* | Frida |
+| *Alternatywy* | - |
+
+Drozer to narzędzie przyśpieszające dynamiczna analizę aplikacji tzn. uruchomioną na urządzeniu. Pozwala badac jakie komponenty sa dostepne z punktu widzenia innych aplikacji. Pozwala nawet automatycznie wyszukiwac podatnosci Path Traversal i SQLInjection.
+
+Drozer składa się agenta, którego instaluje sie na urzadzeniu i tekstowej konsoli, ktora się z nim łączy i pozwala nim sterować.
 
 {pagebreak}
 
@@ -1002,7 +1013,7 @@ http://www.vogella.com/tutorials/android.html
 Znane źródło tutoriali opisujących popularne zagadnienia z zakresu programowania na Androida i nie tylko.
 
 
-### SzkolaAndroida.pl - Blog
+### SzkolaAndroida.pl
 https://SzkolaAndroida.pl
 
 Blog, który tworzę w wolnym czasie pomiędzy projektami i szkoleniami. Staram się przekazywać spostrzeżenia dotyczące tworzenia aplikacji, zwłaszcza od strony warsztatu programisty.
@@ -1148,4 +1159,4 @@ https://SzkoleniaAndroid.pl/youtube
 https://twitter.com/smdremedy
 
 ## A przede wszystkim czytaj bloga
-https://SzkoleniaAndroid.pl/blog/
+https://SzkolaAndroida.pl
