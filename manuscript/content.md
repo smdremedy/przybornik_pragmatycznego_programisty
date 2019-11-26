@@ -951,7 +951,7 @@ Poza tworzeniem własnych modułów (kodu modyfikującego zachowanie), mozna tak
 ## Drozer
 
 {height:10%}
-![](resources/images/xposed_logo.png)
+![](resources/images/drozer_logo.png)
 
 
 | *Strona*      | https://labs.f-secure.com/tools/drozer/ |
@@ -961,6 +961,19 @@ Poza tworzeniem własnych modułów (kodu modyfikującego zachowanie), mozna tak
 Drozer to narzędzie przyśpieszające dynamiczna analizę aplikacji tzn. uruchomioną na urządzeniu. Pozwala badac jakie komponenty sa dostepne z punktu widzenia innych aplikacji. Pozwala nawet automatycznie wyszukiwac podatnosci Path Traversal i SQLInjection.
 
 Drozer składa się agenta, którego instaluje sie na urzadzeniu i tekstowej konsoli, ktora się z nim łączy i pozwala nim sterować.
+
+## Kali Linux
+
+{height:10%}
+![](resources/images/kali_logo.png)
+
+
+| *Strona*      | https://www.kali.org/ |
+| *Cena*        | FREE                         |
+| *Alternatywy* | Santoku |
+
+Dystrybucja Linuxa stanowiąca podstawowe narzędzie wszystkich ludzi zajmujących się zagadnieniami Security niezależnie od platformy i strony. Zawiera większość narzędzi do testowania sieci komputerowych, reverse engineeringu czy sociotechnik.
+Doskonale sprawdza się jako baza do testowania aplikacji mobilnych, choć może wymagać doinstalowania kilku narzędzi z repozytorium.
 
 {pagebreak}
 
