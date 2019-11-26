@@ -4,9 +4,9 @@
 {height:20%}
 ![](resources/images/smd.jpeg)
 
-Cześć, nazywam się **Sylwester Madej** i od 7 lat pomagam ludziom tworzyć aplikacje na Androida. Poza kodowaniem, prowadzę także szkolenia stacjonarne i online w ramach **SzkoleniaAndroid.pl**. Często uczestnicy pytają się mnie o sprawdzone narzędzia, które warto poznać. Postanowiłem zebrać moje rekomendacje w tego ebooka.
+Cześć, nazywam się **Sylwester Madej** i od 7 lat pomagam ludziom tworzyć aplikacje na Androida. Poza kodowaniem, prowadzę także szkolenia stacjonarne w ramach **SzkoleniaAndroid.pl** i online na stronie **SzkolaAndroida.pl**. Często uczestnicy pytają się mnie o sprawdzone narzędzia, które warto poznać. Postanowiłem zebrać moje rekomendacje w tego ebooka.
 
-Celem niniejszego ebooka jest przedstawienie zestawu narzędzi i zasobów, których używanie wpływa na jakość i wydajność pracy programisty. Każde z nich przetestowałem na własnej skórze, podczas tworzenia wielu aplikacji. Wybór ten potwierdziło wielu programistów, z którymi rozmawiałem na imprezach branżowych, takich jak Mobile Warsaw, Droidcon czy Mobilization.
+Celem niniejszego ebooka jest przedstawienie zestawu narzędzi i zasobów, których używanie wpływa na **jakość i wydajność pracy programisty**. Każde z nich przetestowałem na własnej skórze, podczas tworzenia wielu aplikacji. Wybór ten potwierdziło wielu programistów, z którymi rozmawiałem na imprezach branżowych, takich jak Mobile Warsaw, Droidcon czy Mobilization.
 
 Postarałem się wybrać po jednym elemencie, z każdej kategorii. W przypadku gdy znam inne, podobne rozwiązania, podaje je jako alternatywy. Ułatwia to proces wyboru osobom początkującym, choć sam wychodzę z założenia, że nie ma narzędzi idealnych do wszystkiego. Dlatego też sam co jakiś czas szukam nowych, lepszych rozwiązań.
 
@@ -14,7 +14,7 @@ Duża część wskazanych przeze mnie narzędzi jest bezpłatna. W przypadku roz
 
 Mam nadzieję, że programiści zaczynający swoją przygodę z profesjonalnym tworzeniem aplikacji znajdą tu masę wskazówek, które pomogą im od samego początku pracować "zgodnie ze sztuką". W przypadku osób bardziej doświadczonych, liczę na to, że znajdziecie tutaj co najmniej 2-3 interesujące narzędzia, które przydadzą się w Wam w pracy.
 
-Lubię książki, które podają konkretne kroki i od samego początku przynoszą wartość. Dlatego też mam prośbę: wybierz 1 narzędzie i zacznij z niego korzystać. Gwarantuję, że już po tygodniu zauważysz zmianę na plus!
+Lubię książki, które podają konkretne kroki i od samego początku przynoszą wartość. Dlatego też mam prośbę: **wybierz 1 narzędzie i zacznij z niego korzystać**. Gwarantuję, że już po tygodniu zauważysz zmianę na plus!
 
 # Narzędzia
 Zacznę od crème de la crème spośród narzędzi do tworzenia aplikacji mobilnych, czyli produktów dostępnych jako aplikacje desktopowe lub wtyczki do takich aplikacji. Są to elementy, z którymi programista spędza najwięcej czasu. Starałem się, aby wybrane narzędzia dobrze się uzupełniały i stanowiły ekosystem, w którym praca staje się prostsza.
@@ -305,7 +305,7 @@ Kolejne proste narzędzie, które pomoże zaoszczędzić godziny przy tworzeniu 
 
 Sposób na podejrzenie ekranu telefonu na ekranie komputera. Przydatne zwłaszcza gdy robimy demo dla klienta lub zespołu i potrzebujemy fizycznego urządzenia.
 
-
+{height:40%}
 ![Źródło: https://github.com/Genymobile/scrcpy](resources/images/scrcpy.jpg)
 
 
@@ -782,7 +782,7 @@ Flowable.range(1, 10)
 
 Flipper to biblioteka od Facebooka, która pozwala debugować aplikację z użyciem dedykowanej aplikacji desktopowej. Pozwala, w czasie rzeczywistym, podglądać hierarchię widoków, zawartość bazy danych i SharedPreferences, a nawet monitorować zapytania HTTP.
 
-{height:30%}
+{height:50%}
 ![Podgląd bazy danych na telefonie zdecydowanie ułatwia debugowanie. Źródło: https://fbflipper.com/](resources/images/flipper_db.png)
 
 
@@ -875,7 +875,7 @@ I potrzebna konfiguracja w XML:
 {pagebreak}
 
 
-# Narzędzia związane z bezpieczeństwem
+# Narzędzia związane z bezpieczeństwem aplikacji
 
 ## Burp Suite
 
@@ -895,7 +895,7 @@ Właśnie wsparcie dla SSL oraz prostota obsługi sprawiają, że narzędzie to 
 
 Dodatkowo, polecam czasem przeanalizować co wysyłają na serwer inne aplikacje lub np. usługi Google.
 
-{height:40%}
+{height:30%}
 ![Podsłuchiwanie ruchu HTTPS wymaga jedynie zainstalowania root CA.](resources/images/burp_suite.png)
 
 
@@ -911,6 +911,7 @@ Dekompilator bajtkodu w formacie dex do Java. Pozwala zobaczyć zawartość wyge
 
 Podstawowe narzędzie do statycznej analizy w przypadku testów bezpieczeczeństwa oraz debugowania kwestii związanych np. z obfuskacją kodu przez ProGuard albo R8.
 
+{height:40%}
 ![Zdekompilowany kod jest zaskakująco czytelny. Źródło: https://github.com/skylot/jadx](resources/images/jadx.png)
 
 {pagebreak}
@@ -962,6 +963,12 @@ Drozer to narzędzie przyśpieszające analizę aplikacji bezpośrednio na urzą
 
 Drozer składa się z agenta, którego instaluje się na urządzeniu i tekstowej konsoli, która się z nim łączy i pozwala nim sterować.
 
+{height:40%}
+![Drozer wymaga połączenia z agentem na urządzeniu.](resources/images/drozer.png)
+
+
+{pagebreak}
+
 ## Kali Linux
 
 {height:10%}
@@ -975,6 +982,10 @@ Drozer składa się z agenta, którego instaluje się na urządzeniu i tekstowej
 Dystrybucja Linuxa stanowiąca podstawowe narzędzie wszystkich ludzi zajmujących się zagadnieniami Security niezależnie od platformy i strony. Zawiera większość narzędzi do testowania sieci komputerowych, reverse engineeringu czy socjotechnik.
 
 Doskonale sprawdza się jako baza do testowania aplikacji mobilnych, choć może wymagać doinstalowania kilku narzędzi z repozytorium.
+
+{height:40%}
+![Kali Linux w akcji.](resources/images/kali.png)
+
 
 {pagebreak}
 
