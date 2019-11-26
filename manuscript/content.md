@@ -295,57 +295,18 @@ Kolejne proste narzędzie, które pomoże zaoszczędzić godziny przy tworzeniu 
 
 {pagebreak}
 
-## Burp Suite
 
-{height:10%}
-![](resources/images/burp_logo.png)
+## ScrCpy
 
-
-| *Strona*      | https://portswigger.net/burp |
-| *Cena*        | FREE                         |
-| *Alternatywy* | CharlesProxy, Fiddler, Mitmproxy |
-
-
-
-BurpSuite pozwala na debugowanie komunikacji HTTP pomiędzy aplikacją mobilną, a serwerem. Do działania wykorzystuje mechanizm proxy, czyli urządzenia, przez które przechodzi cały ruch sieciowy. Wystarczy wystartować program i ustawić na urządzeniu nasz komputer, jako serwer proxy, aby móc podejrzeć każdy bajt informacji przesyłany po HTTP, nawet w przypadku szyfrowania SSL.
-
-Właśnie wsparcie dla SSL oraz prostota obsługi sprawiają, że narzędzie to może oszczędzić godziny. Często korzystam też z narzędzia interceptor, które niczym w debugerze, pozwala przerwać request w trakcie i np. zmodyfikować odpowiedź z serwera, jeśli chcę przetestować inny przypadek.
-
-Dodatkowo, polecam czasem przeanalizować co wysyłają na serwer inne aplikacje lub np. usługi Google.
-
-{height:40%}
-![Podsłuchiwanie ruchu HTTPS wymaga jedynie zainstalowania root CA.](resources/images/burp_suite.png)
-
-
-{pagebreak}
-
-## JADX
-
-| *Strona*      | https://github.com/skylot/jadx |
-| *Cena*        | FREE                         |
-| *Alternatywy* | Dex2Jar |
-
-Dekompilator bajtkodu w formacie dex do Java. Pozwala zobaczyć zawartość wygenerowanego przez nas pliku APK i przeanalizować czy nie zostawiamy w kodzie zbyt dużo informacji, które ktoś może wykorzystać do niecnych celów.
-
-Podstawowe narzędzie do statycznej analizy w przypadku testów bezpiczeczeństwa oraz debugowania kwestii związanych np. z obfuskacją kodu przez ProGuard albo R8.
-
-![Zdekompilowany kod jest zaskakująco czytelny. Źródło: https://github.com/skylot/jadx](resources/images/jadx.png)
-
-{pagebreak}
-
-
-## Vysor
-
-| *Strona*      | https://www.vysor.io/ |
-| *Cena*        | FREE / Vysor Pro $2.50/mo, $10/yr, or $40/lifetime |
-| *Alternatywy* | Mobizen                    |
+| *Strona*      | https://github.com/Genymobile/scrcpy |
+| *Cena*        | FREE |
+| *Alternatywy* | Vysor, Mobizen                    |
 
 
 Sposób na podejrzenie ekranu telefonu na ekranie komputera. Przydatne zwłaszcza gdy robimy demo dla klienta lub zespołu i potrzebujemy fizycznego urządzenia.
 
-Darmowa wersja wyświetla reklamy, więc przed demo dla klienta warto zainwestować w pełną wersję albo poszukać alternatyw.
 
-![Źródło: https://www.vysor.io](resources/images/vysor-desktop.jpg)
+![Źródło: https://github.com/Genymobile/scrcpy](resources/images/scrcpy.jpg)
 
 
 {pagebreak}
@@ -808,21 +769,21 @@ Flowable.range(1, 10)
 
 {pagebreak}
 
-## Stetho
+## Flipper
 
 {height:10%}
-![](resources/images/logo_stetho.png)
+![](resources/images/logo_flipper.png)
 
 
 
-| *Strona*      | https://facebook.github.io/stetho/ |
+| *Strona*      | https://fbflipper.com/ |
 | *Cena*        | FREE                       |
-| *Alternatywy* | -     |
+| *Alternatywy* | Stetho     |
 
-Stetho to biblioteka, która pozwala debugować aplikację z użyciem Chrome Developer Tools. Pozwala, w czasie rzeczywistym, podglądać hierarchię widoków, zawartość bazy danych i SharedPreferences, a nawet monitorować zapytania HTTP.
+Flipper to biblioteka od Facebooka, która pozwala debugować aplikację z użyciem dedykowanej aplikacji desktopowej. Pozwala, w czasie rzeczywistym, podglądać hierarchię widoków, zawartość bazy danych i SharedPreferences, a nawet monitorować zapytania HTTP.
 
 {height:30%}
-![Podgląd bazy danych na telefonie zdecydowanie ułatwia debugowanie. Źródło: https://facebook.github.io/stetho/](resources/images/inspector-sqlite.png)
+![Podgląd bazy danych na telefonie zdecydowanie ułatwia debugowanie. Źródło: https://fbflipper.com/](resources/images/flipper_db.png)
 
 
 Integracja jest bardzo łatwa i sprowadza się do dodania zależności w Gradle oraz zainicjalizowania biblioteki przy starcie aplikacji.
@@ -831,7 +792,12 @@ Integracja jest bardzo łatwa i sprowadza się do dodania zależności w Gradle 
 public class MyApplication extends Application {
   public void onCreate() {
     super.onCreate();
-    Stetho.initializeWithDefaults(this);
+    SoLoader.init(this, false);
+    if (BuildConfig.DEBUG && FlipperUtils.shouldEnableFlipper(this)) {
+      final FlipperClient client = AndroidFlipperClient.getInstance(this);
+      client.addPlugin(new InspectorFlipperPlugin(this, DescriptorMapping.withDefaults()));
+      client.start();
+    }
   }
 }
 ```
@@ -840,7 +806,7 @@ Opcjonalnie można dodać jeszcze interceptor do OkHttp, aby móc podsłuchiwać
 
 ```java
 new OkHttpClient.Builder()
-    .addNetworkInterceptor(new StethoInterceptor())
+    .addNetworkInterceptor(new FlipperOkhttpInterceptor(networkFlipperPlugin))
     .build();
 ```
 
@@ -909,6 +875,86 @@ I potrzebna konfiguracja w XML:
 {pagebreak}
 
 
+# Narzędzia związane z bezpieczeństwem
+
+## Burp Suite
+
+{height:10%}
+![](resources/images/burp_logo.png)
+
+
+| *Strona*      | https://portswigger.net/burp |
+| *Cena*        | FREE                         |
+| *Alternatywy* | CharlesProxy, Fiddler, Mitmproxy |
+
+
+
+BurpSuite pozwala na debugowanie komunikacji HTTP pomiędzy aplikacją mobilną, a serwerem. Do działania wykorzystuje mechanizm proxy, czyli urządzenia, przez które przechodzi cały ruch sieciowy. Wystarczy wystartować program i ustawić na urządzeniu nasz komputer, jako serwer proxy, aby móc podejrzeć każdy bajt informacji przesyłany po HTTP, nawet w przypadku szyfrowania SSL.
+
+Właśnie wsparcie dla SSL oraz prostota obsługi sprawiają, że narzędzie to może oszczędzić godziny. Często korzystam też z narzędzia interceptor, które niczym w debugerze, pozwala przerwać request w trakcie i np. zmodyfikować odpowiedź z serwera, jeśli chcę przetestować inny przypadek.
+
+Dodatkowo, polecam czasem przeanalizować co wysyłają na serwer inne aplikacje lub np. usługi Google.
+
+{height:40%}
+![Podsłuchiwanie ruchu HTTPS wymaga jedynie zainstalowania root CA.](resources/images/burp_suite.png)
+
+
+{pagebreak}
+
+## JADX
+
+| *Strona*      | https://github.com/skylot/jadx |
+| *Cena*        | FREE                         |
+| *Alternatywy* | Dex2Jar |
+
+Dekompilator bajtkodu w formacie dex do Java. Pozwala zobaczyć zawartość wygenerowanego przez nas pliku APK i przeanalizować czy nie zostawiamy w kodzie zbyt dużo informacji, które ktoś może wykorzystać do niecnych celów.
+
+Podstawowe narzędzie do statycznej analizy w przypadku testów bezpiczeczeństwa oraz debugowania kwestii związanych np. z obfuskacją kodu przez ProGuard albo R8.
+
+![Zdekompilowany kod jest zaskakująco czytelny. Źródło: https://github.com/skylot/jadx](resources/images/jadx.png)
+
+{pagebreak}
+
+## Apktool
+
+{height:10%}
+![](resources/images/logo_apktool.png)
+
+
+| *Strona*      | https://ibotpeaches.github.io/Apktool/ |
+| *Cena*        | FREE                         |
+| *Alternatywy* | - |
+
+{pagebreak}
+
+
+## Xposed Framework
+
+{height:10%}
+![](resources/images/xposed_logo.png)
+
+
+| *Strona*      | https://github.com/rovo89/XposedBridge |
+| *Cena*        | FREE                         |
+| *Alternatywy* | Frida |
+
+{pagebreak}
+
+
+## Drozer
+
+{height:10%}
+![](resources/images/xposed_logo.png)
+
+
+| *Strona*      | https://labs.f-secure.com/tools/drozer/ |
+| *Cena*        | FREE                         |
+| *Alternatywy* | Frida |
+
+{pagebreak}
+
+
+
 # Kody źródłowe
 
 ## Plaid 
@@ -941,14 +987,23 @@ Warto przejrzeć, choć z doświadczenia wiem, że kod nie jest idealny i trudny
 
 ## Strony
 
+### raywenderlich.com
+https://raywenderlich.com/android
+
+Najlepiej dopracowane tutoriale w Internecie.
+
+RayWenderlich.com to strona, która oferuje dużo kursów, tutoriali i książek. Znacząca część 
+jest płatna, ale te które są darmowe też wyglądają świetnie i są bardzo dopracowane.
+
+
 ### Vogella Android Tutorials
 http://www.vogella.com/tutorials/android.html
 
-Znane źródło bardzo dopracowanych tutoriali opisujących popularne zagadnienia z zakresu programowania na Androida i nie tylko.
+Znane źródło tutoriali opisujących popularne zagadnienia z zakresu programowania na Androida i nie tylko.
 
 
-### SzkoleniaAndroid.pl - Blog
-https://SzkoleniaAndroid.pl/blog/
+### SzkolaAndroida.pl - Blog
+https://SzkolaAndroida.pl
 
 Blog, który tworzę w wolnym czasie pomiędzy projektami i szkoleniami. Staram się przekazywać spostrzeżenia dotyczące tworzenia aplikacji, zwłaszcza od strony warsztatu programisty.
 
@@ -969,6 +1024,13 @@ Największy katalog bibliotek, narzędzi i przykładów na Androida. Z możliwo�
 
 Alternatywy: https://www.android-libs.com
 
+
+### Fragmented Podcast
+https://fragmentedpodcast.com
+
+Lubie podcasty, bo dają szansę zdobywać wiedzę, gdy jadę samochodem, albo jestem na siłowni. Spośród podcastów o Androidzie zdecydowanie wyróżnia się Fragmented.
+
+Dużo wiedzy, aktualne tematy i znani goście sprawiają, że warto mu poświęcić kilkadziesiąt minut. 
 
 {pagebreak}
 
